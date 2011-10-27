@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Emphasising with HTML - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="Update: I had given a wrong example of the cite element. It is corrected now. There are several ways to quote/emphasise using HTML, you can use the & &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/emphasising-with-html.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Emphasising With HTML</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2008-11-15T00:00:00+05:30" pubdate>Nov 15<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong>Update:</strong> I had given a wrong example of the <code>cite</code> element. It is corrected now. </p>
+
+
+<p>There are several ways to quote/emphasise using <abbr title="Hyper Text Markup Language">HTML</abbr>, you can use the <code>&lt;q&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code> and there are subscripts <code>&lt;sub&gt;</code> and superscripts <code>&lt;sup&gt;</code>. </p>
+
+
+<h3>What does each mean?</h3>
+
+
+<br/>
+
+
+<dl>
+    <dt>Quote</dt>
+    <dd><p>Quote is used for short quotes within paragraphs.</p> 
+        <p>Example</p>
+        <pre>
+<code>&lt;q&gt;All men and women are equal&lt;/q&gt;</code>
+        </pre>
+        <p>Opera, Safari and Firefox display quotes with double-quotes automatically. Internet Explorer does not render any quotes for text marked as quote. <a href="http://willcode4beer.com/tips.jsp?set=fixIEQuotes">Here is a way to display quotes in Internet Explorer</a></p></dd>
+        <dt>Blockquote</dt>
+        <dd><p>Blockquotes are used to mark up long quotations which may run into a few paragraphs. Ideally, you use a <code>&lt;p&gt;</code> to mark up a paragraph within a <code>&lt;blockquote&gt;</code> (even if there is only one paragraph).</p>
+        <p><a href="http://www.w3.org/TR/html4/struct/text.html#h-9.2.2">The Specs</a> state: </p>
+            <blockquote>
+                <p>Note. We recommend that style sheet implementations provide a mechanism for inserting quotation marks before and after a quotation delimited by BLOCKQUOTE in a manner appropriate to the current language context and the degree of nesting of quotations.</p>
+            <p>However, as some authors have used BLOCKQUOTE merely as a mechanism to indent text, in order to preserve the intention of the authors, user agents should not insert quotation marks in the default style.</p>
+            </blockquote>
+            <p>Monc.se has an <a href="http://www.monc.se/kitchen/129/rendering-quotes-with-css">excellent article on quotes with a special section on blockquotes</a> that helps to understand how to insert quotation marks using stylesheets for <code>blockquote</code>.</p>
+        </dd>
+        <dt>Cite</dt>
+        <dd>
+            <p>Contains a citation or a reference to other sources. <a href="http://www.w3.org/MarkUp/html-spec/html-spec_5.html#SEC5.7.1.1">The HTML 5 spec</a> states that <code>cite</code> is to indicate the title of a book or other citation. For example:</p>
+            <pre>
+As &lt;cite&gt;The White Mughals &lt;/cite&gt; states, 
+&lt;q&gt;A moment&#x27;s insight is sometimes worth a life&#x27;s experience.&lt;/q&gt;
+            </pre>
+        </dd>
+        <dt>em, strong</dt>
+        <dd>
+            <p><code>&lt;em&gt;</code> is used to indicate emphasis, while <code>&lt;strong&gt;</code> indicates stronger emphasis.</p>
+        </dd>
+        <dt>Code</dt>
+        <dd>
+            <p>To indicate a fragment of HTML or other programming instances. For example:</p>
+            <pre>
+&lt;code&gt;&lt;link type=&quot;image/x-icon&quot; href=&quot;/blog/files/nimbupani_favicon.ico&quot; rel=&quot;shortcut icon&quot;/&gt;&lt;/code&gt;
+            </pre>
+            <p>Code does not display the content in a fixed width font and requires <abbr title="Cascading Style Sheets">CSS</abbr> styling for it to do so. You also need to convert the angle brackets and other coding symbols into their respective HTML entities before they can be displayed without interfering with the HTML elements within the page.</p>
+        </dd>
+        <dt>Pre</dt>
+        <dd>
+            <p>The <code><a href="http://www.w3.org/TR/REC-html40/struct/text.html#edef-PRE">Pre</a></code> notifies the browsers that the text within that element is &#8220;preformatted&#8221; which means browsers can:</p>
+            <ul>
+                <li>leave the white space within the text intact.</li>
+                <li>render the text with a fixed width font (like courier).</li>
+                <li>disable automatic word wrap.</li>
+            </ul>
+            <p><code>pre</code> also requires the symbols of programming be converted into their respective HTML entities before they can be displayed as they would interfere with the other HTML elements within the page.</p>
+        </dd>
+        <dt>Superscripts and Subscripts</dt>
+        <dd>
+            <p><code>&lt;sup&gt;</code>, and <code>&lt;sub&gt;</code> are used to represent superscripts and subscripts. Some people recommend that, since it is for presentational use, to use CSS for them. <a href="http://www.personal.psu.edu/ejp10/blogs/tlt/2007/02/beware-css-for-superscriptsubc.html">This article</a> states why it is better to use unicode rather than <abbr title="Cascading Style Sheets">CSS</abbr> to replace them.</p>
+        </dd>
+</dl>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2008-11-15T00:00:00+05:30" pubdate>Nov 15<span>th</span>, 2008</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/emphasising-with-html.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/emphasising-with-html.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/being-over-enthusiastic-about-accessibility.html" title="Previous Post: Being over enthusiastic about accessibility">&laquo; Being over enthusiastic about accessibility</a>
+      
+      
+        <a class="basic-alignment right" href="/book-review-for-october-08.html" title="next Post: Book Review for October 08">Book Review for October 08 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

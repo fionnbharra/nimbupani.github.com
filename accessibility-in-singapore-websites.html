@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title> Accessibility in Singapore websites - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="Accessibility has been in the news lately - with Target&#8217;s accessiblity lawsuit being given the class-action status. Now, lets take a look at &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/accessibility-in-singapore-websites.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Accessibility in Singapore Websites</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2007-10-11T00:00:00+05:30" pubdate>Oct 11<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Accessibility has been in the news lately - with <a href="http://www.456bereastreet.com/archive/200710/update_on_the_target_accessibility_lawsuit/">Target&#8217;s accessiblity lawsuit being given the class-action status.</a> Now, lets take a look at what was missing in Target&#8217;s website that caused the complaint in the first place (summarized from the <a href="http://www.dralegal.org/downloads/cases/target/nfb_v_target_complaint.pdf">official <abbr title ="National Federation of the Blind">NFB</abbr> Vs Target legal docs</a>):</p>
+
+<ul><li>lack of alt-text on graphics</li><li>inaccessible image maps</li><li>the lack of adequate prompting and labeling</li><li>the denial of keyboard access</li><li>the requirement that transactions be performed solely with a mouse</li><li>lack of navigational links</li></ul>
+
+
+
+
+<p>In Singapore, accessibility services seems to be provided majorly by <a href="http://designafa.com/pages/clients.asp">Designafa</a> - especially for government websites. Lets see how well these are managed by their own website:</p>
+
+
+<p> <dl>
+<dt><em>lack of alt-text on graphics</em></dt>
+<dd></p>
+
+<p>The first thing that strikes you is that the navigation links are separated by images that have no alt text. Moreover, you have the fluffy rounded corners images with no alt text as well. The problem is not that there is no alt text, but the very existence of these images. If they are not required for screen reading why are they present - impeeding the screenreaders? They should be background images using css. Alas, as the site structure shows, they had not thought about using css and webstandards.</p>
+
+
+<p></p>
+
+<p>The next thing I notice is that the image says &#8220;Key to successful web (sic) Accessibility & Usability&#8221; while the alt text says &#8220;Accessibility for all, Making your website Accessible&#8221;. If the image does nothing but display text as an &#8220;image&#8221; then the least that should occur is that the text matches that on the image.</p>
+
+
+<p></p>
+
+<p>Another interesting alt text is this &#8220;Commemorating International Day of Disable Persons 2006&#8221; for the image that says &#8220;Forum on E-Accessibility in Singapore&#8221; and the date that is mentioned in the image is 22 June <em>2007</em>.</p>
+
+
+<p></dd>
+<dt><em>inaccessible image maps</em></dt></p>
+
+<p>The site doesnt use any image maps thankfully. </p>
+
+
+<p>
+</dd>
+<dt><em>the lack of adequate prompting and labeling</em></dt>
+<dd></p>
+
+<pre><code>This is definitely missing in the form on the &lt;a href="http://www.designafa.com/pages/contactus.asp"&gt;contact page&lt;/a&gt;. Labels are wrapped around the input elements without a "label". The fields are also filled but use javascript to erase it once clicked - I am not sure how that works well with screen readers, but I dont think it is that accessible.  
+</code></pre>
+
+<p></dd>
+<dt><em>the denial of keyboard access</em></dt>
+<dd>They have provided excessive keyboard access. Given that they have ordered the tab indexes as well as providing access keys for navigation links as well as other links (including blank ones for labels). The very idea of changing tab index from the natural order  itself is murky waters. The idea of access keys have got <a href="http://www.wats.ca/show.php?contentid=32">negative reactions</a> <a href="http://www.accessify.com/2005/11/trouble-with-accesskeys.php">from the accessibility community</a> (<a href="http://www.mezzoblue.com/archives/2003/12/29/i_do_not_use/">Dave Shea&#8217;s comment</a>) (<a href="http://www.456bereastreet.com/archive/200601/giving_the_user_control_over_accesskeys/">alternative suggestions</a>).
+</dd>
+<dt><em>the requirement that transactions be performed solely with a mouse</em></dt>
+<dd>This again is taken care of with &#8220;onkeypress&#8221; and other inline javascripts. But for usability, the submit button is not focussed when tabbed to or even when focussed with the mouse - so u never know when the &#8220;submit&#8221; button is active or not.</dd>
+<dt><em>lack of navigational links</em></dt>
+<dd>This is clearly present, but their &#8220;skip to content&#8221; link goes to the content below the announcement of the latest event.</dd>
+</dl></p>
+
+<p>The idea is not to criticize their work, but to showcase what has been missed in this race to get accessibility certifications. Having an overdose of access keys or incorrect alt texts is definitely not accessible but it does not get detected in any of the automatic tests (which the website seems to clear).</p>
+
+<p>Given that they consult the government on accessibility - I think they should have some of these things resolved. If you go to the <a href="http://www.pmo.gov.sg/">Prime Minister&#8217;s Office website</a>, the headings are actually encapsulated in &lt;font&gt; tags - so the screen reader wont know it is a heading - which if you were able to see the website you would be able to. You might notice the unusual number of &lt;br/ &gt;s are well.</p>
+
+<p>The Ministry of Community Development, Youth and Sports has a &#8220;increase text size&#8221; widget slapped on the top as well. Here is what <a href="http://www.456bereastreet.com/archive/200709/scrap_text_resize_widgets_and_teach_people_how_to_resize_text/">Roger Johansson has to say about these text resize widgets</a>:</p>
+
+<blockquote>
+<p>
+Something that always bugs me is when somebody slaps a text resize widget on their site and calls it &#8220;accessible&#8221;. Job done. Maybe that is a bit unfair since there are many sites that actually are accessible that have a text resize widget, but my non-scientific guess is that a majority of sites that have a feature like that are a long way from being accessible and use a text resizing widget as a band-aid instead of addressing the underlying problem.
+</p>
+</blockquote>
+
+
+<p>It is great that we have a committed organization for providing accessibility to singaporeans but the current usage of accessibility techniques in their client websites as well as their own seems like they haven&#8217;t caught up with the latest accessibility techniques as well as discarding those that are deprecated. While the websites pass the automatic tests, they still are not accessible as well as they could be to a disabled person.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2007-10-11T00:00:00+05:30" pubdate>Oct 11<span>th</span>, 2007</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/accessibility-in-singapore-websites.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/accessibility-in-singapore-websites.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/infamy.html" title="Previous Post:  Infamy">&laquo;  Infamy</a>
+      
+      
+        <a class="basic-alignment right" href="/word-it-look.html" title="next Post:  Word It: Look"> Word It: Look &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

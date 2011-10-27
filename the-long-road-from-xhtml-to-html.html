@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The Long Road from XHTML to HTML - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="XHTML - A New Hope! I started developing websites in 2003. At that time, XHTML was the flavour of the season (or rather the official W3C &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/the-long-road-from-xhtml-to-html.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">The Long Road From XHTML to HTML</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2009-04-18T00:00:00+05:30" pubdate>Apr 18<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>XHTML - A New Hope!</h3>
+
+
+<p>I started developing websites in 2003. At that time, XHTML was the flavour of the season (or rather the official W3C recommendation to move forward from HTML 4.x) and <a href="http://deepak.jois.name">Deepak</a> introduced me to the world of web design with XHTML and CSS. It was even <a href="http://www.alistapart.com/articles/betterliving/">written about favourably</a> by the <a href="http://zeldman.com">Godfather of Web Design</a>. The reasons that were given to adopt XHTML were these:</p>
+
+
+<ol>
+    <li>XHTML had a smaller set of rules (since it is based off XML).</li>
+    <li>Using XHTML will make your document well formed (not the tag soup HTML allows you to write).</li>
+    <li>XHTML will be future compatible.</li>
+    <li>XHTML lets you integrate content from other markup languages with XML namespaces (like SVG and MathML) </li>
+    <li>You can use standard XML tools to work with your XHTML documents.</li>
+</ol>
+
+
+<p>This was in 2000-2003. With the gift of hindsight we know now that XML was not the future. The biggest disadvantage to using XHTML being, any user agent (e.g. the browser) when it comes across an unescaped ampersand (&amp;) in a URL or a mismatched character encoding in a trackback message, would cause the entire page to fail, and so most of today&#8217;s public web applications can&#8217;t safely be incorporated in a true XHTML page.</p>
+
+
+<p>Internet Explorer has never supported XHTML (<a href="http://realtech.burningbird.net/standards/ie8-standards-mode-by-default/">not even IE 8</a>) making all arguments about standards compliance go down the drain. <a href="http://www.webdevout.net/articles/beware-of-xhtml#content_type">XHTML is not HTML compliant if it is served as content type <code>text/html</code></a> (read more on <a href="http://www.hixie.ch/advocacy/xhtml">why sending XHTML as text/html is harmful</a>). Moreover, XHTML 2 is not compatible with XHTML 1.1, which throws the future compatibility argument out of the window. Others had doubts over XHTML and XHTML 2.0 in particular (<a href="http://www.webdevout.net/articles/beware-of-xhtml">1</a>, <a href="http://www.b-list.org/weblog/2008/jun/18/html/" title="Why HTML">2</a>, <a href="http://meyerweb.com/eric/thoughts/2003a.html#t20030114" title="Eric's Archived Thoughts">3</a>, <a href="http://www.alistapart.com/articles/xhtml/" title="A List Apart: Articles: Rated XHTML">4</a>, <a href="http://diveintomark.org/archives/2003/01/13/semantic_obsolescence" title="Semantic obsolescence [dive into mark]">5</a>) which paved the way for <a href="http://www.whatwg.org/specs/web-apps/current-work/">HTML 5</a>.</p>
+
+
+<h3>HTML Strikes Back!</h3>
+
+
+<p>HTML 5 takes an evolutionary path with focus on backwards compatibility along with some innovations. HTML 5 aims to replace XHTML 1.0 and HTML 4.0. HTML 5 and XHTML 2 are opposites in a way, as support for HTML 5 does not imply support for XHTML 2 (browsers need to support these separately).</p>
+
+
+<p>HTML 5 defines 2 syntaxes - HTML syntax (which is compatible with HTML 4 and XHTML 1 documents (served as <code>text/html</code>)) and XML syntax which needs to be served as <code>application/xhtml+xml</code>. Even better, HTML syntax of HTML 5 allows MathML and SVG elements to be used inside a HTML document (reducing the need to use XML at all). </p>
+
+
+<p>With HTML 5, you can continue using XHTML closing for empty elements (e.g. &lt;br/&gt;) and <a href="http://wiki.whatwg.org/wiki/FAQ#Should_I_close_empty_elements_with_.2F.3E_or_.3E.3F">it will still be acceptable in HTML syntax</a>.</p>
+
+
+<p>HTML 5 defines different rules for user agents and authors. The user agents are required to be backwards compatible, but the authors are required not to use &#8220;deprecated&#8221; elements for HTML 5 conformance.</p>
+
+
+<p>Safari, Opera, Firefox have openly declared support for HTML 5 (and Internet Explorer is on the team to draft the HTML 5 standard). XHTML 2 does not have any browser support and <a href="http://webkit.org/blog/89/html-standards-process-returning-from-the-grave/">Safari has explicitly opted out of drafting XHTML 2. </a></p>
+
+
+<p>Mike Malone has written a <a href="http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/">great review of XHTML 2 vs. HTML 5</a> and <a href="http://www.digital-web.com/articles/html5_xhtml2_and_the_future_of_the_web/">it seems like HTML 5 will win this war.</a></p>
+
+
+<p>Personally, I gave up on XHTML when I learnt to be more forgiving (and less of a pedant) about HTML documents (it is not their fault!). This blog though, is ironically XHTML 1.0 Strict.</p>
+
+
+<h3>What should you do?</h3>
+
+
+<p>If you are new to web design or working on large portals, my suggestion would be to use HTML 4 rather than XHTML. You <em>can</em> code well-formed HTML with HTML 4 and you don&#8217;t need XHTML to whip you into shape to do that. Better still, use HTML 5 - without using the newly introduced elements (as they are not supported universally).</p>
+
+
+<h3>Read More</h3>
+
+
+<ul>
+    <li><a href="http://dev.w3.org/html5/html4-differences/">Differences between HTML 5 and HTML 4</a></li>
+    <li><a href="http://wiki.whatwg.org/wiki/FAQ">HTML 5 FAQ</a></li>   
+</ul>
+
+
+
+
+<p><em>UPDATE:</em> Dave Shea talks about why <a href="http://mezzoblue.com/archives/2009/04/20/switched/">he is switching to HTML 4.01</a>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2009-04-18T00:00:00+05:30" pubdate>Apr 18<span>th</span>, 2009</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/the-long-road-from-xhtml-to-html.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/the-long-road-from-xhtml-to-html.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/what-happened-to-the-design.html" title="Previous Post: What happened to the design?">&laquo; What happened to the design?</a>
+      
+      
+        <a class="basic-alignment right" href="/book-reviews-for-april-2009.html" title="next Post: Book Reviews for April 2009">Book Reviews for April 2009 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

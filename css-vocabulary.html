@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CSS Vocabulary - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="I realised quite late that to say something meaningful about CSS, I would have to know exactly what the terms used mean. Often, I have asked for help &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/css-vocabulary.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">CSS Vocabulary</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-11-02T00:00:00+05:30" pubdate>Nov 2<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I realised quite late that to say something meaningful about CSS, I would have to know exactly what the terms used mean. Often, I have asked for help in forums, and have got stuck wondering how exactly to describe my problem. So I thought it would be a good idea to describe all the common terms of CSS. </p>
+
+
+<pre><code>&lt;p&gt;Bookmark this page, if you are prone to panic attacks while racing a deadline and are likely to have issues with your CSS at that time.&lt;/p&gt; 
+
+&lt;h3&gt;CSS Vocabulary&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Property:&lt;/strong&gt; The style that you are applying to a selector, e.g. &lt;code&gt;border&lt;/code&gt;. &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Value: &lt;/strong&gt;The value that the property can have, e.g. &lt;code&gt;1px&lt;/code&gt;. &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Keyword:&lt;/strong&gt; A word that is defined within the CSS specs and hence must never appear within quotes when used. E.g. &lt;code&gt;red&lt;/code&gt;, &lt;code&gt;solid&lt;/code&gt;, &lt;code&gt;dotted&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Length Units:&lt;/strong&gt;Values can be declared in units (e.g., 1px, 2%). &lt;a href="http://twitter.com/#!/nimbuin/status/28960734159"&gt;This summarizes major units you should be concerned with&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;   
+  &lt;li&gt;&lt;strong&gt;Functional Notation:&lt;/strong&gt; Any value that is specified as a function (an identifier followed by &lt;code&gt;()&lt;/code&gt;). Mainly used to denote colors, URIs, attributes, and transforms: e.g. &lt;code&gt;rgba(0, 0, 0, 0.5)&lt;/code&gt;, &lt;code&gt;url('im.png')&lt;/code&gt;, &lt;code&gt;attr('href')&lt;/code&gt;, &lt;code&gt;scale(20)&lt;/code&gt;. Here are &lt;a href="http://www.w3.org/TR/css3-values/#functional"&gt;some more details on functional notation&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Declaration:&lt;/strong&gt; The set of property names and values like so:&lt;/p&gt;
+    &lt;pre&gt;background: red;&lt;/pre&gt; 
+  &lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Declaration Block:&lt;/strong&gt; A set of declarations within &lt;code&gt;{}&lt;/code&gt;, e.g.&lt;/p&gt;
+&lt;pre&gt;{
+  clear: both;
+  color: sky; 
+}&lt;/pre&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;p&gt;&lt;strong&gt;Rule or Rule Set:&lt;/strong&gt; Selector(s) followed by a declaration block. E.g.&lt;/p&gt;
+&lt;pre&gt;#lovelyweather {
+    clear: both;
+    color: skyblue;
+}  
+&lt;/pre&gt;
+&lt;p&gt;This &lt;a href="http://nimbupani.com/demo/css-vocab.html"&gt;demo&lt;/a&gt; shows what each part of a ruleset means. Hover on each of the terms to see what they mean. &lt;/p&gt;
+&lt;/li&gt;  
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Selector&lt;/strong&gt; The way you declare which elements the styles should apply to. &lt;code&gt;#lovelyweather&lt;/code&gt; in the above example is a selector. There are &lt;a href="http://www.w3.org/TR/css3-selectors/"&gt;different kinds of selectors&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Class:&lt;/strong&gt; The most commonly used selector. E.g. ".cloudy" to select an element with classname cloudy (e.g. '&lt;div class=cloudy&gt;&lt;/div&gt;' There can be more than 1 element with the same classname. &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ID:&lt;/strong&gt; Use this sparingly. You cannot reuse an ID within the same page and used only to identify an element uniquely. E.g. &lt;code&gt;&amp;lt;div id=lovelyweather&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/li&gt;                                                                                                                
+  &lt;li&gt;&lt;strong&gt;Attribute Selector:&lt;/strong&gt; If you use any attribute other than class or id to identify an element in a stylesheet, you would be using Attribute Selectors. You can also do basic pattern matching within an attribute selector (so if you would like to do basic pattern matching for selectors using class or ID attributes, you would want to use attribute selectors).&lt;/li&gt;  
+  &lt;li&gt;&lt;strong&gt;Pseudo-Classes: &lt;/strong&gt; Classes that are applied to elements based on information that is not present in the markup, e.g. &lt;code&gt;:first-child&lt;/code&gt; or &lt;code&gt;:last-child&lt;/code&gt;. Do note that the selectors are parsed from right to left (&lt;a href="http://nimbupani.com/demo/css-vocab.html#pseudo-classes"&gt;see the demo&lt;/a&gt;). You cannot use &lt;code&gt;section article:first-child&lt;/code&gt; to select the first occurrence of &lt;code&gt;article&lt;/code&gt;, if the first child of &lt;code&gt;section&lt;/code&gt; is &lt;code&gt;h1&lt;/code&gt; and not &lt;code&gt;article&lt;/code&gt;. Likewise with the &lt;code&gt;:nth-child&lt;/code&gt;, and &lt;code&gt;:last-child&lt;/code&gt; pseudo-classes.  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pseudo-Elements&lt;/strong&gt; Pseudo-elements differ from Pseudo-Classes in that they actually create an element in the document tree. This is almost the first instance of CSS modifying the HTML document tree. You should ideally use pseudo-elements with "::" instead of ":" (but most browsers accept ":" notation for CSS 2.1 pseudo-elements). Pseudo-elements are: &lt;code&gt;::first-line&lt;/code&gt;, &lt;code&gt;::first-letter&lt;/code&gt;, &lt;code&gt;::before&lt;/code&gt;, &lt;code&gt;::after&lt;/code&gt; (&lt;a href="http://nimbupani.com/demo/css-vocab.html#pseudo-elements"&gt;See the demo for how pseudo-elements work&lt;/a&gt;). &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt; 
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Combinators:&lt;/strong&gt; The selection of an element based on its occurrence in relation to another element (chosen by the choice of combinator: whitespace, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, or &lt;code&gt;~&lt;/code&gt;). You can have:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Descendant Combinator:&lt;/strong&gt; This is the most common usage, e.g. &lt;code&gt;#lovelyweather h1&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Child Combinator:&lt;/strong&gt; Select an element if it is a direct child of another element (and not a grandchild of that element). &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Adjacent Sibling Combinator: &lt;/strong&gt;The element that is immediately adjacent to another element. &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;General Sibling Combinator:&lt;/strong&gt; The element that is adjacent, but not immediately to another element. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://nimbupani.com/demo/css-vocab.html#combinators"&gt;See demo for all these combinators.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt; 
+&lt;li&gt;&lt;strong&gt;At-Rules:&lt;/strong&gt; Rules that begin with the &lt;code&gt;@&lt;/code&gt; character, e.g. &lt;a href="http://www.w3.org/TR/2005/WD-css3-cascade-20051215/#import"&gt;@import&lt;/a&gt;, &lt;a href="http://www.w3.org/TR/css3-page/#page-box-page-rule"&gt;@page&lt;/a&gt;, &lt;a href="http://www.w3.org/TR/css3-mediaqueries/#background"&gt;@media&lt;/a&gt;, and &lt;a href="http://www.w3.org/TR/2009/WD-css3-fonts-20090618/#the-font-face-rule"&gt;@font-face&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Features:&lt;/strong&gt; With media queries, you can target the styles depending on the feature of that particular medium. A popular use of a media feature is the &lt;code&gt;min-width&lt;/code&gt; and &lt;code&gt;max-width&lt;/code&gt; to detect iOS devices. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vendor-specific Extension: &lt;/strong&gt;Exactly what it states. They provide functionality specific to that particular vendor (i.e. the browser). They do not always necessarily represent a feature declared in a standard. Peter Beverloo maintains an &lt;a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/"&gt;exhaustive list of vendor-prefixed CSS properties by browser&lt;/a&gt;. See &lt;a href="http://nimbupani.com/demo/css-vocab.html#vendor-specific"&gt;this demo for how vendor-specific extensions work&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is &lt;a href="http://perfectionkills.com/tag-is-not-an-element-or-is-it/"&gt;similar confusion with HTML terms&lt;/a&gt;. My hope is this makes it easier for everyone to communicate exactly what they mean when taking about markup and style. &lt;/p&gt; 
+</code></pre>
+
+<p><small>Thanks to <a href="http://ajpiano.com/">ajpiano</a>, <a href="http://akahn.net/">akahn</a>, and <a href="http://desandro.com/">desandro</a> for the initial feedback!</small></p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2010-11-02T00:00:00+05:30" pubdate>Nov 2<span>nd</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/css-vocabulary.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/css-vocabulary.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/active-web-development.html" title="Previous Post: Active Web Development">&laquo; Active Web Development</a>
+      
+      
+        <a class="basic-alignment right" href="/book-reviews-for-october-2010.html" title="next Post: Book Reviews for October 2010">Book Reviews for October 2010 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Spacing Out on CSS Namespaces - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="One of my favourite past times is opening up a random email from the CSS mailing list and going down a rabbit hole. On one rainy day, I found myself &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/spacing-out-on-css-namespaces.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Spacing Out on CSS Namespaces</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-05-06T00:00:00+05:30" pubdate>May 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>One of my favourite past times is opening up a random email from the <a href="http://lists.w3.org/Archives/Public/www-style/">CSS mailing list</a> and going down a rabbit hole. On one rainy day, I found myself staring at the specifications for <a href="http://www.w3.org/TR/css3-namespace/#intro">CSS Namespaces module</a>. </p>
+
+
+<p></p>
+
+<h3>Namespaces</h3>
+
+
+
+
+<p>As Wikipedia defines it, a <a href="http://en.wikipedia.org/wiki/XML_namespace">namespace</a> provides a list of uniquely identifiable elements and attributes in an XML document. Here is how you would define the namespace of an XHTML document:</p>
+
+
+
+
+<pre><code>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</code></pre>
+
+
+
+
+<p>The URL in the code above is simply the name of that namespace and does not refer to an actual location online. Browsers do not use or process URL. It is just an easy way to understand what that namespace is referring to when someone is reading the source code of the document. </p>
+
+
+
+
+<h3>CSS Namespaces</h3>
+
+
+<p>In 2007, Bert Bos <a href="http://xhtml.com/en/css/conversation-with-css-3-team/">explained why CSS Namespaces were introduced</a>:
+
+<blockquote><p>The Namespaces module is very small, very simple, and probably rarely needed, but just because it is simple, it doesn&#8217;t cost much to add it to CSS. Indeed, many browsers have supported it for a long time already.</p>
+
+<p>The only thing it defines is how to declare an XML Namespace prefix in CSS. That is needed if you want to use selectors that only match elements in a certain namespace. </p></blockquote>
+
+<p>For example, SVG shares some common elements (e.g. <code>&lt;a&gt;</code>) and <a href="http://www.w3.org/TR/SVG/styling.html#PropertiesFromCSS2">CSS properties</a> with HTML with XML and HTML. If you are using the same stylesheet for both HTML and SVG documents, then it is best to separate out the styles for SVG and HTML to prevent any overlap.</p>
+<h3>Usage</h3>
+<ol>
+    <li><p>Declare your XHTML doctype and define a namespace:</p>
+
+    <pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;  
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;  
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;</code></pre>
+    </li> 
+    <li><p>In your style sheet, declare the default namespace for the CSS rules:</p> 
+        <pre><code>@namespace "http://www.w3.org/1999/xhtml"; 
+@namespace svg "http://www.w3.org/2000/svg"; </code>
+        </pre>
+    </li>
+    <li><p>Use the rules specific to each namespace. If you have declared the above namespaces, you can scope CSS rules to only apply to SVG elements which have the same namespace as above:</p><pre><code>svg|a { color: white; } </code></pre><p>All the other rules will be applied to HTML elements by default. </p></li>
+</ol>
+
+<h3>Using it with HTML 5</h3>
+<p><a href="http://hsivonen.iki.fi/html5-parser-improvements/">HTML5 allows inline SVG and MathML</a>, which means you can style HTML, inline SVG and MathML elements using the same stylesheet.</p>
+    
+    
+<p>The advantage of HTML5 parsing is that, HTML5 parsers should <a href="http://wiki.whatwg.org/wiki/HTML_vs._XHTML#Syntax_and_Parsing">implicitly assign namespaces to known vocabularies (so far SVG, XML, and MathML)</a>, if the document is <a href="http://wiki.whatwg.org/wiki/HTML_vs._XHTML">HTML</a> (and <em>not</em> XHTML). This means, you do not have to use <code>xmlns</code> to explicitly specify the namespace for SVG or MathML elements in your HTML5 document.</p>
+
+<p>The bad news is, only <a href="http://nightly.mozilla.org/">Firefox nightly builds</a> with <code>html5.enabled = true</code> set on <code>about:config</code> parse and recognize inline SVG or MathML.</p>
+
+<p>Here is a <a href="http://nimbupani.com/demo/namespaces/index.html">demo of using CSS Namespaces for a HTML5 page with inline SVG</a> (mind you, it only works on Firefox nightlies with html5 parser enabled). If you are one of the 99.9% of the population that does not use Firefox nightlies, this is how it is supposed to look:</p>
+
+<p><img src="http://nimbupani.com/files/css3namespace-screenshot.png" alt="screenshot of css3 namespaces demo"></p>
+<p>The dinosaur on the left is an inline SVG image which uses styles defined in the SVG namespace. <p>
+
+<p>As the spec mentions, it is not often you will find use for it.     Though,  <a href="http://www.iecss.com/firefox-3.6.3.css">Firefox user agent style sheet</a> uses namespaces to separate the default styles for web pages from those for Firefox UI (which uses <a href="http://en.wikipedia.org/wiki/XUL">XUL</a>).</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2010-05-06T00:00:00+05:30" pubdate>May 6<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/spacing-out-on-css-namespaces.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/spacing-out-on-css-namespaces.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/book-reviews-for-april-2010.html" title="Previous Post: Book Reviews for April 2010">&laquo; Book Reviews for April 2010</a>
+      
+      
+        <a class="basic-alignment right" href="/notes-from-javascript-n00b.html" title="next Post: Notes from a JavaScript n00b">Notes from a JavaScript n00b &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

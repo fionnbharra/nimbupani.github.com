@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Creating Rating Sprites - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="I came across this Youtube HTML 5 demo via Laura Carlson and was amazed at their simple sprite solution for static ratings display. Here is how to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/creating-rating-sprites.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Creating Rating Sprites</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2009-11-09T00:00:00+05:30" pubdate>Nov 9<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I came across this <a href="http://www.youtube.com/html5">Youtube HTML 5 demo</a> via <a href="http://twitter.com/laura_carlson">Laura Carlson</a> and was amazed at their simple sprite solution for static ratings display. Here is how to create one.</p>
+
+
+<h3>Caveat</h3>
+
+
+<p>This solution is only for displaying a static rating and not an <a href="http://www.learningjquery.com/2007/05/half-star-rating-plugin">animated one</a>.</p>
+
+
+<p>I am using the word &ldquo;star&rdquo; a bit loosely in this post. The &ldquo;star&rdquo; in the sprite below is a circle for the sake of simplicity.
+<h3>Image</h3>
+<p>Create a sprite as shown below. I have created each circle within an imaginary 20px box so that it is easier to style via CSS. You can use my reference <a href="/demo/ratingsprite/stars.psd">Photoshop file</a> where I have used guides to position each circle at intervals of 20px.</p>
+<p><img src="http://www.nimbupani.com/blog/files/stars.png" alt="stars sprite"></p>
+
+<h3>HTML</h3>
+<p>Put this HTML where you want your ratings to appear:</p>
+<pre>&lt;span class=&quot;rating r0&quot;&gt;0/5&lt;/span&gt;</pre>
+<p>The class <code>rating</code> will be used to apply all the common style properties. Classes <code>r0</code> to <code>r5</code> will be used to position the sprite as a background image appropriately.</p>
+
+<h3>CSS</h3>
+<p>In your CSS file, add the following:</p>
+
+<pre>
+span.rating {
+  background:url(&quot;star.png&quot;) top left;  
+  display:inline-block;
+  width:100px; /* width of the set of 5 stars */
+  overflow:hidden;
+  text-indent:-1000em;  
+}                                     
+</pre>
+
+<h3>Creating the rating</h3>
+<p>Now we style each of the <code>r0</code> to <code>r5</code> classes. </p>
+
+<pre>span.r0 {
+  background:-50px 0;
+}</pre>               
+
+<pre>
+span.r1 {             
+   background-position:-60px 0; /* assuming each star is 20px wide */      
+}      
+</pre>
+
+<p>and so on&hellip;</p>
+
+If you use <a href="http://sass-lang.com/">SASS</a> you can add this to your SASS file:
+<pre>
+// 100 is the width of the set of 5 stars and 20 is the width of each 
+// star (including the space to the right, see the Photoshop file
+
+@for !i from 0 through 5
+  span.r#{!i}
+    background-position = &quot;#{-(100 - (20*!i))}px 0&quot; 
+</pre> 
+
+<p>Here is the <a href="http://nimbupani.com/demo/ratingsprite/">demo of the star ratings sprite</a>.</p>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Single image, lesser page requests, faster page load.</li>
+    <li>Small file size</li>
+    <li>Easier maintainance: You only need to edit one image file in case you want to change the graphic.</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2009-11-09T00:00:00+05:30" pubdate>Nov 9<span>th</span>, 2009</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/creating-rating-sprites.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/creating-rating-sprites.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/book-reviews-for-november-2009-part-1.html" title="Previous Post: Book Reviews for November 2009 — Part 1">&laquo; Book Reviews for November 2009 — Part 1</a>
+      
+      
+        <a class="basic-alignment right" href="/book-reviews-for-november-2009-part-2.html" title="next Post: Book Reviews for November 2009 — Part 2">Book Reviews for November 2009 — Part 2 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Notes from HTML5 Readiness Hacking - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="Update: HTML5 Readiness now shows how HTML5 support has evolved since 2008. Click away to see the spurt of growth in 2010! Paul Irish pinged me on &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/notes-from-html5-readiness-hacking.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Notes From HTML5 Readiness Hacking</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-04-17T00:00:00+05:30" pubdate>Apr 17<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><em>Update:</em> <a href="http://html5readiness.com">HTML5 Readiness</a> now shows how HTML5 support has evolved since 2008. Click away to see the spurt of growth in 2010!</p>
+
+
+
+
+<p><a href="http://paulirish.com">Paul Irish</a> pinged me on Thursday evening wondering about visualizing browser support per HTML5/CSS3 feature for <a href="http://jsconf.us/2010/schedule.html">his presentation at JSConf</a> on April 17th. I thought it would be a fun exercise in creating it with the &#8220;cool&#8221; features of CSS3. Soon, Paul had registered the domain and <a href="http://html5readiness.com">HTML5 Readiness</a> was born. Here are some of the design and implementation notes from that process.</p>
+
+
+
+
+<h3>Design</h3>
+
+
+
+
+<p>The intention of the visualization is to show how much support exists for each new HTML/CSS feature. I remembered the graphic showing the <a href="http://www.good.is/post/transparency-america-s-wealthiest-religions">distribution of wealth among religious Americans</a> and I thought a similar structure would work for this one too and I really liked this <a href="http://www.flickr.com/photos/eriknitsche/476093355/in/set-72157600143976187/">ad for General Dynamics by Erik Nitsche</a>.</p>
+
+
+
+
+<p>Paul wanted to show support for 8 browsers (IE 7, 8, 9, Opera 10.10, Safari 4, Chrome 4, Firefox 3.5, and Firefox 3.7). The browsers are grouped into color schemes based on their underlying rendering engine - e.g. all Firefox versions are shades of blue, Chrome/Safari - yellow, IE - pink. Each ray also has a different background color if it is a CSS3 feature.</p>
+
+
+
+
+<p>Each browser is represented with a tile on the bar and gets an equal width of space, so if you see a bar that is full, that means that feature has universal support among all the 8 browsers.</p>
+
+
+
+
+<p><img src="http://nimbupani.com/files/html5readiness.png" alt="html5readiness.png" border="0" width="600" height="612" ></p>
+
+
+
+
+<h3>Sass to rescue</h3>
+
+
+
+
+<p>There was not enough time to spend working on a photoshop mockup and then implementing the design. I am also more comfortable working on a design in the browser (with all the CSS3 bells & whistles), so I dived in to HTML/Sass. <a href="http://sass-lang.com">Sass</a> is a life-saver. The transforms (for each ray on the semi-circle), which result in about 114 lines of CSS (when compacted and with vendor-prefixes), are actually a result of just 4 lines of Sass:</p>
+
+
+
+
+<pre><code>@for $i from 1 through 28
+ .ray-#{$i}
+   +transform((-6.7deg*($i - 1)), 0%, 50%)
+  
+  i
+    +transform((6.7deg*($i - 1)), 50%, 50%)</code></pre>
+
+
+
+
+<p>The odd angle multiplier (6.7) is because each ray (except the first) is transformed so that they fit into the 180 degree arc with equal angular space between each (0, 50% sets the axis for rotation). You can see <a href="http://github.com/paulirish/html5readiness.com/blob/master/src/style.sass">the full Sass file on Github</a>.<p>
+
+<p>That&#8217;s it! Most of the work was done Thursday night / Friday morning. It was great fun dealing with 2D graphics after 8 years, and I loved working on it!</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2010-04-17T00:00:00+05:30" pubdate>Apr 17<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/notes-from-html5-readiness-hacking.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/notes-from-html5-readiness-hacking.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/content-models-in-html.html" title="Previous Post: Content Models in HTML">&laquo; Content Models in HTML</a>
+      
+      
+        <a class="basic-alignment right" href="/book-reviews-for-april-2010.html" title="next Post: Book Reviews for April 2010">Book Reviews for April 2010 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

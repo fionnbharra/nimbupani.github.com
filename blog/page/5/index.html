@@ -1,0 +1,930 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="I have for a long time pretended to know exactly what DOM, ECMAScript, JScript, DHTML, etc. mean, just to sound cool, but took this weekend to read &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/blog/page/5/index.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/dom-ecmascript-and-other-puzzles.html">DOM, ECMAScript and Other Puzzles</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-03-22T00:00:00+05:30" pubdate>Mar 22<span>nd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have for a long time pretended to know exactly what <abbr title="Document Object Model">DOM</abbr>, ECMAScript, JScript, DHTML, etc. mean, just to sound cool, but took this weekend to read up on what they mean and how they are related.</p>
+
+
+<p></p>
+
+<p>This is how the <a href="http://www.w3.org/TR/DOM-Level-2-Core/introduction.html">DOM specification</a> defines a DOM:</p>
+
+
+
+
+<blockquote><p>The Document Object Model (DOM) is an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p></blockquote>
+
+
+
+
+<p>In other words, DOM is a standard way to let programming languages interact with HTML/XML documents. W3C provides, what is called, language bindings, for Java, and ECMAScript. This means, the functionalities defined in the DOM specification have been implemented in these languages.</p>
+
+
+
+
+<p><a href"http://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a> is a standardization of the cave-men scripting languages - Netscape’s <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, and Microsoft’s <a href="http://en.wikipedia.org/wiki/JScript">JScript</a> so that all browsers can understand instructions written using ECMAScript. Now, there are three major &ldquo;dialects&rdquo; of ECMAScript: JavaScript (Firefox/Chrome/Safari), JScript (IE), and ActionScript (Adobe Flash/Flex). These are called dialects as they support code written before standardisation and provide some features not available in ECMAScript or other dialects. </p>
+
+
+
+
+<p>A browser provides an implementation of the DOM interfaces that allows ECMAScript (or supported dialects) to interact with the DOM of a HTML/XML document. So, most decent browsers release conformance statements to say which ECMAScript Standard each version of their browser supports. </p>
+
+
+
+
+<p>The DOM of a HTML page has a &ldquo;tree-like&rdquo; structure when visualized. It is important to note that the DOM does not represent the content of the HTML but only represents objects through which the content can be accessed. These objects are modelled after the markup that exists on the HTML page. The relationships, functions, behaviors and attributes of these objects are identified by the DOM.</p>
+
+
+<p></p>
+
+<p>That is it! You typically do not need to know about DOM interfaces if you work primarily with a JavaScript library. But if you are interested, Quirksmode has a <a href="http://www.quirksmode.org/dom/intro.html">great introduction to DOM</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/it-is-not-the-users-fault.html">It Is Not the User&#8217;s Fault</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-03-20T00:00:00+05:30" pubdate>Mar 20<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://jonoscript.wordpress.com/">Not The User&rsquo;s Fault</a> has a great blog post on <a href="http://jonoscript.wordpress.com/2010/02/18/some-people-cant-read-urls/">why some people have difficulty reading urls</a>, but unfortunately, a lot people still think like <a href="http://jonoscript.wordpress.com/2010/02/18/some-people-cant-read-urls/#comment-2757">this person</a>: </p>
+
+
+
+
+<blockquote><p>Is this the kind of computer users we want? Does the all-time audience of computers need to adapt to a new generation of dumbed-down, flashy silly apps with huge YOU ARE HERE address bars with 50 types of styling so Average Joe can understand he’s HERE and not THERE?</p></blockquote>
+
+
+
+
+<p>Here is a thought: How is it possible that almost everyone learns how to drive, or ride a bicycle but somehow a vast majority of people, who can do both these tasks quite well, fail to grasp what a browser means? If so many people have trouble understanding what computers/browsers do, the problem is not the users, but the machines/applications.</p>
+
+
+
+
+<p>When learning to cycle, we know exactly what causes the results (or at least superficially) – e.g. pushing the pedal makes the wheels turn. In the case of a computer, it is not that obvious, because a computer is a machine that lets you do several things at once. You can not just shop for shoes, but also send mails, and also play your favourite song. A computer is the equivalent of a TV, Radio, Postal System, Grocery Store all rolled into one. Computers and software are complicated instruments that expect users to imagine actions instead of seeing them. </p>
+
+
+<p></p>
+
+<p>The nearest parallel I can think of is a flight controller, and to operate that you need to undergo several hours of training. But, nobody is trained in that manner to use the computer – children learn from parents; parents from someone else; everyone is getting by and very few people invest enough effort to learn to use it. </p>
+
+
+<p></p>
+
+<p>Computers were invented and used primarily by scientists till the late 80s. The UI has been dictated by purposes that computers rarely serve these days. Several people are working on making it easy, but years of history would make it hard to create a completely new interface. If we ever create such an interface, all of us &ldquo;experts&rdquo; will be up in arms as it would be radically different from status quo and would need us to invest time and effort to learn.</p>
+
+
+<p></p>
+
+<p>My point is most people use a computer to get by, and not as a source of their existence. If there is anyone who needs to be embarrassed, it is us &ldquo;experts&rdquo;.</p>
+
+
+<p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/illustration-friday-expire.html">Illustration Friday - Expire</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-03-20T00:00:00+05:30" pubdate>Mar 20<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="http://nimbupani.com/files/expire-illustrationfriday_0.png" alt="expire-illustrationfriday.png" ></p>
+
+
+<!--break-->
+
+
+<p>This week I heard about the death of a close family friend. He was my only connection to my <a href="http://www.flickr.com/photos/nimbupani/sets/72057594080142412/">grandfather</a> who knew most details of my grandpa&rsquo;s extraordinary life. But what struck me more was my indifferent reaction to the news. This Illustration Friday could have come at a no better moment. I feel a sense of loss, of myself and of the friend. Rest in peace, Balu mama. </p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/the-danger-of-story.html">The Danger of a Story</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-03-06T00:00:00+05:30" pubdate>Mar 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Have you seen <a href="http://www.arab2.com/picture-worth-thousand-words/images/vulture-child.jpg">this photograph</a>? </p>
+
+
+<p><img src="http://nimbupani.com/files/vulture-child.jpg" alt="vulture-child.jpg" border="0" width="556" height="404"><br><small>&copy; Kevin Carter/CORBIS/Sygma</small></p>
+
+<p>I am hazarding, you would think, just as I did, that &#8220;Something must be done! This cannot be!&#8221; <a href="http://uk.answers.yahoo.com/question/index?qid=20080726074246AAJ95qa">This Yahoo Answers</a> thread is a great example of it. If you are enterprising enough, you would look for a website that takes donations to help people in that area or at least attempt to know more about the area where the photo was taken.</p>
+
+
+
+
+<p>The problem with this story is that,it is just that, a story. This photograph can represent a million things. It can as easily be applied to Sudan as to any other country. It can be appropriated by anyone as their symbol of struggle and oppression.</p>
+
+
+<p></p>
+
+<p>But, here is an <a href="http://en.wikipedia.org/wiki/Kevin_Carter#Prize-winning_photograph_in_Sudan">alternative story of this picture</a> which is much less sinister and sounds more probable:</p>
+
+
+
+
+<blockquote><p>Again according to Silva, Carter was quite shocked as it was the first time that he had seen a famine situation and so he took many shots of the children suffering from famine. Silva also started to take photos of children on the ground as if crying, which were not published. The parents of the children were busy taking food from the plane so they had left their children only briefly while they collected the food. This was the situation for the girl in the photo taken by Carter. A vulture landed behind the girl. To get the two in focus, Carter approached the scene very slowly so as not to scare the vulture away and took a photo from approximately 10 metres. He took a few more photos and then the vulture flew off.</p></blockquote>
+
+
+
+
+<p>This is not to diminish the tragedy that unfolded in Sudan, but to simply point out the danger of a story. Stories that fit into a well-known pattern and titillate us with graphic and violent details are especially dangerous.</p>
+
+
+<p></p>
+
+<p>Stories cloud our perceptions and lead to a mob behavior, frequently seen online (like <a href="http://blog.iso50.com/2009/04/06/save-jon-engle/">this story of Jon Engle</a> which I implicitly believed in before more details came out). Anyone who asks to know an alternate point of view is treated as a &#8220;heartless&#8221; person or someone who must be in collusion with the devil or a traitor. This is the danger of a story, we get sucked into it without us realising we are reacting to it.</p>
+
+
+<p></p>
+
+<p>Thanks to the internet, you do not have to work too hard to know all aspects of a story to make up your mind. <a href="http://tedxmidatlantic.com/live/#TylerCowen">Tyler Cowen</a> and <a href="http://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story.html">Chimamanda Ngozi Adichie</a> have spoken much more eloquently on this topic, which I consider essential viewing for anyone wondering about the danger of a story.</p>
+
+
+
+
+<p>As Tyler Cowen states, any story that is simple to understand, or is of the form Good vs. Evil, that translates to a good movie, or is a story that you like to hear, is worth investigating before assuming it to be true.</p>
+
+
+<p></p>
+
+<p>Make it a habit to never believe in any story reported in any media, until you know enough to form an opinion about it. More importantly, be willing to change that opinion as soon as more facts are known, or when it stops being plausible.</p>
+
+
+
+
+<p>Don&#8217;t believe anything I have just said either :)</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blogging-with-drupal-6-part-2.html">Blogging With Drupal 6 - Part 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-03-05T00:00:00+05:30" pubdate>Mar 5<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In the first post of this series I <a href="http://nimbupani.com/blogging-with-drupal-6-part-1.html">covered migrating and backing up content in Drupal 6</a>. Today it will be Drupal 6 modules.</p>
+
+
+
+
+<p>Drupal is most efficient and maintainable without any optional modules. But, alas, we need modules to get a blog running smoothly. There are <a href="http://drupal.org/project/Modules">hundreds of modules available for Drupal</a>, which makes it tempting to install anything that seems interesting. Cure yourself of that temptation. Do not install a module unless absolutely necessary, and turn on caching.</p>
+
+
+<p></p>
+
+<p>I have been burned enough times that I always consider these two questions before even attempting to try one:</p>
+
+
+
+
+<ol><li><h4>Will they be available for future Drupal versions?</h4><p>Drupal releases a new version with slightly different codebase every year (at least), and it is always recommended that you upgrade. Sometimes, the modules you have installed in your existing version of Drupal will not be available for the new versions, which makes us think twice about upgrading.</p><p>My rule of thumb is to always find modules that will be available at least for the upcoming Drupal version.</p></li>
+
+<li><h4>Do they contain security vulnerabilities?</h4> <p>There are hundreds of modules and many of them use insecure code, which might make your site vulnerable to security exploits.</p></li></ol>
+
+
+<p></p>
+
+<p>Here are some ways to find answers for these questions:</p>
+
+
+<ul><li>Use <a href="http://drupal.org/project/usage">popular Drupal modules</a> only (warning page might take a long time to load). If a module is popular, it is more likely to be supported in the future versions. </li>
+<li>Use modules that pledge support for Drupal 7. Modules that have &#8220;#D7CX&#8221; should be releasing a version for Drupal 7 when a stable version of Drupal 7 is released. </li> 
+<li>Use modules that have history (modules that have been in existence for at least 3 Drupal releases). You can check that from the earliest version number that is available for download.</li>
+<li>Use only stable releases for the module on your live site, if this is not possible, test out the unstable releases (alpha, beta versions) on your staging server before using them on your site.</li>
+</ul>
+
+
+<p></p>
+
+<p>There will always be something that is not available as a module, in which case, you can either <a href="http://drupal.org/node/51169" title="Hiring a Drupal site developer | drupal.org">hire someone to create a module for you</a>, or drop that idea and look for something else.</p>
+
+
+<p></p>
+
+<p>With all these caveats, here are some of the Drupal 6 modules that are useful for blogging:</p>
+
+
+
+
+<h3>Basic</h3>
+
+
+
+
+<ul><li><h4>Poormanscron</h4>
+If you have no idea what a cron means or how to set it up (or cannot set it up due to host restrictions), this module is for you. <a href="http://drupal.org/project/poormanscron">Download</a>
+</li>
+<li><h4>Views</h4>
+The new Views is a bit intimidating at first. Be careful not to include your Views tables when exporting your Drupal 5 database. 
+Drupal 6 views has a lot of default views available (much more than in Drupal 5), including the one that bloggers most covet—monthly archives. <a href="http://drupal.org/project/views">Download</a></li>
+<li><h4>Google Analytics</h4>
+You can always simply set up Google Analytics in the footer of your template, but this module does two additional things:
+
+<ul><li>Cache Tracking Code file locally: So, that is one less page request for your page. </li>
+
+<li>Track Internal Search: If you are using Drupal&#8217;s Search form on your site, this module will also track that and report to Google Analytics.</li></ul> 
+
+<a href="http://drupal.org/project/google_analytics">Download</a></li>
+</ul>
+
+
+
+
+<h3>Feedburner</h3>
+
+
+<p>Feedburner gives a universal RSS feed URL. Subscribers to your feedburner feed will not have to do anything if you move your CMS from Wordpress to Drupal or even to another domain (previously, they would have to manually subscribe from your new website). </p>
+
+
+<p>This module returns Feedburner URLs instead of the standard Drupal feed URLs in all places where your Drupal feed URLs are referenced. I use this to return Feedburner links to my subcategories too, like <a href="http://feeds.feedburner.com/nimbu">Web Design</a> and <a href="http://feeds.feedburner.com/nimbu-books">Book Reviews</a>. Of course, there is always the danger of Feedburner going down, but I think this service is worth that risk. <a href="http://drupal.org/project/feedburner">Download</a></p>
+
+
+
+
+<h3>SEO</h3>
+
+
+<p>The following modules make it easy for Search Engines and Search Engine users to find content on your site.</p>
+
+
+
+
+<ul>
+    <li><h4>Path Auto</h4>
+    <p>Drupal has a default URL for each node which looks like &#8220;/node/35&#8221;.  This module creates an alias (e.g. &#8220;blog/new-post.html&#8221;) for a default URL based on some keywords, date, title, category, etc.</p><p> If you have used path auto in Drupal 5, continue with same settings. If you are converting to Drupal from another CMS, and want to retain your URLs, Path Auto has enough variables to continue generating the URLs you had.</p> </li>    
+    <li><h4>Global Redirect</h4>
+    <p>Path Auto only creates another URL which will point to the same content as the default URL. This poses a problem as Search Engines can index both these URLs as two separate web pages. Someone might link using the default URL instead of the URL you have specified in Path Auto. Ihis is easily prevented by using Global Redirect Module. This module detects if an alias exists, and if so, permanently redirects the incoming URL to the alias. This way, Search Engines will make note of the new location for the default URL, and any incoming URL will also be redirect to the correct alias. <a href="http://drupal.org/project/pathauto">Download</a></p>
+    </li>
+    <li>
+        <h4>Nodewords</h4>
+        <p>This is quite useful in clearly stating what your post is about for Search Engine users. Nodewords also lets you use the abstract instead of typing in custom description for each post. <a href="http://drupal.org/project/nodewords">Download</a></p>      
+    </li>                                                                  
+    <li><h4>Search 404</h4>
+    <p>If you used descriptive URLs before and do not think those need to be 301 redirected. I used to be on Movable Type in 2003, and I still get hits for URLs formed by Movable Type. This module is supposed to extract keywords from the URL and do a search for it and render the search results instead of a typical 404 page. It does not work as advertised for me, but hopefully you will have better luck. <a href="http://drupal.org/project/search404">Download</a></p>
+    </li>   
+</ul>
+
+
+
+
+<h3>Comments</h3>
+
+
+<ul>
+     <li><h4>Comment Closer</h4><p>For the life of me, I cannot get it to work on my site. But it is supposed to close comments on posts that are older than a specified time period. Most comment spam hit older posts and this is a good way to stop them. <a href="http://drupal.org/project/commentcloser">Download</a></p>
+    </li>                         
+    <li><h4>Comment Notify</h4>
+    <p>The little checkbox that asks you if you want to subscribe to follow-up comments on this blog post is available thanks to this module. <a href="http://drupal.org/project/comment_notify">Download</a></p></li>
+    <li><h4>Gravatar</h4>
+    <p>If you want to display of the avatars of people who leave comments, this is a good module. While it is advertised to work only for authenticated users, it works very well for anonymous ones too. <a href="http://drupal.org/project/gravatar">Download</a></p>
+ </li>
+<li><h4>Mollom</h4>
+<p>Mollom makes it really hard to comment (I am consoling myself that this is why I don&#8217;t get any on my site!), but is an effective deterrent to comment spam. <a href="http://drupal.org/project/mollom">Download</a></p>
+</li>
+<li><h4>widgEditor</h4>
+<p>I cannot think of any reason why any other WYSIWYG editor needs to be in existence. <a href="http://drupal.org/project/widgeditor">Download</a></p>
+</li>
+</ul>
+
+
+<h3>Maintenance</h3>
+
+
+
+
+<p>No CMS is maintenance free. Here are somethings you can do, to ensure your site runs smoothly:</p>
+
+
+
+
+<ul>
+    <li><h4>Turn on updates</h4><p>You need to turn on the Update Status module at <code>/admin/modules</code>. A list of updates available will be at <code>/admin/reports/updates</code>. You can also set it to email you when an update is ready for Drupal core or installed modules. Typically there are updates at least every 2 months.</p> </li>
+
+    <li><h4>Backup</h4> <p>Backup and Migrate module backs up your database on a predetermined schedule. The trouble is it backs up to the same space where your Drupal files are located which defeats the purpose of a backup. If you have a desktop machine at home that is on most of the day, you can schedule a cron job that grabs the backed up database and saves it locally on your machine (which you are hopefully backing up!) <a href="http://drupal.org/project/backup_migrate">Download</a></p></li>    
+</ul>
+
+
+
+
+<p>That&rsquo;s it! Do you have any good Drupal 6 modules that you have found useful for blogging?</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/book-reviews-for-feb-2010-part-2.html">Book Reviews for Feb 2010 - Part 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-02-28T00:00:00+05:30" pubdate>Feb 28<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It was only 15 days ago I was bemoaning my meagre collection of books to review, and here I am with six more! Sleepless nights FTW!</p>
+
+
+
+
+<ul><li><h3>Half Yellow Sun</h3>
+<p>Chimamanda Ngozi Adichie&rsquo;s is a marvellous writer (I have joined her fan club <a href="http://www.halfofayellowsun.com/content.php?page=mailinglist&f=2">officially</a>). While <a href="http://www.amazon.com/gp/product/1400044162?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1400044162">Half of a Yellow Sun</a><img src="http://www.assoc-amazon.com/e/ir?t=nimbupani-20&amp;l=as2&amp;o=1&amp;a=1400044162" width="1" height="1" alt=""> states <a href="http://en.wikipedia.org/wiki/Igbo_people" title="Igbo people - Wikipedia, the free encyclopedia">Igbo people</a> suffered greatly during the <a href="http://en.wikipedia.org/wiki/Biafran_War" title="Nigerian Civil War - Wikipedia, the free encyclopedia">Biafran war</a>, the book also elegantly depicts that, in a war, everyone is a victim. Also interesting is the tone of how women seem to be resigned to their husbands&rsquo; infidelity and use that to justify their own extra-marital affairs. This is a good, if fictional, introduction to the North-South divide in Nigeria which still clouds the <a href="http://www.vanguardngr.com/2010/02/27/yar%E2%80%99aduas-inaccessibility-confirms-he-can%E2%80%99t-perform-%E2%80%94-richard-akinjide-part-2/" title="Vanguard News Online">current uncertainty with the Nigerian Presidency</a>. </p></li>
+
+<li><h3>New York Trilogy</h3>
+<p><a href="http://www.amazon.com/gp/product/0143039830?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0143039830">The New York Trilogy</a> is as complex as <a href="http://en.wikipedia.org/wiki/Meenaxi:_A_Tale_of_Three_Cities" title="Meenaxi: A Tale of Three Cities - Wikipedia, the free encyclopedia">M F Hussain&rsquo;s Meenaxi</a> (or more so). There is a character called Paul Aster (the same name as the author), and you have no idea when the so-called author becomes a narrator. There is a <a href="http://translate.google.com/translate?js=y&amp;prev=_t&amp;hl=en&amp;ie=UTF-8&amp;layout=1&amp;eotf=1&amp;u=http://traui.blogspot.com/2007/05/katze-schwanz.html&amp;sl=auto&amp;tl=en" title="New York Trilogy Chart">handy chart</a> to understand the characters in the novels, but I am still confused. All of these stories are based on what can happen when a detective gets obsessed with stalking someone. An engrossing read that keeps you confused for years to come :)</p>
+
+<p>This edition also has art by Art Spiegelman, which was fantastic!</p></li>
+
+
+<li><h3>Wizard of the Crow</h3>
+<p>This giant book is a thinly-veiled allegory on Kenyan politics. <a href="http://www.amazon.com/gp/product/1400033845?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1400033845">Wizard of the Crow</a><img src="http://www.assoc-amazon.com/e/ir?t=nimbupani-20&amp;l=as2&amp;o=1&amp;a=1400033845" width="1" height="1"> is set in a fictional state of Abruria ruled by a despot. The protagonists Kamiti and Grace are articulate, literate young people who struggle to raise money and find work. Kamiti is a passionate humanist and extensively talks about his experiences in Madras, India and morals from the Bhagavad Gita. He is guilt-stricken as his poor parents spent their entire life savings on sending him to study in India and yet he cannot find a job back in Abruria. </p><p>Suddenly, some people mistakenly interpret Kamiti&rsquo;s actions and serendipity for witchcraft and start consulting him. All actions of Kamiti can be rationally explained, but it amused me to no end to see how the rest of the characters interpret it. These actions are not peculiar to any “African nation” but you can see it in action everywhere! Foolish superstitious beliefs and <a href="http://www.huffingtonpost.com/2010/01/13/pat-robertson-haiti-curse_n_422099.html" title="Pat Robertson: Haiti 'Cursed' By 'Pact To The Devil' (VIDEO)">Pat Robertson’s trash about Haitians pact with Satan</a>, are more actions in the same vein.</p><p>It is a long read, but very well-written. Ngugi wa Thiong&#8217;o, the author, also suffered for speaking out  -  He was imprisoned in Kenya for his writing (by the dictator <a href="http://en.wikipedia.org/wiki/Daniel_arap_Moi" title="Daniel arap Moi - Wikipedia, the free encyclopedia">Daniel arap Moi</a>). </p></li>
+
+
+<li><h3>The Lost Daughter</h3>
+
+<p>I have started to read books in the ascending order of marking them as &#8220;to-read&#8221;, which means I have no idea why some of the books end up in that list. This was one such book. It is not something I would pick up usually.</p><p> <a href="http://www.amazon.com/gp/product/1933372427?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1933372427">The Lost Daughter</a> is about a mother who muses on her parenting while on a holiday. It is an uncomfortable book, and there are parallels that can be drawn from it to incidents in any mother-daughter relationship. I found it very annoying that the writer focussed so much on what the mother is thinking about, which is usually about herself or her relationship with her daughters, ex-husband, or potential lovers. It might have worked if it was written in first-person, but feels like the author is trying to force her view through the mother. </p> </li>
+
+<li><h3>Hell Boy Vol 7 / Tom Strong Book 4</h3>
+<p><a href="http://www.amazon.com/gp/product/1593078609?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1593078609">Hellboy, Vol. 7: The Troll Witch and Other Stories</a><img src="http://www.assoc-amazon.com/e/ir?t=nimbupani-20&amp;l=as2&amp;o=1&amp;a=1593078609" width="1" height="1" border="0" alt=""> was a riot as usual (I am running out of adjectives to describe it!) <a href="http://www.amazon.com/gp/product/1401205720?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1401205720">Tom Strong (Book 4)</a><img src="http://www.assoc-amazon.com/e/ir?t=nimbupani-20&amp;l=as2&amp;o=1&amp;a=1401205720" width="1" height="1"> is a big pile of mush. I fear Alan Moore must have lost his marbles when he wrote this character (or at least the story in this book).</p></li> 
+</ul>
+
+
+<p></p>
+
+<p>I won’t be surprising you with a Part 3 for Feb at least :) Any books that you have been pondering about lately?</p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blogging-with-drupal-6-part-1.html">Blogging With Drupal 6 - Part 1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-02-26T00:00:00+05:30" pubdate>Feb 26<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As you might infer from <a href="http://snapbird.org/nimbuin/timeline/drupal">my tweets</a>, I have a love-hate relationship with Drupal. I want to document here what I gathered in my quest to move my blog to Drupal 6, to spare you some of the <span class="strike">back</span> path-breaking work.</p>
+
+
+
+
+<p>I hope to cover what I learnt about Drupal 6 migration, modules, and design in 3 posts. I assume you have a blog running Drupal 5 and you know the meaning of a <a href="http://en.wikipedia.org/wiki/Web_server">Web Server</a> or a Database. </p>
+
+
+<p></p>
+
+<p>In this post, I want to talk about setting up a staging server.  Bloggers are tempted to use their live sites to experiment with migrating or testing modules. You are most vulnerable when you do this, as you can even wipe out your entire database by installing a rogue module. </p>
+
+
+
+
+<p>Hence, the most important thing you should do as a Drupal blogger is to set up a local staging server where you can test your migration to Drupal 6. Once you are satisfied, you need to repeat the same steps for migrating the live content to Drupal 6.</p>
+
+
+
+
+<p>If you are looking to migrate from Wordpress or other CMS, here is <a href="http://drupal.org/handbook/migrating">how to migrate content</a>.</p>
+
+
+
+
+<ul>
+    <li><h3>Set up Staging Server</h3>
+        <p>Before we begin the migration, we need to setup Drupal 6 on a Staging server. It would be best if your Staging server can reflect the server where your website is hosted as much as possible. Follow these <a href="http://drupal.org/getting-started/6/install/download">instructions to set up Drupal 6 on your machine</a>.</p></li>                                                            
+    <li>
+        <h3>Migrate Content to the Staging Server</h3>
+        <ol>
+            <li>This is the nasty bit. If you are importing from Drupal 5, you are in luck as <a href="http://drupal.org/project/backup_migrate">Backup and Migrate module</a>  can do the donkey work for you.
+                <ol>
+                    <li>Install Backup and Migrate on your live site</li>                   
+                    <li>Put your site in Off-line mode (Admin > settings > Site Maintenance)</li>                   
+                    <li>Turn off clean URLs, disable optional modules (e.g. Views, Image, TinyMCE, etc.), and switch to a default theme. If your frontpage is a View (as mine was), set it to the default node.</li>
+             <li>Go to the Admin settings for Backup and Migrate, and export your database as a downloadable file. </li>                            
+            <li>Turn back on all the modules (make sure your settings are still correct), clean URLs and revert to your theme. Finally take your site back online. </li>            
+                </ol> 
+                </li>
+            <li><a href="http://codex.wordpress.org/Restoring_Your_Database_From_Backup">Import the database from the above step</a> into your local Database Management System (usually MySQL). 
+            </li> 
+            <li>Open the Drupal 6 <code>update.php</code> in a browser to upgrade the imported database.</li>
+        </ol>       
+    </li>  
+    <li>
+        <h3>Install Modules</h3>        
+        <p>The trick to have pain free upgrades is to depend as less as possible on external modules. Unfortunately, the curse of infinite modules almost always hits every Drupal Administrator. Recently Drupal has introduced a pledge system, which module maintainers use to declare their support for the upcoming Drupal release. But, it is still not a good solution.</p>
+        <p>To look at it positively, it gives you opportunity to fine-tune the user experience on your site. If a module does not have a future release, it is most likely because of poor demand, which means you shouldn&#8217;t be using it anyway. </p>
+        <p>I will cover some of the interesting modules for blogging in my next post. </p>
+    </li>
+    <li>
+        <h3>Update Theme</h3>
+        <p>There are <a href="http://drupal.org/project/themes?filters=drupal_core:87&amp;solrsort=sis_project_release_usage%20desc" title="Themes | drupal.org">several themes available for Drupal 6</a>, which you can use immediately. I hope to cover some of the pitfalls of writing a theme for Drupal 6 in a future post in this series.</p>        
+    </li>
+    <li>
+        <h3>Test Local Staging</h3>
+        <p>Use this opportunity to test your <a href="http://en.wikipedia.org/wiki/Rewrite_engine">URL Rewrites</a> <strong>if</strong> your local staging uses the same web server as your host. If this move involves moving your blog from a sub-folder to the main directory (like mine did), it helps to write and test URL Rewrites on this local staging server. </p>
+        <p>If you are moving from another CMS system to Drupal, you should ensure the paths redirect seamlessly or are retained. Two modules that can help you here are <a href="http://drupal.org/project/pathauto">Path Auto</a> and <a href="http://drupal.org/project/globalredirect">Global Redirect</a>.</p>
+    </li>                                                  
+    <li><h3>Migrate the live site</h3><p>Practise, practise, practice. Typically you might not have caching systems to handle your blog downtime, so make sure you are well-versed in the migration process (all the above steps) so that you can do them with the least downtime possible. I repeated all the steps above six or seven times on my local staging server, before I found the courage to do it on my live site.</p>
+        <p>It still took me two hours.</p></li>
+    <li>
+        <h3>Backup Regularly</h3>
+        <p><a href="http://news.ycombinator.com/item?id=990323">Coding Horror&#8217;s catastrophic failure</a> just underscores how you need to take up backup in your hands and not simply trust your hosting provider.</p>
+        <p>With Drupal 6, Backup and Migrate Module can be used to schedule regular backup of your Drupal database. Unfortunately you can only backup to a location that hosts your Drupal files. You should download these files every day/week (depending on how frequently you update the site), so that you are truly safe from catastrophic failure (and back up your local machine!)</p>
+        <p>If you like tinkering with the site theme as I do, you should use a <a href="http://en.wikipedia.org/wiki/Revision_control" title="Revision control - Wikipedia, the free encyclopedia">Versioning System</a> so that you can go back to changes done in case you don&#8217;t like your latest update. You can put the site files on your local staging server in version control, but your hosting provider will typically not provide that facility for your use (which means you may have to update the live site manually).</p>
+    <p>There is a reason for this backup madness, which is to be prepared when disaster strikes. Of course, this is assuming you care enough about your blog, if you didn&#8217;t, you won&#8217;t be reading this anyway!</p>
+    </li>
+</ul>
+
+
+<p>In the next post, I will cover some of the modules I have found useful in Drupal 6, and talk about modules I had to lose from Drupal 5 and how I coped with that loss.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/book-reviews-for-feb-2010.html">Book Reviews for Feb 2010</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-02-16T00:00:00+05:30" pubdate>Feb 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This month has not been very good for reading. I hope to correct that next month! Here are my reviews:</p>
+
+
+<ul>
+    <li><h3>Tropical Gangsters</h3>
+        <p>If you are curious to know why many African countries that receive aid and yet show no sign of progress, this book has some answers. Robert Klitgaard talks about his experience as a World Bank consultant in Equatorial Guinea, a country still ruled by <a href="http://en.wikipedia.org/wiki/Teodoro_Obiang_Nguema_Mbasogo" title="Teodoro Obiang Nguema Mbasogo - Wikipedia, the free encyclopedia">the despot</a> who features in the book. <a href="http://www.amazon.com/gp/product/0465087604?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0465087604">Tropical Gangsters: One Man&#8217;s Experience With Development And Decadence In Deepest Africa</a> is written simply (probably too simply) but is a good unbiased look into the world of Aid and Development.</p>
+        <p>Developed nations have repeatedly looted Equatorial Guinea, by providing expensive &#8220;consultants&#8221;, who have absolutely no clue on how to help Equatorial Guinea (except for their own benefit). So, most Equatorial Guineans do not trust an outsider. It does not help that a dictator rules the country. It is shocking to read about Mercedes cars of ministers plying barely serviceable roads and other atrocious gimmicks by both Foreigners and Guineans alike. </p></li>
+    <li><h3>Hellboy Series (Vol 3, 4, 5)</h3><p>I became a Hellboy addict after reading <a href="http://nimbupani.com/book-reviews-for-jan-2010-%E2%80%93-part-2.html" title="Book Reviews for Jan 2010 – Part 2 | Nimbupani Designs">the first volume</a>.  These three (<a href="http://www.amazon.com/gp/product/1593070918?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1593070918">Vol. 3</a>, <a href="http://www.amazon.com/gp/product/1593070934?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1593070934">Vol. 4</a>, <a href="http://www.amazon.com/gp/product/1593070926?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1593070926">Vol. 5</a>) further that addiction. Hellboy, the comic series, is definitely better than the movies. I am amazed how well Hellboy moves between Science-Fiction, Fantasy, and Mythology.</p></li>
+    <li><h3>Goon: Rough Stuff</h3><p>Whenever I am at the comics section of the library, there is usually nobody else around. But this time, there was a kindred soul who was enthused by seeing me picking up Hellboy and started recommending comics (too bad I already read Watchmen!) <a href="http://www.amazon.com/gp/product/1593070861?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1593070861">The Goon: Rough Stuff (Goon (Unnumbered))</a> was one of those he recommended. Goon is awesome. It is the story of two zombie-killing thugs who become the heads of a criminal gang &mdash; what is not to love? I think I would have enjoyed it more if I <a href="http://twitter.com/nimbupani/status/8722959518">was not afraid of being turned into a Zombie</a> myself.</p></li>
+    <li><h3>Waiter Rant</h3>
+        <p>I remember my first visit to <a href="http://waiterrant.net/" title="Waiter Rant">Waiter Rant</a> clearly. It was the day I spent more than 5 hours reading archives of that blog. I had never done that before for any website (except Wikipedia). His book, <a href="http://www.amazon.com/gp/product/0061256684?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0061256684">WaiterRant: Confessions of a Cynical Waiter</a>,  is mostly a collection of his blog posts and it brought back memories of that day. It is a melancholic, but compelling, look at the life and times of a no-longer-young waiter.</p></li>
+    <li>
+        <h3>Embroideries</h3>
+        <p>Marjane Satrapi has written <a href="">award-winning graphic-novels</a> about her life in Iran. <a href="http://www.amazon.com/gp/product/0375714677?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0375714677">Embroideries</a> is a humorous story documenting a gossip session among a group of ladies in Iran. The story starts with Marjane&#8217;s grandmother stating &ldquo;To speak behind others&rsquo; backs is the ventilator of the heart&rdquo;. Every woman discusses the issue of sex or their sex lives. It is really funny and touching at the same time. You should read it and discover how apt the title is!</p>
+    </li>
+</ul>
+
+
+<p>That ends my reviews for Feb! Any books you have read recently that you recommend?</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/mortality-of-morality.html">Mortality of Morality</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-02-12T00:00:00+05:30" pubdate>Feb 12<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="">Morality</a>, as Wikipedia says, is &#8220;a set of beliefs distinguishing between right and wrong behaviors&#8221;. There is a perception among many people that moral codes are permanent, that,  what now is morally right will remain so eternally.</p>
+
+<p>My assertion (which Wikipedia calls <a href="http://en.wikipedia.org/wiki/Moral_skepticism">Moral Skepticism</a>) is that morality meanders with time. Paul Graham covers some aspects of it in his essay about <a href="http://www.paulgraham.com/say.html">What You Can&#8217;t Say</a>.</p>
+
+<p>200 years ago, you were only allowed to love thy neighbour if he was also of the same social class as you. Slavery was moral. Women were morally obliged to mind the business of taking care of children instead of voicing their opinion about politics.</p>
+
+<p>But, I can hear you say, the basic principles of morality are eternal. You only need to read the religious texts of several religions to see how common the moral codes are! But religious texts are always derivative, and interpreted. For example, the <a href="http://en.wikipedia.org/wiki/Hijab#Etymology_and_meaning">meaning of Hijab in Islam has changed over time</a>.</p>
+
+<p>A moral code is usually defined by the triumph of an opinion that influences a majority. 100 years ago, almost every state or region had a different moral code, but thanks to colonial globanization, most countries now share the what-was-then-Christian view of equality and human rights. Some European countries have become more liberal (legal drug use, gay rights, etc), and the world seems to be moving towards a uniform liberal moral code.</p>
+
+<p>Thanks to the internet, these liberal moral codes have spread a lot faster than before.  All you seem to need these days is a petition with 300K signatures (citizenship not necessary) to raise awarness for altering existing moral codes in any country.</p>
+
+<p>Iran&#8217;s protests are an example of how moral codes are getting impacted with technology. Youtube, Flickr, Twitter have all featured prominently in the arsenal of a protestor, so much that China and Iran are taking steps to control them. Protestors have also got a bigger audience now, instantly. But interestingly, the new era of communication does not seem to make people protest more than simply putting a twibbon or adding their email to petitions. There has not been any kind of protests in the internet era like those that put an end to Vietnam War or Black Inequality. If anything, technology has made us complacent about morality.</p>
+
+<p>Still, moral codes are changing. As an aeron-chair expert, I also think it is safe to assume a moral code is under attack and very vulnerable, when people find the need to defend it anonymously instead of identifying themselves with it. For example, most people will have no hesitation in stating their opinion about child pornography, but some people will rather talk &#8220;off the record&#8221; or &#8220;anonymously&#8221; about gay marriage. In fact, Washington judiciary <a href="http://www.ontopmag.com/article.aspx?id=4529&MediaType=1&Category=26">approved a motion to make anonymous the names of people who were petitioning to revoke the rights to gay marriage</a>.</p>
+
+<p>I know some of you might be offended by this dissection of morality, but this is just a thought experiment. I do have my own codes of morality (which tend towards liberal), but I do understand my moral codes might change too.  I hope this post provokes some of you to leave a comment with your take on morality!</p>
+
+<p>Thanks to <a href="http://nandinisniche.blogspot.com/">Nandini</a> for making me think about morality while we were having a session at the <a href="http://www.youtube.com/watch?v=kQFKtI6gn9Y">Argument Clinic</a> about Japanese culture.</p>
+
+<p>There is a much more <a href="http://onthehuman.org/2010/03/moral-skepticism-and-moral-disagreement-developing-an-argument-from-nietzsche/">serious discussion on Moral Skepticism here.</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/the-final-coming-of-svg.html">The Final Coming of SVG</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-02-11T00:00:00+05:30" pubdate>Feb 11<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I started drafting this post about a month ago, giddy with the news about Microsoft joining <a href="http://blogs.msdn.com/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx">SVG Working Group</a> and all the possibilities SVG portended. So, I started dreaming of creating a demo of how SVG could be used by web developers now, as background images with fall-back support, webfonts, and what not. Why, you ask? Think about all these that you can do with SVG using CSS:</p>
+
+
+
+
+<ul>
+    <li>Simple background images that are several times smaller than PNG/GIF formats.</li>
+    <li>Scalable background images that can be reused on elements with different widths and heights.</li>
+    <li>SVG background images can share same stylesheet as the webpages which means you do not have to open Photoshop every time you need to change the colors of background images.</li>
+    <li>Use the same SVG file <a href="http://nimbupani.com/about-fonts-in-svg.html">as a font</a> and an image.</li>
+</ul>
+
+
+<p></p>
+
+<p>Alas, it was not to be! The story of SVG is like the story of the boy who cried Wolf. Every 2 years there is a riot about SVG&#8217;s coming dominance, nothing happens, and everybody goes away disappointed. So, when SVG truly becomes a standard supported by most browsers, nobody gives a damn.</p>
+
+
+
+
+<p>At the risk of sounding like that boy, my opinion is SVG dominance is closer to reality than ever before. SVG support for most modern browsers has improved (<a href="http://www.opera.com/docs/specs/presto23/svg/attributes/">Opera</a>, <a href="https://developer.mozilla.org/en/SVG_in_Firefox">Firefox</a>, <a href="http://webkit.org/projects/svg/status.xml">Webkit</a>). <a href="http://hsivonen.iki.fi/test-html5-parsing/">HTML specification has been updated to allow in-line SVG</a> too! Hell, there are even <a href="http://paulirish.com/work/gordon/demos/">Flash runtimes written with JavaScript and SVG</a> that can run Flash animations on browsers that do not support Flash (I am looking at you, iPhone Safari).</p>
+
+
+
+
+<p>David Storey has <a href="http://people.opera.com/dstorey/user-interfacesvgcss.html">a nifty example of a HTML5 UI that uses SVG files as background images</a>. Browsers do not consistently support using SVG files as background images. Safari does not render the file if the SVG does not have absolute width and height specified (not so for Chrome). Firefox does not render SVG background images at all. Here is <a href="http://nimbu.in/demo/svg/">a demo of using an SVG file as background or border image</a>.</p>
+
+
+
+
+<p>You have much better luck with <a href="http://www.alistapart.com/articles/using-svg-for-flexible-scalable-and-fun-backgrounds-part-ii">SVG images rendered via the object element</a>, most browsers support SVG as an image format, and for IEs you could use <a href="http://code.google.com/p/svgweb/">SVGWeb</a> to replace them with a flash file. In SVG-friendly browsers, you can also use this <a href="http://plugins.jquery.com/project/svg ">jQuery plugin to manipulate SVG files</a>.</p>
+
+
+<p></p>
+
+<p>So, all this means good times are ahead for SVG. <a href="http://lists.w3.org/Archives/Public/www-svg/2010Jan/0108.html">Microsoft even seems to be asking relevant questions</a> about implementing SVG, which only supports the assertion that IE9 will be the first Internet Explorer to support SVG.</p>
+
+<p>If you are interesting in learning SVG, the <a href="http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html">W3C SVG Primer</a> is best place to start. You can also create simple shapes in Illustrator or Inkscape and save them as SVG, but they are more likely to be tag-soups, so be sure to clean them with <a href="http://www.planetsvg.com/tools/scour/scra.py/form">Scour</a>.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/6/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/4/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

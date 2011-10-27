@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Vignettes with CSS3 Box Shadows - Blog of Divya Manian</title>
+  <meta name="author" content="Divya Manian">
+
+  
+  <meta name="description" content="Paul Irish (why nobody else sends me such awesome stuff beats me), showed me yet another CSS3/HTML5 website. What is interesting is, the site author &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nimbupani.github.com/blog/vignettes-with-css3-box-shadows.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Blog of Divya Manian</a></h1>
+  
+    <h2>Web Development Lemonade</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Vignettes With CSS3 Box Shadows</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+  
+
+<time datetime="2010-07-12T00:00:00+05:30" pubdate>Jul 12<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://nimbupani.com/demo/css3vignettes/"><img src="http://nimbupani.com/files/vignette.png" alt="vignette.png" border="0" width="604" height="331"> </a></p>
+
+<p><a href="http://paulirish.com">Paul Irish</a> (why nobody else sends me such awesome stuff beats me), showed me yet another <a href="http://chris-armstrong.com/">CSS3/HTML5 website</a>.</p>
+
+
+<p></p>
+
+<p>What is interesting is, the site author uses 4 empty divs to create the vignetting effect on the four corners of the viewport. I thought it would be a good use of box-shadow property to recreate the same effect, minus the 3 extra divs (<a href="http://sickdesigner.com/index.php/2010/html-css/css3-vignette-a-wicked-cool-technique/#comment-231">I am not the first to think of it</a>).</p>
+
+
+
+
+<p>The caveat is, the CSS3 <code>box-shadow</code> property slows down webkit browsers considerably. So, until <a href="https://bugs.webkit.org/show_bug.cgi?id=22102">this bug is resolved</a> this demo will only work on non-webkit browsers like Opera 10.5x, Firefox 3.5+ (IE 9 Platform Preview claims <code>box-shadow</code> support, but this demo does not render box-shadows there).</p>
+
+
+<p></p>
+
+<p>You could use the same technique to add vignetting to images. Here is how: </p>
+
+
+
+
+<ol>
+    <li><p>In your HTML document, add a wrapper element to the image, I have this: </p>
+        <pre><code>&lt;p class=&quot;vignette&quot;&gt;&lt;img src=&quot;image.jpg&quot;&gt;&lt;/p&gt;</code></pre>
+    </li>
+    <li><p>In your CSS file, add this:</p>
+
+    <pre><code>p.vignette {
+  position: relative;
+}
+p.vignette img {
+ display: block;
+}
+p.vignette:after {
+ -moz-box-shadow: inset 0 0 10em #666;  
+ -webkit-box-shadow: inset 0 0 10em #666;   
+ box-shadow: inset 0 0 10em #666;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 2;
+ content: "";
+}</code></pre>
+<p>The <code>content: ""</code> is essential to <a href="http://www.w3.org/TR/CSS2/generate.html#content">make sure the pseudo-element is generated</a>. <code>z-index</code> positions the pseudo-element above the image.</p> 
+</li>
+<li>
+    <em>Die Ende!</em>
+</li>
+</ol>
+
+
+<p>Yes, I do wish webkit would hurry up and fix those horrible box-shadow bugs. Till then, you can indulge with me in this fantasy and <a href="http://nimbupani.com/demo/css3vignettes/">view the demo</a> :) </p>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Divya Manian</span></span>
+
+      
+
+
+
+
+  
+
+<time datetime="2010-07-12T00:00:00+05:30" pubdate>Jul 12<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nimbupani.github.com/blog/vignettes-with-css3-box-shadows.html" data-via="divya" data-counturl="http://nimbupani.github.com/blog/vignettes-with-css3-box-shadows.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/book-reviews-for-july-2010-part-1.html" title="Previous Post: Book Reviews for July 2010 - Part 1">&laquo; Book Reviews for July 2010 - Part 1</a>
+      
+      
+        <a class="basic-alignment right" href="/wee-marquee.html" title="next Post: Wee! Marquee">Wee! Marquee &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
+      </li>
+    
+      <li class="post">
+        <a href="/some-css-transition-hacks.html">Some CSS Transition hacks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/safe-css-defaults.html">Safe CSS Defaults</a>
+      </li>
+    
+      <li class="post">
+        <a href="/unplugged-2011.html">Unplugged 2011</a>
+      </li>
+    
+      <li class="post">
+        <a href="/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("divya", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/nimbupani?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/nimbupani">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - Divya Manian -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
