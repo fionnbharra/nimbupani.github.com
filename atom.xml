@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of Divya Manian]]></title>
   <link href="http://nimbupani.github.com/blog/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/blog/"/>
-  <updated>2011-10-27T21:04:19+05:30</updated>
+  <updated>2011-11-21T18:02:17-08:00</updated>
   <id>http://nimbupani.github.com/blog/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[This revolution needs new revolutionaries]]></title>
     <link href="http://nimbupani.github.com/blog/this-revolution-needs-new-revolutionaries.html"/>
-    <updated>2011-05-21T00:00:00+05:30</updated>
+    <updated>2011-05-21T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/this-revolution-needs-new-revolutionaries</id>
     <content type="html"><![CDATA[<p>In early 2000s, when the web was in its infancy, a great number of committed activists made Open Web Standards possible. They advocated, wrote the specifications, explained them to the masses, and contributed to the revolution of using W3C Specs on the web. I owe each of them my career as a Web Designer/developer.</p>
 
@@ -64,7 +64,7 @@
   <entry>
     <title type="html"><![CDATA[Some CSS Transition hacks]]></title>
     <link href="http://nimbupani.github.com/blog/some-css-transition-hacks.html"/>
-    <updated>2011-05-17T00:00:00+05:30</updated>
+    <updated>2011-05-17T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/some-css-transition-hacks</id>
     <content type="html"><![CDATA[<p>I am speaking at <a href="http://unplugged11.webdirections.org/program/design#creative-css3">some</a> <a href="http://2011.texasjavascript.com/">events</a> which means I have to write a few demos. You can find some <a href="http://nimbu.in/unplugged/demos/">here</a>, and I am in the process of creating more. While doing so, I have come across two new (to me), ways of applying transitions.  This only works for the conditions stated here, and you should think carefully before trying to expand these to be used elsewhere.</p>
 
@@ -131,7 +131,7 @@
   <entry>
     <title type="html"><![CDATA[Safe CSS Defaults]]></title>
     <link href="http://nimbupani.github.com/blog/safe-css-defaults.html"/>
-    <updated>2011-04-13T00:00:00+05:30</updated>
+    <updated>2011-04-13T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/safe-css-defaults</id>
     <content type="html"><![CDATA[<p>You know those nights when you race towards a deadline, banging out the CSS as fast as you can, there comes a moment when you pause…wondering what keyword would get rid of that z-index on that anchor, then you make the best guess you can, and type:</p>
 
@@ -464,7 +464,7 @@
   <entry>
     <title type="html"><![CDATA[Unplugged 2011]]></title>
     <link href="http://nimbupani.github.com/blog/unplugged-2011.html"/>
-    <updated>2011-03-04T00:00:00+05:30</updated>
+    <updated>2011-03-04T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/unplugged-2011</id>
     <content type="html"><![CDATA[<p>I gave my first ever big talk at <a href="http://south10.webdirections.org/program/w3c#active-web-development">Web Directions South in Sydney</a> last year. This May, I will be speaking at <a href="http://unplugged11.webdirections.org">Unplugged</a> in Seattle!</p>
 
@@ -483,7 +483,7 @@
   <entry>
     <title type="html"><![CDATA[Bokeh with CSS3 Gradients]]></title>
     <link href="http://nimbupani.github.com/blog/bokeh-with-css3-gradients.html"/>
-    <updated>2011-02-22T00:00:00+05:30</updated>
+    <updated>2011-02-22T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/bokeh-with-css3-gradients</id>
     <content type="html"><![CDATA[<p>Ever since <a href="http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/">Lea Verou mentioned about the possibilities of CSS3 Gradients</a>, I have been using them in various shapes and sizes as a replacement for background images. I recently worked on a project which uses a bunch of circles as a decorative background. <a href="http://gf3.ca/">gf3</a> suggested that the circles would look much better like <a href="http://en.wikipedia.org/wiki/Bokeh">bokeh</a>. Today, I finally got down to creating them.</p>
 
@@ -562,7 +562,7 @@
   <entry>
     <title type="html"><![CDATA[Making "Pure CSS3" demos better]]></title>
     <link href="http://nimbupani.github.com/blog/making-pure-css3-demos-better.html"/>
-    <updated>2011-02-17T00:00:00+05:30</updated>
+    <updated>2011-02-17T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/making-pure-css3-demos-better</id>
     <content type="html"><![CDATA[<p>I appreciate the effort that goes into creating a pure CSS3/HTML5 demo, but unfortunately many beginners consider these demos as representation of the best practices in Web Development (many aren&#8217;t). Here is one that got my goat today: A <a href="http://designmadeingermany.de/slideshow/">Pure CSS3 Slideshow</a>.</p>
 
@@ -642,7 +642,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for January & February 2011]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-january-and-february-2011.html"/>
-    <updated>2011-02-17T00:00:00+05:30</updated>
+    <updated>2011-02-17T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-january-and-february-2011</id>
     <content type="html"><![CDATA[<p>This year started pretty well for my reading schedule. I managed to finish two huge books in January, but am on a particularly slow pace since. It also doesn&#8217;t help that I am in Oslo for the first two weeks of Feb getting to know people in Opera as part of my <a href="http://nimbupani.com/web-opener-at-opera.html">new position</a>. So these are all I am left with: </p>
 
@@ -691,7 +691,7 @@
   <entry>
     <title type="html"><![CDATA[Web Opener at Opera]]></title>
     <link href="http://nimbupani.github.com/blog/web-opener-at-opera.html"/>
-    <updated>2011-01-31T00:00:00+05:30</updated>
+    <updated>2011-01-31T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/web-opener-at-opera</id>
     <content type="html"><![CDATA[<p>Good news everyone! I am now a Web Opener at <a href="http://opera.com">Opera</a>.</p>
 
@@ -706,7 +706,7 @@
   <entry>
     <title type="html"><![CDATA[Current Color in CSS]]></title>
     <link href="http://nimbupani.github.com/blog/current-color-in-css.html"/>
-    <updated>2011-01-27T00:00:00+05:30</updated>
+    <updated>2011-01-27T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/current-color-in-css</id>
     <content type="html"><![CDATA[<p>In the interest of documenting useless trivia about CSS3, here is something that I re-discovered thanks to <a href="http://twitter.com/ultror">nlogax</a>: <code>currentcolor</code> (<a href="http://jsfiddle.net/2ysAr/show/">example</a>).</p>
 
@@ -736,7 +736,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for December 2010]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-december-2010.html"/>
-    <updated>2010-12-22T00:00:00+05:30</updated>
+    <updated>2010-12-22T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-december-2010</id>
     <content type="html"><![CDATA[<p>A year is almost over! I have reviewed about 80 books (&amp; collections) and read about 110 books in total! Not bad given all the mindless travel I have been doing. Here are the last reviews for this year!</p>
 
@@ -799,7 +799,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for November 2010]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-november-2010.html"/>
-    <updated>2010-11-29T00:00:00+05:30</updated>
+    <updated>2010-11-29T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-november-2010</id>
     <content type="html"><![CDATA[<p>Within 2 weeks of returning from Sydney, I was traipsing through New York. I stayed about 10 days in Albany and another 4 in NYC. I did have my Kindle, which is the main reason I managed to read at least these! Here are the reviews: </p>
 
@@ -848,7 +848,7 @@
   <entry>
     <title type="html"><![CDATA[Kindle: The Power Reading Device]]></title>
     <link href="http://nimbupani.github.com/blog/kindle-the-power-reading-device.html"/>
-    <updated>2010-11-11T00:00:00+05:30</updated>
+    <updated>2010-11-11T00:00:00-08:00</updated>
     <id>http://nimbupani.github.com/blog/kindle-the-power-reading-device</id>
     <content type="html"><![CDATA[<p>Over the last few years, a lot of magazines have started publishing long-form content online (mostly from their archives). Thanks to these, I would invariably be sitting in front of my laptop late at night - trying to read in a posture that was comfortable (and failing). </p>
 
@@ -922,7 +922,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for October 2010]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-october-2010.html"/>
-    <updated>2010-11-04T00:00:00+05:30</updated>
+    <updated>2010-11-04T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-october-2010</id>
     <content type="html"><![CDATA[<p>October was a month of traveling and being nervous about <a href="http://nimbupani.com/active-web-development.html">my talk at Web Directions South</a>, which meant I managed to read very little. But, it was the first time I read Kindle books &mdash; Alice&rsquo;s Adventures in Wonderland and The Girl Who Kicked the Hornet&rsquo;s Nest &mdash; both on the train from Darwin to Adelaide. A review of the Kindle is pending, and hopefully I should put it out soon!</p>
 
@@ -966,7 +966,7 @@
   <entry>
     <title type="html"><![CDATA[CSS Vocabulary]]></title>
     <link href="http://nimbupani.github.com/blog/css-vocabulary.html"/>
-    <updated>2010-11-02T00:00:00+05:30</updated>
+    <updated>2010-11-02T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/css-vocabulary</id>
     <content type="html"><![CDATA[<p>I realised quite late that to say something meaningful about CSS, I would have to know exactly what the terms used mean. Often, I have asked for help in forums, and have got stuck wondering how exactly to describe my problem. So I thought it would be a good idea to describe all the common terms of CSS. </p>
 
@@ -1029,7 +1029,7 @@
   <entry>
     <title type="html"><![CDATA[Active Web Development]]></title>
     <link href="http://nimbupani.github.com/blog/active-web-development.html"/>
-    <updated>2010-10-22T00:00:00+05:30</updated>
+    <updated>2010-10-22T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/active-web-development</id>
     <content type="html"><![CDATA[<pre><code>&lt;p&gt;I recently &lt;a href="http://south10.webdirections.org/program/w3c#active-web-development"&gt;gave a talk at Sydney's Web Directions South&lt;/a&gt; on being more active as a web developer. These are the slides:&lt;/p&gt;
 &lt;div style="width:425px" id="__ss_5438688"&gt;&lt;object id="__sse5438688" width="425" height="355"&gt;&lt;param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-101013215252-phpapp01&amp;stripped_title=active-web-development&amp;userName=nimbupani" /&gt;&lt;param name="allowFullScreen" value="true"/&gt;&lt;param name="allowScriptAccess" value="always"/&gt;&lt;embed name="__sse5438688" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-101013215252-phpapp01&amp;stripped_title=active-web-development&amp;userName=nimbupani" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/div&gt;
@@ -1195,7 +1195,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for September]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-september.html"/>
-    <updated>2010-09-22T00:00:00+05:30</updated>
+    <updated>2010-09-22T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-september</id>
     <content type="html"><![CDATA[<p>Hey, hey, hey, is it September already? I had no idea where all the days went by. Seattle is already moaning with fall weather. But thankfully I will be escaping to Sydney (to give a talk on <a href="http://south10.webdirections.org/program/w3c#active-web-development">Oct 15th on Active Web Development</a>). If you are in Sydney or Melbourne, holler in the comments if you want to meet! Meanwhile, here are some books I read this month: </p>
 
@@ -1295,7 +1295,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for August 2010]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-august-2010.html"/>
-    <updated>2010-09-02T00:00:00+05:30</updated>
+    <updated>2010-09-02T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-august-2010</id>
     <content type="html"><![CDATA[<p>Eeks! I forgot to review books I read for August and now I have way too many! I shall hopefully not read as many in September and can space the reviews better. Anyways, onward!</p>
 
@@ -1372,7 +1372,7 @@
   <entry>
     <title type="html"><![CDATA[Sexy CSS3 Buttons]]></title>
     <link href="http://nimbupani.github.com/blog/sexy-css3-buttons.html"/>
-    <updated>2010-08-17T00:00:00+05:30</updated>
+    <updated>2010-08-17T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/sexy-css3-buttons</id>
     <content type="html"><![CDATA[<p><b>Update:</b> <a href="http://chriseppstein.github.com">Chris Eppstein</a> pointed out the obvious, a neat <a href="http://brandonmathis.com/projects/fancy-buttons/demo/">fancy buttons plugin for Compass</a> that provides simple gradient fancy buttons without using an extra element in the markup.</p>
 
@@ -1502,7 +1502,7 @@
   <entry>
     <title type="html"><![CDATA[Accessible CSS Barcharts]]></title>
     <link href="http://nimbupani.github.com/blog/accessible-css-barcharts.html"/>
-    <updated>2010-08-16T00:00:00+05:30</updated>
+    <updated>2010-08-16T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/accessible-css-barcharts</id>
     <content type="html"><![CDATA[<p><b>Update:</b> I am now <a href="http://nimbu.in/accessible-bar-charts/">hosting the bar charts</a> for posterity :)  You can also <a href="http://github.com/nimbupani/table-bar-chart">fork it on Github</a>.</p>
 
@@ -1557,7 +1557,7 @@
   <entry>
     <title type="html"><![CDATA[Book Reviews for July - Part 2]]></title>
     <link href="http://nimbupani.github.com/blog/book-reviews-for-july-part-2.html"/>
-    <updated>2010-08-04T00:00:00+05:30</updated>
+    <updated>2010-08-04T00:00:00-07:00</updated>
     <id>http://nimbupani.github.com/blog/book-reviews-for-july-part-2</id>
     <content type="html"><![CDATA[<p>I have racked up too many books unreviewed, which means (un)fortunately means shorter reviews. Here goes:</p>
 
