@@ -6,10 +6,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
-  <title>Blog of Divya Manian</title>  
+  <title>Blog Archive | Divya Manian</title>  
   <meta name="author" content="Divya Manian">
   
-  <meta name="description" content="I knew I had to declare a Doctype but just didn&rsquo;t know why. I recently had to work with html files without Doctype and didn&rsquo;t even &hellip;">
+  <meta name="description" content="Blog Archive ❬ ❭ 2005 Aug 10 2005 First Protestors Sighted in Singapore! Aug 09 2005 Happy Birthday Singapore! 40 years&#8230; Aug 08 2005 Powder &hellip;">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,828 +18,402 @@
   <link rel="canonical" href="http://nimbupani.github.com/blog/blog/page/10/index.html">
   <link href="/blog/stylesheets/screen.css" rel="stylesheet">
   <script src="/blog/javascripts/modernizr-2.0.js"></script>
-  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Blog of Divya Manian" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
+  <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Divya Manian" type="application/atom+xml">
+  
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/blog/">Blog of Divya Manian</a></h1>
+<body >
+  <header role="banner">  <h1><a href="/blog/">Divya Manian</a></h1>
   
-    <h2>Web Development Lemonade</h2>
+  <h2>Web Development Lemonade</h2>
   
-</hgroup>
-
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-<form action="http://google.com/search" method="get">
+  <nav><form action="http://google.com/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
-<ul class="main-navigation">
-  <li><a href="/blog/">Blog</a></li>
-  <li><a href="/blog/blog/archives">Archives</a></li>
-</ul>
-
+<a href="/blog/">Home</a>
+<a href="/blog/blog/archives">Archives</a>
+<a href="/blog/about">About</a>    
+<a href="http://feeds.feedburner.com/nimbupani" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
 </nav>
   <div id="main">
-    <div id="content">
-      <div class="blog-index">
+      <section class="post">
+<article>
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/the-truth-about-doctypes.html">The Truth About Doctypes</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2009-03-22T00:00:00-07:00" pubdate>Mar 22<span>nd</span>, 2009</time>
-        
-         | <a href="/blog/the-truth-about-doctypes.html#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Blog Archive</h1>
     
   </header>
-
-
-  <div class="entry-content"><p>I knew I had to declare a Doctype but just didn&rsquo;t know why. I recently had to work with html files without Doctype and didn&rsquo;t even realise that the IE errors I was coming across was because of the triggering of quirks mode. Today I read in depth about Doctypes and I burn in shame to know how many bugs could simply be resolved by declaring a Doctype. So, here is what I found out about the Damned Doctypes.</p>
-
-
-<h3>IN THE BEGINNING</h3>
-
-
-<p>Long long time ago in the age of no standards, people wrote HTML with reckless abandon which resulted in tag soups and atrocious styling. Browsers were no better and tried to &ldquo;fix&rdquo; the errors in CSS declarations and generally did not obey any standard. </p>
-
-
-<h3>ENTER DOCTYPE</h3>
-
-
-<p>In 1995 the first signs of standardisation came in the form of HTML 2.0 HTML specification (note that there was no HTML 1.0) which first introduced the use of Doctype &ldquo;To identify information as an HTML document conforming to this specification, each document must start with &hellip; document type declarations.&rdquo;</p>
-
-
-<p>At end of December 1997, HTML 4.0 was released which specified 3 different specifications. A HTML document can choose which one to follow, by indicating with the Doctype: A Strict specification (which excludes deprecated elements and frames), a Transitional specification (which excludes only frames), and a Frameset specification (which allows just about anything!).</p>
-
-
-<p></p>
-
-<h3>INVENTION OF DOCTYPE SWITCHING</h3>
-
-
-<p>With the 3 flavours of HTML 4.0, browsers had the burden of having to display non-confirming HTML like it used to before (as many old websites would break if the browsers changed the CSS and HTML implementation to match the standards) as well as new HTML documents produced to confirm to the specifications.</p>
-
-
-<p></p>
-
-<p><a href="http://en.wikipedia.org/wiki/Tantek_Çelik">Tantek Çelik</a>, first implemented the innovative Doctype Switching while working on Internet Explorer 5 for Mac. The idea was this, if the Doctype specifies one of the modern specifications, the browser will render the HTML in &ldquo;standards mode&rdquo; and if not, the browser will render the HTML in &ldquo;quirks mode&rdquo;. Soon, all other browsers adopted it.</p>
-
-
-<p></p>
-
-<p>There is a 3rd mode called &ldquo;Almost Standards Mode&rdquo; which only differs from &ldquo;Standards Mode&rdquo; in the implementation of vertical sizing of table cells (IE 6 and 7 only render this mode and never the standards mode).</p>
-
-
-<p></p>
-
-<h3>QUIRKS MODE</h3>
-
-
-<p>When a browser renders a document in quirks mode, it interprets the CSS and HTML like older versions of the browser allowing for nonstandard code and workarounds. The most affected is the CSS of the HTML document which gets interpreted differently in this mode.</p>
-
-
-<p></p>
-
-<p>There is no standard on which Doctype will trigger quirks mode, each browser has its own list of Doctypes that will trigger the quirks mode (<a href="http://en.wikipedia.org/wiki/Quirks_mode#Comparison_of_document_types">see this chart</a>).</p>
-
-
-<p>For IE 6, 7 and 8, the Doctype declaration should be the very first line of the HTML document, otherwise it defaults to quirks mode (An XML declaration before an XHTML Doctype or even having a HTML comment above the Doctype declaration will trigger quirks mode). In IE 7 and 8, having an XML declaration as the first line of the HTML document will no longer trigger quirks mode.</p>
-
-
-<p></p>
-
-<p>Here is how valid CSS declarations get misinterpreted in IE 6, 7 and 8, when they are in quirks mode:</p>
-
-
-<ul>
-<li>The Box Model is rendered incorrectly (padding is applied within the declared width of an element instead of being added to the declared width of an element).</li> 
-<li>The dimensions of a block level element changes if the content of the element does not fit the declared dimensions (e.g. If a paragraph which has a <code>height:200px;</code> specified will expand in IE 6 and 7 in quirks mode if the actual text content is longer than that declared height).</li>
-<li>The default <code>margin-left</code> and <code>margin-right</code> of a floated element becomes 3px in IE. </li>
-<li><code>margin:0 auto</code> does not center elements.</li>
-<li>Font properties are not inherited from parent elements to tables.</li>
-</ul>
-
-
-
-
-<p>Other browsers have their own set of weird behaviors in quirks mode. </p>
-
-
-
-
-<h3>FUN TIMES WITH IE 8</h3>
-
-
-<p>As IE 6 and IE 7 &ldquo;standards&rdquo; mode did not fully confirm to the specifications, many websites had &ldquo;hacks&rdquo; to make them &ldquo;look good&rdquo; in &ldquo;standards mode&rdquo;. These websites will all appear &ldquo;broken&rdquo; in IE 8 when that comes along (since it complies more to standards than before), so here we go AGAIN down the road of Doctype switching.</p>
-
-
-<p></p>
-
-<p>So, now IE 8 has at least 4 modes, quirks mode, IE 7 standards mode, IE 8 almost standards mode and IE 8 standards mode.</p>
-
-
-<p>Now IE 8 wants to introduce a NEW switching mechanism by using the <code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=8&quot; /&gt;</code> declaration to make sure it uses the IE 8 standards mode to render. If this meta declaration does not exist, it will use other various sources to determine which mode to render, most likely defaulting to IE 7 standards mode.</p>
-
-
-<p></p>
-
-<h3>SO THE POINT IS</h3>
-
-
-<p>Just use the damned Doctype to make sure browsers don&rsquo;t default to quirks mode with your HTML documents. You are safe in using:</p>
-
-
-<ul>
-    <li>
-        <span class="strike"><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code>      </span>
-    </li>
-    <li>
-        <span class=strike><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code> (except it triggers quirks mode in Konqueror 3.2, matters only if you know and care about that browser).       </span>
-    </li>
-    <li>
-        <span class=strike><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt; </code> (without the XML prolog)       </span>
-    </li>
-<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#the-doctype">Just use <code>&lt;!doctype html&gt;</code></a></li>
-</ul>
-
-
-<p>I hope this is of some use to you when you go about coding your HTML pages. Remember the damned Doctype!</p>
-
-
-<h3>REFERENCE</h3>
-
-
-<ol>
-<li><p><a href="http://www.quirksmode.org/css/quirksmode.html">CSS - Quirks mode and strict mode</a></p></li>
-<li><p><a href="http://hsivonen.iki.fi/doctype/">Activating Browser Modes with Doctype</a></p></li>
-</ol>
-
-
-<p>[UPDATED: I edited the information about Doctype switching with inputs from <a href="http://www.maxdesign.com.au/">Russ Weakley</a>.]</p>
-</div>
+  
+  <div class="blog-archives">
+  <nav class="article">
+    
+      <a class="previous" href="/blog/blog/page/11/" title="Older Archives">❬</a>
+    
+    
+      <a class="next" href="/blog/blog/page/9/" title="Newer Archives">❭</a>
+    
+  </nav>  
   
   
-
+  
+  
+    
+    <h2>2005</h2>
+    
+    <article>
+      
+<time datetime="2005-08-10T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>10</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/first-protestors-sighted-in-singapore.html"> First Protestors Sighted in Singapore!</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/book-review-for-feb-2009.html">Book Review for Feb 2009</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2009-03-15T00:00:00-07:00" pubdate>Mar 15<span>th</span>, 2009</time>
-        
-         | <a href="/blog/book-review-for-feb-2009.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Wow, I can&rsquo;t believe it has been two months since I moved to Seattle. The difference in the efficiency of services (private or public) here as compared to Singapore is striking. For anyone who is used to Indian (or other developing nations) service standards, the customer service here is indeed several times better, but coming from Singapore, service is definitely not as great as in Singapore. The time it takes for someone to pick up your call, the delivery times, the incessant background checks, wireless oligopoly, etc., sap you of any energy to start life &ldquo;fresh&rdquo;. But, thankfully, all that is behind me (I hope!). I have even bought a car, which is like the last stop in the process of &ldquo;settling in&rdquo;. Now, I have to learn to drive :)</p>
-
-<p>I am also now in a &ldquo;full time&rdquo; job, after being a freelancer for two years. I find myself better equipped for work than before, but it is tiring to do anything else after work (and I had dreams of doing more illustrations). I would have to get more energy by working out (which I have stopped after moving to Seattle!).</p>
-
-<p>Seattle has its perks too. I have relaxing weekends, am going for tweetups, making new friends, and generally enjoying a cheaper standard of living (I am not kidding!). I can&rsquo;t read as many books as I used to (mainly because of dedicated work hours), but I think I am not that far behind. Here is what I have read so far:</p>
-
-<ul>
-    <li>
-        <h3>Soul Music</h3>
-        <p>I borrowed <a href="http://www.amazon.com/gp/product/0061054895?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0061054895">Soul Music</a> from the Seattle Digital Library which has lots of new Adobe Digital Edition books. I had read &ldquo;Going Postal&rdquo; by Terry Prachett, which was humorous in parts but nothing comparable to the humor of &ldquo;Good Omens&rdquo;. Soul Music is more like &ldquo;Good Omens&rdquo; and I really liked it. The book has Death (as a God) in a philosophical mood and interestingly uses capital letters to denote the &ldquo;voice&rdquo; of death (first time I have seen such a use of capital letters). Death&rsquo;s grand daughter temporarily replaces Death (as he has abandoned his post) and whenever she is speaking as the God of Death, Prachett uses the same capital letters (she mostly speaks &ldquo;normally&rdquo; though). I found it extremely funny that the &ldquo;Guild of Musicians&rdquo; seems to be very similar in operation to the current <abbr title="Recording Industry Association Of America">RIAA</abbr> (except RIAA targets the audience and not the musicians!). A great read!</p>
-    </li>
-    <li>
-        <h3>Best of Everything</h3>
-        <p>
-            I found <a href="http://www.amazon.com/gp/product/0143035290?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0143035290">The Best of Everything</a> on <a href="http://www.flashlightworthybooks.com/The-Books-of-Mad-Men/343">list of books of Mad Men</a>. It definitely is the pick of that era and the book is, not surprisingly, reminicent of Mad Men. But I am not fond of drama or romance, so this book did not appeal to me. I struggled to finish reading this book (skipping many pages). I would love to see this book as a <a href="http://en.wikipedia.org/wiki/The_Best_of_Everything_(1959_film)">movie</a> - going to watch it this week on <a href="http://netflix.com">Netflix</a>.  
-        </p>
-    </li>
-    <li>
-        <h3>Buddha of Suburbia</h3>
-        <p>
-            I identified with the protagonist of <a href="http://www.amazon.com/gp/product/0571200435?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0571200435">Buddha of Suburbia (FF Classics)</a> as he escapes from Suburbia into London where he confronts with people with different ideals, higher education, and refinement than what he was used to (quite the same experience when I landed in Singapore). The book, while exploring sexuality, is more about Karim (the protagonist) blending in. A good read, though I don&rsquo;t think I will read it again.
-        </p>
-    </li>
-    <li>
-        <h3>The Stranger</h3>
-        <p>I really LOVED <a href="http://www.amazon.com/gp/product/0679720200?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0679720200">The Stranger</a>. I generally don&rsquo;t like books with unhappy endings, but this was different. The protagonist is someone who is honest with his feelings (and does not fret over why he does not feel suffering or pain) and hardly feels anything anyway. The book is all about how the world does not understand his point of view and punishes him for being the way he is. In a way it is about <a href="http://en.wikipedia.org/wiki/The_Stranger_(novel)#Philosophy">Existentialism</a> but it is also a great study of humanity in general. Must read for all existentialists!</p>
-    </li>
-    <li>
-        <h3>Anathem</h3>
-        <p>
-            <a href="http://www.amazon.com/gp/product/0061474096?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0061474096">Anathem</a> is a book that I was most looking forward to reading. This is the first <a href="http://www.adobe.com/products/digitaleditions/">Adobe Digital Edition</a> book I read. And it took the longest to finish (at 928 pages)! The ideas expounded here would be a mathematician&rsquo;s delight. The ending is a little too fantastic (even for speculative fiction!), and has a fundamental theme of <a href="http://en.wikipedia.org/wiki/Many-worlds_interpretation">Many Worlds Interpretation</a> (which was not clear to me this time when I read). When I was reading this book I was just focussing on getting the story and ignored the different discussions about mathematics that occurs in the book, so I missed some of the good parts of it. The idea of living in a monastery, where you spend most of your waking hours in the pursuit of intellectual curiosity (without access to any distractions), is highly appealing to me. I won&rsquo;t be surprised if such monastries do not <em>already</em> exist. Definitely a book to read again! 
-        </p>
-    </li>
-    <li>
-        <h3>Dune</h3>
-        <p><a href="http://www.amazon.com/gp/product/0441013597?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0441013597">Dune</a> is a highly acclaimed science fiction novel that takes place in a far far future where &ldquo;Spice&rdquo; is the new Oil. Like Anathem, it has its own vocabulary and provides definitions for new words and phrases. In a way this is no different from the <a href="http://en.wikipedia.org/wiki/Last_of_the_mohicans">Last of the Mohicans</a>. The interesting part is the subtle approval for <a href="http://baheyeldin.com/literature/arabic-and-islamic-themes-in-frank-herberts-dune.html">Islamic Culture</a> which is obvious from the phrases and the kind of culture shown among the Fremen tribes. I think this novel is sexist in a way, and I was not too impressed with putting one person (the protagonist) on a pedestal as <a href="http://en.wikipedia.org/wiki/Muad'Dib">Muad&#x27;Dib</a>. It was an engrossing read I must say.</p>
-    </li>
-</ul>
-
-
-<p>Whew! That covers it! What books do you recommend?</p>
-
-</div>
-  
-  
-
+<time datetime="2005-08-09T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>09</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/happy-birthday-singapore-40-years.html"> Happy Birthday Singapore! 40 years&#8230;</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/book-reviews-for-dec-08-and-jan-09.html">Book Reviews for Dec 08 and Jan 09</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2009-02-08T00:00:00-08:00" pubdate>Feb 8<span>th</span>, 2009</time>
-        
-         | <a href="/blog/book-reviews-for-dec-08-and-jan-09.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Book Reviews for December and January</p>
-
-<p>It has taken me two months to pack my belonging and move to Seattle. Meanwhile, my book reading suffered quite a bit. But I did manage to complete reading about 7 books mostly in December. Here is what I read:</p>
-
-<ul>
-<li><h3>The Ballad of Halo Jones</h3>
-<p>I enjoyed reading <a href="http://www.amazon.com/gp/product/1401205909?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1401205909">The Ballad of Halo Jones</a> lot more than reading <a href="http://www.amazon.com/gp/product/1401219268?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1401219268">Watchmen</a> or <a href="http://www.amazon.com/gp/product/140120841X?ie=UTF8&tag=nimb">V for Vendetta</a>. I really liked the way they have portrayed the protagonist, and the life that she <em>endures</em>, set sometime in the future. The fiction is ironically realistic and portrays women without any bias (very rare in a comic book).   </p>
-</li>
-<li>
-<h3>Kitchen</h3>
-<p><a href="http://www.amazon.com/gp/product/0571171044?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0571171044">Kitchen</a> is a book that made me think a lot about Death. It is something I avoid thinking about, because it brings forth a lot of unanswered questions and thoughts. But this book&rsquo;s protagonist (who is shown as writing in first person) clearly has the same questions and doubts. The book also showcases the modern Japanese ways of living. Also interesting is the sub-plot of the relationship between a transexual mother and her son. It is not the kind of book that you will remember though.</p>
-</li>
-<li>
-<h3>The Tin Drum</h3>
-<p>I did not think I would read a heavyweight like G&uuml;nter Grass. Ever. But then I read about <a href="http://www.amazon.com/gp/product/0749394757?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0749394757">The Tin Drum</a> and decided to read it for the heck of it - to see if I could actually complete such a book. I did! Though it is another matter that it seemed weird that the story features a boy who &ldquo;refuses to grow up&rdquo; and has (for a short period of time), glass-splitting shriek. I wonder if these are metaphors for something else. This book does have a great description of the <a href="http://en.wikipedia.org/wiki/Defense_of_the_Polish_Post_Office_in_Danzig">defense of the Polish Post Office in Danzig</a>.</p>
-</li>
-<li><h3>Cairo Modern</h3>
-<p><a href="http://www.amazon.com/gp/product/9774161564?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=9774161564">Cairo Modern</a> is a very insightful book written about Cairo in the forties. It is quite similar in some sense to <a href="http://www.amazon.com/gp/product/1400076560?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1400076560">The In-Between World of Vikram Lall</a> as it highlights the corruption in the Egyptian government and what a man would do to escape poverty and remain wealthy. The book also has an interesting character who is a fundamentalist probably based on <a href="http://en.wikipedia.org/wiki/Sayyid_Qutb">Sayyid Qutb</a>. The book is worth a read just for the dialogues between the fundamentalist, the atheist, and the agnostic protagonists.</p>
-</li>
-<li>
-<h3>Gertrude Bell: The Arabian Diaries 1913-1914</h3>
-<p><a href="http://www.amazon.com/gp/product/0815606729?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0815606729">Gertrude Bell: The Arabian Diaries, 1913-1914</a> was a book I read at one go in the Central Library, Singapore. These are the diaries of <a href="http://en.wikipedia.org/wiki/Gertrude_Bell">Gertrude Bell</a>, who was influential in creating the state of Iraq after the fall of the Ottoman Empire. The writing are written in the &ldquo;old style&rdquo; of long paragraphs and formal english, so it is difficult to keep focused, but what emerges is a great description of the life and times of Iraqis which seem no different from what it is today. I am in awe of Gertrude Bell, who in the twenties managed to undertake extraordinary adventures in a hostile territory. I liked the book for the adventures that Gertrude Bell nonchalantly describes as though she was just buttering toast!</p>
-</li>
-<li><h3>No God in Sight</h3>
-<p><a href="http://www.amazon.com/gp/product/0144000601?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0144000601">No God in Sight</a> is an attempt at &ldquo;R.K.Narayanesque&rdquo; writing which does not have as much impact as those by R.K.Narayan. It has an interesting thread connecting one story to the other. But nothing really great about this book.</p>
-</li>
-<li>
-<h3>The Hitchhiker&rsquo;s Guide to the Galaxy </h3>
-<p>I first picked up Douglas Adams in my university days (I think at the prodding of <a href="http://nandinisniche.blogspot.com/">Nandini</a>). But I picked up <a href="http://www.amazon.com/gp/product/0671742515?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0671742515">Long Dark Tea Time of the Soul</a> which made absolutely no sense. I was <a href="http://nimbupani.com/blog/god-is-no-w-here.html">infuriated at wasting my time reading such nonsense and gave up on it</a>. But after talking to <a href="http://twitter.com/maddyks">Maddyks</a> and <a href="http://twitter.com/grumpygorilla">Ashwin</a>, I decided to give <a href="http://www.amazon.com/gp/product/0345391802?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0345391802">The Hitchhiker&rsquo;s Guide to the Galaxy</a> a go. I am so glad I did! I haven&rsquo;t read a more funny sci-fi novel! I adore Marvin, the depressed robot so much! I did not appreciate the movie much, because I hadn&rsquo;t read the book then. But I need to watch it again! LOVE this book.</p></li>
-</ul>
-
-</div>
-  
-  
-
+<time datetime="2005-08-08T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>08</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/powder-puff-girl.html"> Powder Puff Girl</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/my-last-veena-performance.html">My Last Veena Performance</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-12-05T00:00:00-08:00" pubdate>Dec 5<span>th</span>, 2008</time>
-        
-         | <a href="/blog/my-last-veena-performance.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I started learning to play the <a href="http://en.wikipedia.org/wiki/Veena">Veena</a> when I was 11. It was the most irritating experience at that time. I did not want to play the Veena, I just wanted to read <a href="http://en.wikipedia.org/wiki/The_Adventures_of_Tintin">Tintin</a> or draw. But I stuck with it and learnt till I was in my X standard (&ldquo;O&rdquo; levels by singapore standards). When I came to <abbr title="Nanyang Technological University">NTU</abbr> I found a vibrant carnatic music scene (in the Indian carnatic music group called Shrutilaya) and I brought my (then) 5-year-old Veena all the way to Singapore to start playing and practicing. I also was getting training from the disciple of <a href="http://en.wikipedia.org/wiki/S._Balachander">Veena Balachander</a> and it was wonderful to learn about the maths and the rationale behind the structures of carnatic music. I learnt quite a bit and with a lot of enthusiasm. But my teacher left for India and my interest waned again. I never quite picked it up after that.</p>
-
-
-<p>Since 2004 I have not touched the Veena. Yesterday, realising I need to do something with it, I called <a href="http://www.sifas.org/">SIFAS</a> (the Indian Arts Association in Singapore) and asked about donating a Veena. They asked me to come today. It sank in today morning that I was going to give up my more-than-15-year-old Veena. So, I sat down to play something. What follows is the video of my performance. I was really bad at playing it, after such a long period of time (especially without the required clips and vaseline). This version of the Indian National Anthem is not even what I have been taught, but something I tried on my own. So it is doubly worse. But still, I have a permanent reminder of the Veena that has travelled the distance with me during my growing up years. Here it is, for your entertainment:</p>
-
-
-<p></p>
-
-<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/cTnXDDgG91Q&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/cTnXDDgG91Q&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
-
-
-<p>Video taken by <a href="http://deepak.jois.name">Deepak Jois</a></p>
-
-</div>
-  
-  
-
+<time datetime="2005-08-05T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>05</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/watch-us-and-learn.html"> Watch Us and Learn!</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/book-reviews-for-november.html">Book Reviews for November</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-12-03T00:00:00-08:00" pubdate>Dec 3<span>rd</span>, 2008</time>
-        
-         | <a href="/blog/book-reviews-for-november.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li>
-<h3>The Eyre Affair</h3>
-<p><a href="http://www.amazon.com/gp/product/0142001805?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0142001805">The Eyre Affair</a> is a quirky fantasy, science fiction and literary novel that captures the adventures of a detective called Thursday Next while trying to capture her arch enemy Acheron Hades. This novel is based on an alternative universe where <a href="http://en.wikipedia.org/wiki/Neanderthal">neanderthals</a> co-exist with humans (having been reverse engineered) and people keep <a href="http://en.wikipedia.org/wiki/Dodo">Dodos</a> as pets. It is a very humorous book and quite &ldquo;unputdownable&rdquo;. You will appreciate it a lot more if you are a fan of English Literature Classics - especially of <a href="http://en.wikipedia.org/wiki/Jane_Eyre">Jane Eyre</a>. I loved reading it. </p>
-</li>
-<li>
-<h3>The World According to Garp</h3>
-<p>
-<a href="http://www.amazon.com/gp/product/0679603069?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0679603069">The World According to Garp</a> is about an author and his famous mother who find themselves the object of adoration and insult as they are crowned as radical supporters of feminism (even though they are not). In the book, the protagonist (who writes in first person) finds himself famous as a feminist when his novel becomes popular as a feminist novel even though it was never written that way. Similarly, this novel too, evokes questions about feminism even though it is a piece of fiction. The novel features an extreme radical wing of feminism called Ellen Jamsians (who cut their tongues to show their support to a rape victim Ellen James whose tongue was cut by the rapists) - all this fictional of course. And how they hate the protagonist with a passion (even though other feminists adore him). Ironically, Ellen James herself hates the Ellen Jamesians. The radical Ellen Jamesians slowly lose their support and are even ridiculed by the end of the novel. Surely gets you thinking about feminism and its role in society. 
-</p>
-</li>
-<li>
-<h3>The Lost Cosmonaut</h3>
-<p>
-<a href="http://www.amazon.com/gp/product/0743289943?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0743289943">Lost Cosmonaut: Observations of an Anti-Tourist</a> is a travel book where the author visits states in Russia (<a href="http://en.wikipedia.org/wiki/Tatarstan">Tartarstan</a>, <a href="http://en.wikipedia.org/wiki/Kalmykia">Kalmykia</a>, <a href="http://en.wikipedia.org/wiki/Mari_El">Mari El</a>, and <a href="http://en.wikipedia.org/wiki/Udmurtia">Udmurtia</a>) that no tourist would ever want to visit. It is a fun book but occasionally drags through because there is not much to describe in these zones of anti-humanity. But there are a few fun facts about these places: Did you know that the Head of the Republic of Kalmykia is also the President of <a href="http://en.wikipedia.org/wiki/FIDE">FIDE</a> (chess organization) and that chess is compulsory as part of education? The last of the pagan believers of Europe live in Mari El and are believers of <a href="http://en.wikipedia.org/wiki/Marla_faith">Marla</a>? Udmurtia is where <a href="http://en.wikipedia.org/wiki/Mikhail_Kalashnikov">Mikhail Kalashnikov</a> (inventor of AK-47) lives? 
-</p>
-</li>
-<li>
-    <h3>The Vintage Book of Indian Writing</h3>
-    <p><a href="http://www.amazon.com/gp/product/0099731010?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0099731010">THE VINTAGE BOOK OF INDIAN WRITING 1947-1997</a> was quite disappointing. I think the tragedy of Indian fiction is more apparent when all these famous authors are put together. All their words sound similar - melancholic repetitive Indian recollections (except those by Satyajit Ray, R K Narayan and Vikram Seth). It seems all you need is a description of Indian habits and occurrences with a family plot to keep the story moving. Most of the stories are extracts from books, which don&rsquo;t seem to make much sense on their own. I was deeply disappointed by the choice of the story by Satyajit Ray (Big Bill), he has written numerous other creative stories. Likewise for R K Narayan. I have NO IDEA what Kiran Desai was doing there in that book (Maybe she was featured just because her mother (Anita Desai) was featured?). Best not to read this one.</p>
-</li>
-</ul>
-
-</div>
-  
-  
-
+<time datetime="2005-08-05T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>05</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/i-geek.html"> I, Geek</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/goals-for-2009.html">Goals for 2009</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-12-01T00:00:00-08:00" pubdate>Dec 1<span>st</span>, 2008</time>
-        
-         | <a href="/blog/goals-for-2009.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Here is what I hope to achieve in 2009 (given that I hardly achieved anything I set out to achieve in 2008). I hope to keep blogging my progress with my goals.</p>
-
-
-<h3>Blog/Interest Goals</h3>
-
-
-<ul>
-    <li>Blog at least once a week</li>
-    <li>Complete reading <a href="http://is.gd/9HKH">Web Analytics book</a></li>
-    <li>Upgrade Blog to <a href="http://drupal.org/drupal-6.0">Drupal 6</a> (waiting for all my cherished modules to become available in Drupal 6!)</li>
-    <li>Implement SEO strategies while analysing metrics for my blog (and blog about it!)</li>
-    <li>Read <abbr title="World Wide Web Consortium">W3C</abbr>&rsquo;s <a href="http://www.w3.org/TR/REC-html40/">HTML 4 specifications</a></li>
-    <li>Read <a href="http://reference.sitepoint.com/css">Sitepoint&rsquo;s CSS Stylesheet reference</a> (and blog about this and the above)</li>
-</ul>
-
-
-<h3>Personal Goals</h3>
-
-
-<ul>
-    <li>Go to Gym every alternate day</li>
-    <li>Lose 5 Kgs and keep those kilos off</li>
-    <li>Learn Driving</li>
-    <li>Illustrate once a week</li>
-    <li>Set up Etsy shop to sell my illustration prints</li>
-    <li>Attend web specific conferences like SXSW/Web Directions North</li> 
-</ul>
-
-</div>
-  
-  
-
+<time datetime="2005-08-03T00:00:00-07:00" pubdate><span class='month'>Aug</span> <span class='day'>03</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/the-raging-ruins.html"> The Raging Ruins</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/review-of-the-dip.html">Review of the Dip</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-11-30T00:00:00-08:00" pubdate>Nov 30<span>th</span>, 2008</time>
-        
-         | <a href="/blog/review-of-the-dip.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I borrowed <a href="http://www.amazon.com/gp/product/1591841666?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1591841666">The Dip: A Little Book That Teaches You When to Quit (and When to Stick)</a> from the library, hoping to read it casually within a day. But I ended up reading it <em>twice</em> over the day and taking copious notes. I came away inspired to continue my goals. Here is what I learnt from The Dip:</p>
-
-<ul>
-    <li>
-        <h3>Getting through the dip gives you success</h3>
-        <p>The thing is to know if you are in a dip or in a cul-de-sac (where no amount of effort will give you a result, or a cliff, where the more effort you put, it only becomes worse). Ability to push through moments when others tend to quit gives you the edge. To help you get through the dip, decide before you start working on your goal, when you would quit. Quitting at the height of great pain, is an emotional (short-term) decision rather than a strategic (long-term) decision.</p>
-    </li>
-    <li><h3>Create a dip big enough, so you always stay ahead of competition</h3>
-        <p>Apple&rsquo;s iTunes is an example of a successful product which has created a big Dip that is very hard for competitors to pass through. Quit other business if they are not helping you in the main goal. </p>
-    </li>
-    <li>The opposite of quitting is rededication. Give yourself fully to another goal.</li>
-    <li>Mostly, when people quit, they are focused on the short-term benefits (&#8220;less of&#8221; or &#8220;more of&#8221; something).</li>
-    <li><h3>Questions to ask when quitting</h3>
-        <p><strong>Am I Panicking?</strong> - Am I quitting under great pain or quitting as a strategy?</p>
-        <p><strong>Who am I trying to influence?</strong> - Am I trying to change the perception of 1 person or targeting a marketplace?</p>
-        <p><strong>What sort of measurable progress am I making?</strong> - Check if I am in a dip or a cul-de-sac or a cliff.</p>
-    </li>       
-</ul>
-
-
-<p>I strongly recommend reading The Dip. I realised I quit my goal of losing 5 <abbr title="Kilo Grams">Kg</abbr> simply because the pain was great (going daily to the gym) and not because I decided it as a strategy. My new goal is to go to gym alternate days and use the rest days to diet healthily to lose weight.</p>
-
-
-<p>In some areas like in freelancing, I had decided on a quitting goal (didn&rsquo;t know about The Dip at that time) before I even started on my work and kept savings for the worst-case scenario. It helped me get through the dip (some days when I was working throughout the weekdays/weekends/midnights) and get well paying clients who recognised my worth. </p>
-
-
-<p>Coming up shortly, is my list of goals for 2009. </p>
-
-
-<p><a href="http://blog.guykawasaki.com/2007/04/the_big_dip_ten.html">Here is an informative interview</a> with <a href="http://www.squidoo.com/seth">Seth Godin</a> by Guy Kawasaki about The Dip.</p>
-
-</div>
-  
-  
-
+<time datetime="2005-07-31T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>31</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/automatically-backing-up-your-website.html"> Automatically Backing Up Your Website</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/book-review-for-october-08.html">Book Review for October 08</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-11-19T00:00:00-08:00" pubdate>Nov 19<span>th</span>, 2008</time>
-        
-         | <a href="/blog/book-review-for-october-08.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I recently started reading a lot of books (going through 1 book a day sometimes!), so thought it was a good idea to keep track of what I read. Here are some of the books I read recently:</p>
-
-
-<ul>
-<li>
-<h3>What is the What</h3>
-<p><a href="http://en.wikipedia.org/wiki/What_Is_the_What:_The_Autobiography_of_Valentino_Achak_Deng">What is the What</a> is written by <a href="http://en.wikipedia.org/wiki/Dave_Eggers">Dave Eggers</a> based on the true story of Valentino Achak Deng who was a refugee who got amnesty in United States. What is the What is a proverb of Sudanese origin which keeps recurring throughout the story. The whole book is very heartbreaking. The image that remains in my mind is that of an Ethiopian soldier who beckons the child refugees to come closer calling out &#8220;Come to Mother!&#8221;, only to shoot them down when they are close enough. The depravity of human nature shocked me. This book covers similar areas like <a href="http://www.amazon.com/gp/product/0375703772?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0375703772">Emma&#8217;s War</a> only more personal and in the point of view of child refugees.</p>
-<p>A book to read for sure, just to be aware of the violent nature of man and be thankful for the placid existence that most of us have.</p>
-</li>
-<li>
-    <h3>Gods and Pawns</h3>
-    <p>
-        <a href="http://www.amazon.com/gp/product/076531553X?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=076531553X">Gods and Pawns (The Company)</a> is a collection of stories about time traveling by the cyborgs of the future to preserve and create items of value from the past to be sold for big profit in the future. Some of the stories are quite funny and the very idea of cyborgs who occur like Gods to normal human beings is very realistic and offers quite a variety of stories. <a href="http://en.wikipedia.org/wiki/Kage_Baker">Kage Baker&#8217;s</a> knowledge of history is quite extensive and this novel offers a good view of life in the times past. 
-    </p>
-</li>
-<li>
-    <h3>The Towers of Trebizond</h3>
-    <p>
-        <a href="http://www.amazon.com/gp/product/159017058X?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=159017058X">The Towers of Trebizond (New York Review Books Classics)</a><img src="http://www.assoc-amazon.com/e/ir?t=nimbupani-20&l=as2&o=1&a=159017058X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> is a really comic but sometimes emotional book on the travels of Laurie in Turkey with her aunt Dot and a priest Father Chantry-Pigg who are looking to convert Turkish muslims into angelican christians. The book delves in detail about Angelican Christianity and about adultery. I didn&#8217;t realise &#8220;Laurie&#8221; was a woman till I read the <a href="http://en.wikipedia.org/wiki/The_Towers_of_Trebizond">wikipedia review on the book</a> :) Some of the action described are very far fetched but then it is fiction. 
-    </p>
-</li>
-<li>
-    <h3>White Man Falling</h3>
-    <p>
-        <a href="http://www.amazon.com/gp/product/1846880246?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1846880246">White Man Falling</a> is a humorous book about the travails of one R S Swaminathan, a retired police office in a small town of Tamil Nadu when a white man falls before him and dies. I am amazed that a &#8220;white man&#8221; could write so much in depth about the Tamizh milieu so accurately. By the middle of the book, the &#8220;Indian English&#8221; used in the character&#8217;s dialogues was irritating and blocking the description and the story. If at all, Indian English must have been used, it could have been &#8220;Tanglish&#8221; which would be more suited for the story. I guess the author did not know that much about Tamil Nadu after all. Also, Tamilians dont squeal &#8220;Adaa daa daa&#8221;, they go &#8220;Ada ada ada ada&#8221;. I liked the sub-plot of the villain who, after realising his wrongdoings, atones his sins in a temple rather than face legal justice. That is truly the way it happens in India. 
-    </p>
-    <p>But overall, a good book to pass time with and if you are looking to poke into the psyche of tamilians.</p>
-</li>
-<li>
-    <h3>The In-between World of Vikram Lall</h3>
-    <p>
-        <a href="http://www.amazon.com/gp/product/1400076560?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1400076560">The In-Between World of Vikram Lall</a> is a novel of a 3rd generation Indian-Kenyan who is on the run from his country following a conviction for corruption. Meanwhile, we get to glimpse forbidden love between his sister and his Kenyan Kikuyu friend, the gradual degeneration of Kenya, from a country of hope, to a country of loot and corruption. Also glimpsed is both the sides of the <a href="http://en.wikipedia.org/wiki/Mau_Mau_Uprising">Mau Mau Uprising</a>. It is a good read and I managed to read it within a day, it was that compelling.  
-    </p>
-</li>
-</ul>
-
-
-<p></p>
-
-<p>I am planning to make my reviews a more standard feature of my blog. Look out for the next 5!</p>
-
-</div>
-  
-  
-
+<time datetime="2005-07-30T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>30</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/portfolio-update-1.html"> Portfolio Update</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/emphasising-with-html.html">Emphasising With HTML</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-11-15T00:00:00-08:00" pubdate>Nov 15<span>th</span>, 2008</time>
-        
-         | <a href="/blog/emphasising-with-html.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>Update:</strong> I had given a wrong example of the <code>cite</code> element. It is corrected now. </p>
-
-
-<p>There are several ways to quote/emphasise using <abbr title="Hyper Text Markup Language">HTML</abbr>, you can use the <code>&lt;q&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code> and there are subscripts <code>&lt;sub&gt;</code> and superscripts <code>&lt;sup&gt;</code>. </p>
-
-
-<h3>What does each mean?</h3>
-
-
-<br/>
-
-
-<dl>
-    <dt>Quote</dt>
-    <dd><p>Quote is used for short quotes within paragraphs.</p> 
-        <p>Example</p>
-        <pre>
-<code>&lt;q&gt;All men and women are equal&lt;/q&gt;</code>
-        </pre>
-        <p>Opera, Safari and Firefox display quotes with double-quotes automatically. Internet Explorer does not render any quotes for text marked as quote. <a href="http://willcode4beer.com/tips.jsp?set=fixIEQuotes">Here is a way to display quotes in Internet Explorer</a></p></dd>
-        <dt>Blockquote</dt>
-        <dd><p>Blockquotes are used to mark up long quotations which may run into a few paragraphs. Ideally, you use a <code>&lt;p&gt;</code> to mark up a paragraph within a <code>&lt;blockquote&gt;</code> (even if there is only one paragraph).</p>
-        <p><a href="http://www.w3.org/TR/html4/struct/text.html#h-9.2.2">The Specs</a> state: </p>
-            <blockquote>
-                <p>Note. We recommend that style sheet implementations provide a mechanism for inserting quotation marks before and after a quotation delimited by BLOCKQUOTE in a manner appropriate to the current language context and the degree of nesting of quotations.</p>
-            <p>However, as some authors have used BLOCKQUOTE merely as a mechanism to indent text, in order to preserve the intention of the authors, user agents should not insert quotation marks in the default style.</p>
-            </blockquote>
-            <p>Monc.se has an <a href="http://www.monc.se/kitchen/129/rendering-quotes-with-css">excellent article on quotes with a special section on blockquotes</a> that helps to understand how to insert quotation marks using stylesheets for <code>blockquote</code>.</p>
-        </dd>
-        <dt>Cite</dt>
-        <dd>
-            <p>Contains a citation or a reference to other sources. <a href="http://www.w3.org/MarkUp/html-spec/html-spec_5.html#SEC5.7.1.1">The HTML 5 spec</a> states that <code>cite</code> is to indicate the title of a book or other citation. For example:</p>
-            <pre>
-As &lt;cite&gt;The White Mughals &lt;/cite&gt; states, 
-&lt;q&gt;A moment&#x27;s insight is sometimes worth a life&#x27;s experience.&lt;/q&gt;
-            </pre>
-        </dd>
-        <dt>em, strong</dt>
-        <dd>
-            <p><code>&lt;em&gt;</code> is used to indicate emphasis, while <code>&lt;strong&gt;</code> indicates stronger emphasis.</p>
-        </dd>
-        <dt>Code</dt>
-        <dd>
-            <p>To indicate a fragment of HTML or other programming instances. For example:</p>
-            <pre>
-&lt;code&gt;&lt;link type=&quot;image/x-icon&quot; href=&quot;/blog/files/nimbupani_favicon.ico&quot; rel=&quot;shortcut icon&quot;/&gt;&lt;/code&gt;
-            </pre>
-            <p>Code does not display the content in a fixed width font and requires <abbr title="Cascading Style Sheets">CSS</abbr> styling for it to do so. You also need to convert the angle brackets and other coding symbols into their respective HTML entities before they can be displayed without interfering with the HTML elements within the page.</p>
-        </dd>
-        <dt>Pre</dt>
-        <dd>
-            <p>The <code><a href="http://www.w3.org/TR/REC-html40/struct/text.html#edef-PRE">Pre</a></code> notifies the browsers that the text within that element is &#8220;preformatted&#8221; which means browsers can:</p>
-            <ul>
-                <li>leave the white space within the text intact.</li>
-                <li>render the text with a fixed width font (like courier).</li>
-                <li>disable automatic word wrap.</li>
-            </ul>
-            <p><code>pre</code> also requires the symbols of programming be converted into their respective HTML entities before they can be displayed as they would interfere with the other HTML elements within the page.</p>
-        </dd>
-        <dt>Superscripts and Subscripts</dt>
-        <dd>
-            <p><code>&lt;sup&gt;</code>, and <code>&lt;sub&gt;</code> are used to represent superscripts and subscripts. Some people recommend that, since it is for presentational use, to use CSS for them. <a href="http://www.personal.psu.edu/ejp10/blogs/tlt/2007/02/beware-css-for-superscriptsubc.html">This article</a> states why it is better to use unicode rather than <abbr title="Cascading Style Sheets">CSS</abbr> to replace them.</p>
-        </dd>
-</dl>
-
-</div>
-  
-  
-
+<time datetime="2005-07-29T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>29</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/mumbai-monsoons.html"> Mumbai Monsoons</a></h2>
 
     </article>
   
   
+  
+    
     <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/being-over-enthusiastic-about-accessibility.html">Being Over Enthusiastic About Accessibility</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-  
-
-<time datetime="2008-11-14T00:00:00-08:00" pubdate>Nov 14<span>th</span>, 2008</time>
-        
-         | <a href="/blog/being-over-enthusiastic-about-accessibility.html#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Sometimes as an accessibility newbie, whenever I am &ldquo;forced&rdquo; to use tables for layout, I use these attributes &ldquo;summary&rdquo;, &ldquo;headers&rdquo;, &ldquo;scope&rdquo; considering them the necessary ingredients for an accessible layout. But reading the <a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20080430/F46.html">Techniques for WCAG 2.0</a>, I realise that it is a mistake to do it that way.</p>
-
-
-<p> <p>From the technique description:</p><blockquote><p>When a table is used for layout purposes the th element should not be used. Since the table is not presenting data there is no need to mark any cells as column or row headers.</p> <p>Likewise, there is no need for an additional description of a table which is only used to layout content. Do not include a summary attribute and do not use the summary attribute to describe the table as, for instance, &ldquo;layout table&rdquo;. When spoken, this information does not provide value and will only distract users navigating the content via a screen reader. Empty summary attributes are acceptable on layout tables, but not recommended.</p></blockquote><p>Be wise, and don&rsquo;t use tables for layout if you can help it. But if you have no choice, then dont use the full suite of accessible tables because it will only hinder the navigation for those using screen readers.</p></p>
-</div>
-  
-  
-
+<time datetime="2005-07-28T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>28</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/state-of-the-nation.html"> State of the Nation</a></h2>
 
     </article>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/blog/page/11/">&larr; Older</a>
-    
-    <a href="/blog/blog/archives">Blog Archives</a>
-    
-    <a class="next" href="/blog/blog/page/9/">Newer &rarr;</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
+  
     
-      <li class="post">
-        <a href="/blog/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a>
-      </li>
+    <article>
+      
+<time datetime="2005-07-27T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>27</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/web-design-standards-and-why-you-need-them.html"> Web Design Standards and Why you Need them</a></h2>
+
+    </article>
+  
+  
+  
     
-      <li class="post">
-        <a href="/blog/some-css-transition-hacks.html">Some CSS Transition hacks</a>
-      </li>
+    <article>
+      
+<time datetime="2005-07-25T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>25</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/are-they-us.html"> Are they us</a></h2>
+
+    </article>
+  
+  
+  
     
-      <li class="post">
-        <a href="/blog/safe-css-defaults.html">Safe CSS Defaults</a>
-      </li>
+    <article>
+      
+<time datetime="2005-07-24T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>24</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/lazy-weekend.html"> Lazy Weekend</a></h2>
+
+    </article>
+  
+  
+  
     
-      <li class="post">
-        <a href="/blog/unplugged-2011.html">Unplugged 2011</a>
-      </li>
+    <article>
+      
+<time datetime="2005-07-23T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>23</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/birthday-suite.html"> Birthday Suite</a></h2>
+
+    </article>
+  
+  
+  
     
-      <li class="post">
-        <a href="/blog/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a>
-      </li>
+    <article>
+      
+<time datetime="2005-07-17T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>17</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/bloggers-sg.html"> Bloggers.SG</a></h2>
+
+    </article>
+  
+  
+  
     
-  </ul>
+    <article>
+      
+<time datetime="2005-07-17T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>17</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/bloggercon-update.html"> BloggerCon Update&#8230;</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-14T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>14</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/nkf-fiasco.html"> NKF Fiasco</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-12T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>12</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/nimbupanis-first-exhibited-artwork.html"> Nimbupani&#8217;s First Exhibited Artwork</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-11T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>11</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/dus-and-other-interesting-incidents.html"> Dus and Other Interesting Incidents</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-10T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>10</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/character-design-workshop.html"> Character Design Workshop</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-07T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>07</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/violence-never-worked.html"> Violence Never Worked</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-07-07T00:00:00-07:00" pubdate><span class='month'>Jul</span> <span class='day'>07</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/the-illusion-of-free-will.html"> The Illusion of Free Will</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-30T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>30</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/mrs-goh-chok-tong.html"> Mrs. Goh Chok Tong</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-29T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>29</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/pa2-blogs.html"> Pa2 Blogs</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-27T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>27</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/fresh-kills-from-prowl.html"> Fresh Kills from a prowl</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-26T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>26</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/getting-entries-done.html"> Getting Entries Done</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-15T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>15</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/moving-out.html"> Moving Out</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-12T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>12</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/who-makes-the-cities.html"> Who Makes the Cities?</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-11T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>11</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/portfolio-update-0.html"> Portfolio Update</a></h2>
+
+    </article>
+  
+  
+  
+    
+    <article>
+      
+<time datetime="2005-06-09T00:00:00-07:00" pubdate><span class='month'>Jun</span> <span class='day'>09</span> <span class='year'>2005</span></time>
+<h2><a href="/blog/aromas-cafe.html"> Aromas Cafe</a></h2>
+
+    </article>
+  
+</div>
+  
+</article>
+
 </section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("divya", 4, false);
-    });
-  </script>
-  <script src="/blog/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/divya" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @divya</a>
-  
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
   </div>
+  <section id="articles">
+    <h2>Web Development</h2>
+    <ul>
+              
+        <li><a href="/blog/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a></li>
+              
+        <li><a href="/blog/some-css-transition-hacks.html">Some CSS Transition hacks</a></li>
+              
+        <li><a href="/blog/safe-css-defaults.html">Safe CSS Defaults</a></li>
+              
+        <li><a href="/blog/unplugged-2011.html">Unplugged 2011</a></li>
+              
+        <li><a href="/blog/bokeh-with-css3-gradients.html">Bokeh with CSS3 Gradients</a></li>
+              
+        <li><a href="/blog/making-pure-css3-demos-better.html">Making "Pure CSS3" demos better</a></li>
+              
+        <li><a href="/blog/web-opener-at-opera.html">Web Opener at Opera</a></li>
+              
+        <li><a href="/blog/current-color-in-css.html">Current Color in CSS</a></li>
+              
+        <li><a href="/blog/css-vocabulary.html">CSS Vocabulary</a></li>
+              
+        <li><a href="/blog/active-web-development.html">Active Web Development</a></li>
+              
+        <li><a href="/blog/sexy-css3-buttons.html">Sexy CSS3 Buttons</a></li>
+              
+        <li><a href="/blog/accessible-css-barcharts.html">Accessible CSS Barcharts</a></li>
+              
+        <li><a href="/blog/svg-is-coming.html">SVG is coming!</a></li>
+              
+        <li><a href="/blog/wee-marquee.html">Wee! Marquee</a></li>
+              
+        <li><a href="/blog/vignettes-with-css3-box-shadows.html">Vignettes with CSS3 Box Shadows</a></li>
+              
+        <li><a href="/blog/drop-shadows-with-css3.html">Drop Shadows with CSS3</a></li>
+              
+        <li><a href="/blog/diversity.html">Diversity</a></li>
+              
+        <li><a href="/blog/notes-from-javascript-n00b.html">Notes from a JavaScript n00b</a></li>
+              
+        <li><a href="/blog/spacing-out-on-css-namespaces.html">Spacing Out on CSS Namespaces</a></li>
+              
+        <li><a href="/blog/notes-from-html5-readiness-hacking.html">Notes from HTML5 Readiness Hacking</a></li>
+                    
+      <li><a class="btn" href="/categories/web-development/">More</a></li>
+    </ul>
+  </section>
   <footer role="contentinfo"><p>
   Copy to your heart’s content 2011 - Divya Manian -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>  
@@ -848,19 +422,6 @@ As &lt;cite&gt;The White Mughals &lt;/cite&gt; states,
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'nimbu';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 
