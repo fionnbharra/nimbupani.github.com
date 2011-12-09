@@ -607,6 +607,18 @@ article footer {
   margin-top: 8em;
 }
 
+#articles::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: khaki;
+  content: "";
+  height: 20em;
+  z-index: -1;
+  display: block;
+  margin-top: -0.5em;
+}
+
 #articles li {
   list-style: none;
   line-height: 1.5;
