@@ -265,7 +265,7 @@ td {
   display: none;
 }
 
-.hidden, body > nav form {
+.hidden, .sitenav form {
   display: none !important;
   visibility: hidden;
 }
@@ -337,7 +337,7 @@ body header[role="banner"] h2 {
   font-size: 1.5em;
 }
 
-.less-focus, h5, section h4, section section h3, body > nav a, article footer, #articles li {
+.less-focus, h5, section h4, section section h3, .sitenav a, article footer, #articles li {
   font-size: 0.9em;
 }
 
@@ -349,13 +349,13 @@ section section section h3, article > header time, footer[role="contentinfo"], .
   color: #4c561d;
 }
 
-.large-focus, article .entry-content p:first-child {
+.large-focus {
   font-size: 1.2em;
 }
 
 .larger-focus, h2,
 section h1,
-a.btn {
+a.btn, article .entry-content > p:first-child {
   font-size: 1.5em;
 }
 
@@ -367,8 +367,8 @@ article > header h1, #articles li, .blog-archives article h2 {
 }
 
 .inline-block, .icons, .twitter, .youtube, .rss, body header[role="banner"] h1,
-body header[role="banner"] h2, #articles li, #articles .btn, nav.article a.previous,
-nav.article a.next, .blog-archives article time {
+body header[role="banner"] h2, nav.article a.next,
+nav.article a.previous, #articles li, #articles .btn, .blog-archives article time {
   display: inline-block;
 }
 
@@ -388,7 +388,9 @@ nav.article a.next, .blog-archives article time {
   overflow: hidden;
 }
 
-.default-width, body, nav.article {
+.default-width, .content,
+#articles,
+footer[role="contentinfo"] {
   padding: 0 3em;
   max-width: 48em;
   margin: 0 auto;
@@ -525,7 +527,8 @@ blockquote cite:before {
 }
 
 body {
-  color: #4f3232;
+  color: #767171;
+  background: #301e1e;
 }
 
 a {
@@ -549,8 +552,9 @@ li {
   margin-bottom: 1em;
 }
 
-body {
+.container {
   background: url('/blog/images/bgnoise_lg.png?1322798400');
+  padding-bottom: 3em;
 }
 
 body header[role="banner"] h1,
@@ -559,12 +563,14 @@ body header[role="banner"] h2 {
 }
 
 body header[role="banner"] h2 {
-  opacity: 1;
   margin-left: 0.5em;
 }
 
-body header[role="banner"]:hover h2 {
-  opacity: 1;
+body header[role="banner"] h2 a:nth-child(2) {
+  background-color: #90a935;
+}
+body header[role="banner"] h2 a:nth-child(3) {
+  background-color: #d24739;
 }
 
 .twitter {
@@ -580,18 +586,31 @@ body header[role="banner"]:hover h2 {
   background-size: 10px 10px;
 }
 
-body > nav {
+.sitenav {
   text-align: right;
-  margin: 2em 0 10em 0;
+  margin: 0 0 10em 0;
+  padding-top: 2em;
 }
 
-body > nav a {
+.sitenav a {
   margin: 0 0.5em;
 }
 
-body > header {
+header[role="banner"] {
   float: left;
-  margin-top: 1em;
+  margin-top: 4em;
+}
+
+nav.article {
+  white-space: nowrap;
+}
+nav.article a.next,
+nav.article a.previous {
+  font-size: 4em;
+  line-height: 1;
+  cursor: pointer;
+  width: 1em;
+  text-align: left;
 }
 
 article > header {
@@ -620,7 +639,7 @@ article footer {
 }
 
 #articles {
-  margin-top: 8em;
+  margin-top: 3em;
 }
 
 #articles li {
@@ -632,20 +651,40 @@ article footer {
   border-bottom: 1px dotted;
 }
 
-#articles .btn {
-  width: 100%;
-  line-height: 0;
-  vertical-align: middle;
-  text-align: right;
+#articles li:last-child {
+  overflow: visible;
+  padding-bottom: 0;
+}
+#articles li:last-child:hover {
+  background: -o-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
+  background: -webkit-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
+  background: -moz-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
+  background: -ms-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
+}
+#articles li:last-child:hover .btn::after {
+  position: absolute;
+  top: -0.3em;
+  right: -0.9em;
+  width: 0;
+  height: 0;
+  border-top: 0.8em solid transparent;
+  border-bottom: 0.8em solid transparent;
+  border-left: 0.8em solid #d58742;
+  content: "";
+  display: block;
 }
 
-#articles .btn::after {
-  content: "❭";
-  padding-left: 0.15em;
+#articles .btn {
+  width: 100%;
+  line-height: 1.3;
+  text-align: right;
+  position: relative;
+  height: 100%;
 }
 
 footer[role="contentinfo"] {
-  margin: 3em 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .blog-archives article {
@@ -671,23 +710,24 @@ footer[role="contentinfo"] {
 
 @media (min-width: 800px) {
   nav.article {
+    width: 48em;
     position: fixed;
     height: 8em;
-    width: 48em;
     margin: 1em 0 0 0;
     z-index: -1;
-    white-space: nowrap;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
   }
 
   nav.article a.previous,
   nav.article a.next {
-    font-size: 4em;
-    line-height: 1;
     height: 100%;
-    cursor: pointer;
     width: 50%;
+    margin: 0 0.4em 0 -1em;
     text-align: left;
-    margin: 0 2.5em 0 -2em;
   }
 
   nav.article a.next {
@@ -720,6 +760,8 @@ footer[role="contentinfo"] {
 
 #dsq-content .dsq-avatar img {
   border-radius: 50em !important;
+  border: 3px solid #767171 !important;
+  box-sizing: margin-box !important;
 }
 
 .dsq-comment-header {
@@ -730,13 +772,15 @@ footer[role="contentinfo"] {
   border-radius: 0 10em 10em 0 !important;
 }
 
-.dsq-comment-body {
+.dsq-comment-body,
+#dsq-footer {
   padding-left: 36px !important;
 }
 
 #dsq-content .dsq-comment-meta li,
 #dsq-content .dsq-comment-actions li,
-#dsq-sort-by select {
+#dsq-sort-by select,
+#dsq-footer {
   font-size: 0.8em !important;
 }
 

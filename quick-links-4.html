@@ -25,13 +25,16 @@ Webpages that sell ">
   
 </head>
 
+
 <body >
-  <header role="banner">  <h1><a href="/blog/">Divya Manian</a></h1>
+  <div class="container">
+    <div class="content">
+      <header role="banner">  <h1><a href="/blog/">Divya Manian</a></h1>
   
   <h2><a class="twitter" href="https://twitter.com/divya">twitter</a> <a class="rss" href="http://feeds.feedburner.com/nimbupani">RSS Feed</a> <a class="youtube" href="http://youtube.com/nimbupani">Youtube Channel</a></h2>
   
 </header>
-  <nav><form action="http://google.com/search" method="get">
+      <nav class="sitenav"><form action="http://google.com/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:nimbupani.github.com/blog" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
@@ -40,19 +43,18 @@ Webpages that sell ">
 <a href="/blog/">Home</a>
 <a href="/blog/blog/archives">Archives</a>
 <a href="/blog/about">About</a>
-</nav>
-  <div id="main">
-      <nav class="article">
-  
-    <a class="previous" href="/blog/kerry-edwards-logo-flip-flop.html" title=" Kerry-Edwards Logo Flip Flop!">❬</a>      
-  
-  
-    <a class="next" href="/blog/icon-creator.html" title=" Icon Creator">❭</a>              
-   
-  
-             
-</nav>
-<article>
+</nav>    
+      <article>
+  <nav class="article">
+    
+      <a class="previous" href="/blog/kerry-edwards-logo-flip-flop.html" title=" Kerry-Edwards Logo Flip Flop!">❬</a>      
+    
+    
+      <a class="next" href="/blog/icon-creator.html" title=" Icon Creator">❭</a>              
+     
+    
+               
+  </nav>
     <header>
     
 
@@ -90,7 +92,7 @@ Webpages that sell ">
 
 <time datetime="2004-10-09T00:00:00-07:00" pubdate><span class='month'>Oct</span> <span class='day'>09</span> <span class='year'>2004</span></time> in 
 
- with  <a href="/blog/quick-links-4.html#disqus_thread">Comments</a>.       
+ .       
     </p>
   </footer>
 </article>
@@ -101,9 +103,10 @@ Webpages that sell ">
 </div>
   </section>
 
-
+      
+    </div>
   </div>
-  <section id="articles">
+  <aside id="articles">
     <h2>Posts on Web Development</h2>
     <ul>
               
@@ -149,7 +152,7 @@ Webpages that sell ">
                     
       <li><a class="btn" href="/blog/categories/web-development/">More</a></li>
     </ul>
-  </section>
+  </aside>
   <footer role="contentinfo"><p>
   Copy to your heart’s content 2011 - Divya Manian -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>  
@@ -161,16 +164,18 @@ Webpages that sell ">
 
 <script type="text/javascript">
       var disqus_shortname = 'nimbublog';
+      var disqus_developer = 1;        
+      
+      
+        var disqus_url = 'http://nimbupani.com/quick-links-4.html';
+        var disqus_identifier = 'http://nimbupani.com/quick-links-4.html';                
       
         
-        var disqus_developer = 1;        
-        var disqus_url = 'http://nimbupani.com/quick-links-4.html';
-        var disqus_identifier = 'http://nimbupani.com/quick-links-4.html';        
-        var disqus_script = 'embed.js';
+        
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
