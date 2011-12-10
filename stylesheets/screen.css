@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -396,7 +395,6 @@ footer[role="contentinfo"] {
   margin: 0 auto;
 }
 
-/* non highlighted code colors */
 @font-face {
   font-family: 'OstrichBlack';
   src: url('/fonts/ostrich-black-webfont.woff') format("woff"), url('/fonts/ostrich-black-webfont.ttf') format("truetype");
