@@ -553,7 +553,7 @@ li {
 }
 
 .container {
-  background: url('/images/bgnoise_lg.png?1322798400');
+  background: url('/images/bgnoise_lg.png?1323546739');
   padding-bottom: 3em;
 }
 
@@ -574,15 +574,15 @@ body header[role="banner"] h2 a:nth-child(3) {
 }
 
 .twitter {
-  background-image: url('/images/twitter.png?1297632142');
+  background-image: url('/images/twitter.png?1323546739');
 }
 
 .youtube {
-  background-image: url('/images/youtube.png?1323313366');
+  background-image: url('/images/youtube.png?1323546739');
 }
 
 .rss {
-  background-image: url('/images/rss.png?1297632316');
+  background-image: url('/images/rss.png?1323546739');
   background-size: 10px 10px;
 }
 
