@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -306,7 +307,8 @@ td {
   *zoom: 1;
 }
 
-.heading, h1, h2, h3, h4, h5, h6 {
+.heading, h1, h2, h3, h4, h5, h6,
+a.btn {
   font-family: "OstrichBlack", sans-serif;
   font-weight: normal;
 }
@@ -344,26 +346,28 @@ section h5,
 section section h4,
 section section section h3, article > header time, footer[role="contentinfo"], .blog-archives article time {
   font-size: 0.7em;
-  color: #999999;
+  color: #4c561d;
 }
 
 .large-focus, article .entry-content p:first-child {
   font-size: 1.2em;
 }
 
-.larger-focus, h2, section h1 {
+.larger-focus, h2,
+section h1,
+a.btn {
   font-size: 1.5em;
 }
 
 .zeropaddingmargin, body header[role="banner"] h1,
 body header[role="banner"] h2, article > header time,
-article > header h1, #articles li, .blog-archives article h2, nav.article a.next {
+article > header h1, #articles li, .blog-archives article h2 {
   margin: 0;
   padding: 0;
 }
 
 .inline-block, .icons, .twitter, .youtube, .rss, body header[role="banner"] h1,
-body header[role="banner"] h2, #articles li, nav.article a.previous,
+body header[role="banner"] h2, #articles li, #articles .btn, nav.article a.previous,
 nav.article a.next, .blog-archives article time {
   display: inline-block;
 }
@@ -372,15 +376,22 @@ nav.article a.next, .blog-archives article time {
   width: 24px;
   height: 24px;
   background-position: center center;
-  background-color: black;
+  background-color: #d58742;
   border-radius: 10em;
   background-size: 12px 12px;
+  vertical-align: middle;
 }
 
 .ellipsis, #articles li, .blog-archives article h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.default-width, body, nav.article {
+  padding: 0 3em;
+  max-width: 48em;
+  margin: 0 auto;
 }
 
 /* non highlighted code colors */
@@ -404,11 +415,12 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-  article .entry-title {
+  article .entry-title,
+  article .archive-title {
     font-size: 4em;
   }
 }
-h1.entry-title {
+h1.entry-title, h1.archive-title {
   font-family: "OstrichBold", sans-serif;
 }
 
@@ -416,7 +428,9 @@ h1.entry-title {
   font-weight: bold;
 }
 
-h2, section h1 {
+h2,
+section h1,
+a.btn {
   margin-bottom: 0;
 }
 
@@ -511,34 +525,32 @@ blockquote cite:before {
 }
 
 body {
-  color: #222222;
+  color: #4f3232;
 }
 
 a {
-  color: #1863a1;
+  color: #548c9a;
   text-decoration: none;
 }
 a:visited {
-  color: #1863a1;
+  color: #548c9a;
 }
 a:focus {
-  color: #0181eb;
+  color: #54b5cd;
 }
 a:hover {
-  color: #0181eb;
+  color: #54b5cd;
 }
 a:active {
-  color: #01579f;
+  color: #308da4;
 }
 
 li {
   margin-bottom: 1em;
 }
 
-body, nav.article {
-  padding: 0 3em;
-  max-width: 48em;
-  margin: 0 auto;
+body {
+  background: url('/blog/images/bgnoise_lg.png?1322798400');
 }
 
 body header[role="banner"] h1,
@@ -599,24 +611,16 @@ article > header time::before,
   margin-right: 0.5em;
 }
 
+article > header .archive-title {
+  padding-top: 0.46em;
+}
+
 article footer {
   margin: 3em auto 5em;
 }
 
 #articles {
   margin-top: 8em;
-}
-
-#articles::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: khaki;
-  content: "";
-  height: 20em;
-  z-index: -1;
-  display: block;
-  margin-top: -0.5em;
 }
 
 #articles li {
@@ -626,6 +630,18 @@ article footer {
   width: 100%;
   vertical-align: top;
   border-bottom: 1px dotted;
+}
+
+#articles .btn {
+  width: 100%;
+  line-height: 0;
+  vertical-align: middle;
+  text-align: right;
+}
+
+#articles .btn::after {
+  content: "❭";
+  padding-left: 0.15em;
 }
 
 footer[role="contentinfo"] {
@@ -665,17 +681,17 @@ footer[role="contentinfo"] {
 
   nav.article a.previous,
   nav.article a.next {
-    color: #cccccc;
     font-size: 4em;
     line-height: 1;
     height: 100%;
     cursor: pointer;
     width: 50%;
     text-align: left;
-    margin: 0 2em 0 -2em;
+    margin: 0 2.5em 0 -2em;
   }
 
   nav.article a.next {
+    margin: 0;
     text-align: right;
   }
 
@@ -697,6 +713,11 @@ footer[role="contentinfo"] {
     line-height: 3em;
   }
 }
+#dsq-content .dsq-avatar {
+  left: 10px !important;
+  z-index: 2 !important;
+}
+
 #dsq-content .dsq-avatar img {
   border-radius: 50em !important;
 }
@@ -711,19 +732,6 @@ footer[role="contentinfo"] {
 
 .dsq-comment-body {
   padding-left: 36px !important;
-}
-
-.dsq-comment-header::before {
-  position: absolute;
-  left: -34px;
-  top: -5px;
-  border-radius: 5em;
-  height: 129%;
-  left: -48px;
-  top: -5px;
-  width: 54px;
-  background: white;
-  content: "";
 }
 
 #dsq-content .dsq-comment-meta li,
