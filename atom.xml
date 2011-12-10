@@ -1,0 +1,1713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Divya Manian]]></title>
+  <link href="http://nimbupani.github.com/atom.xml" rel="self"/>
+  <link href="http://nimbupani.github.com/"/>
+  <updated>2011-12-10T11:44:10-08:00</updated>
+  <id>http://nimbupani.github.com/</id>
+  <author>
+    <name><![CDATA[Divya Manian]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[This revolution needs new revolutionaries]]></title>
+    <link href="http://nimbupani.github.com/this-revolution-needs-new-revolutionaries.html"/>
+    <updated>2011-05-21T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/this-revolution-needs-new-revolutionaries</id>
+    <content type="html"><![CDATA[<p>In early 2000s, when the web was in its infancy, a great number of committed activists made Open Web Standards possible. They advocated, wrote the specifications, explained them to the masses, and contributed to the revolution of using W3C Specs on the web. I owe each of them my career as a Web Designer/developer.</p>
+
+
+
+
+<p>Now, we are in the middle of another revolution. The web as we know it is changing significantly. The ways of doing, implementing and working with web pages have altered. Designing with the right semantic tags or using floats instead of tables are no longer the simple goals of a good web page. We need the pages to load quickly, use the faster newer CSS selectors and DOM APIs, and better ways to create animations, dynamic images, and dealing with how to design for a variety of devices that now have browsers. </p>
+
+
+
+
+<p>The best way to be a part of the revolution is to BE the revolution, not talk ABOUT the revolution. A lot of recognized individuals seem to be doing the latter. To BE the revolution, you just need to look at what some of the people at the fore-front of it are doing: <a href="http://paulirish.com">Paul Irish</a> and <a href="http://farukat.es/">Faruk Ateş</a> have made the future accessible with <a href="http://modernizr.com">Modernizr</a>. <a href="http://peter.sh/">Peter Beverloo</a> created the <a href="http://peter.sh/category/last-week/">&#8220;Last Week in…&#8221;</a> series that has been re-adopted by <a href="http://www.w3.org/QA/archive/open_web/">W3C</a> and <a href="http://blog.whatwg.org/category/weekly-review">WHATWG</a> where you can keep up with the pace of creation and implementation of web specifications. <a href="http://www.scottjehl.com/">Scott Jehl</a> created <a href="https://github.com/scottjehl/Respond">Respond.js</a> which lets older browsers understand media queries, <a href="http://www.blog.highub.com/">Shi Chuan</a> made designing for multiple devices easy by exhaustive research for <a href="http://html5boilerplate.com/mobile/">HTML5 Mobile Boilerplate</a>. Jon Neal made practical use of HTML5 elements easy with <a href="http://www.iecss.com/print-protector/">IE Print Protector</a>. <a href="http://leaverou.me/">Lea Verou</a> has been <a href="http://leaverou.me/2010/07/organizing-a-university-course-on-modern-web-development/">teaching web development</a> and is the author of significant articles on web development. <a href="http://www.accessibleculture.org/">Jason Kiss</a> has been documenting how <a href="http://www.accessibleculture.org/research/html5-aria-2011/">HTML5 elements, ARIA work with different Screen readers</a> without much fanfare. <a href="http://nicolasgallagher.com/">Nicolas Gallagher</a>, <a href="http://www.thecssninja.com/">Ryan Seddon</a>, <a href="http://mathiasbynens.be/">Mathias Bynens</a> and several others have been doing similar practical investigations on how to use what’s new and awesome in real life scenarios.</p>
+
+
+<p></p>
+
+<p>But these are not the people who are known revolutionaries. Unfortunately, the people who seem to be recognized for pushing the envelope are people who talk ABOUT the change, those who split hairs on whether to call something &#8220;Responsive&#8221; or &#8220;Adaptive&#8221; or speak about HTML5/CSS3 but have very little code to show for their understanding of it. </p>
+
+
+
+
+<p>Now is the time to get developers on board the new rush of web standards, not to promote litigation on the presence or absence of a single HTML attribute, or debate a merits of the name of a technique. What it does is to deflect attention from learning, instead directs developers to spend more time beating about the bush and not be fully engaged in what’s coming.</p>
+
+
+
+
+<p>It is time to move on. I acknowledge all these past trail blazers, but they are not at the forefront today. Following their advocacy does not shed light on all the practical implementations that are possible while exploring new technology. People seem to know - but not use - the latest in web standards, and several are on the fence because they do not know how to work with new standards right now. </p>
+
+
+
+
+<p>It is time for us to get new idols. Here is what my idols do:</p>
+
+
+
+
+<h3>Create</h3>
+
+
+<p>They code. They have demos on their website or on Github.</p>
+
+
+
+
+<p>They write. They write tutorials that are not browser-specific, and link back to specifications, have comments and update their posts with newer/better ideas from within the comments section.</p>
+
+
+
+
+<h3>Research</h3>
+
+
+<p></p>
+
+<p>They research and publish their findings. A lot of recommended practices are dogma and hearsay - creating practical examples to test such assertions and validate them would be cornerstone of their work.</p>
+
+
+
+
+<p>They know what is new. Web standards keep changing. They should know what is new, what is relevant and what shouldn&#8217;t be promoted. They talk and respond to your queries and are not too busy to find time to write code that works.</p>
+
+
+
+
+<h3>Collaborate</h3>
+
+
+<p>They do not work in isolation, but get people together who can create projects that benefit the web.[Bonus!] They are available on mailing-lists, forums, or IRC channels to help n00bs when they can.</p>
+
+
+
+
+<p>If you think it is hard to find these people, then you are not looking. All the people I mentioned earlier are people worthy of listening to. Look at who else they are talking to, or doing projects with, follow the trail. </p>
+
+
+
+
+<p>The old revolution is dead, long live the revolution.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Some CSS Transition hacks]]></title>
+    <link href="http://nimbupani.github.com/some-css-transition-hacks.html"/>
+    <updated>2011-05-17T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/some-css-transition-hacks</id>
+    <content type="html"><![CDATA[<p>I am speaking at <a href="http://unplugged11.webdirections.org/program/design#creative-css3">some</a> <a href="http://2011.texasjavascript.com/">events</a> which means I have to write a few demos. You can find some <a href="http://nimbu.in/unplugged/demos/">here</a>, and I am in the process of creating more. While doing so, I have come across two new (to me), ways of applying transitions.  This only works for the conditions stated here, and you should think carefully before trying to expand these to be used elsewhere.</p>
+
+
+
+
+<h2>Fake Transitions on Gradients</h2>
+
+
+<p>As you know, no browser supports transitions in CSS gradients (yet). But, we have two tools to fake this: transitions that work on background colors, and multiple backgrounds. Given transitions can interpolate colors, we simply transition the background color and apply a gradient image on top of it which fades to transparent value (giving the illusion of an transitioning gradient). </p>
+
+
+<p>Here is a demo:</p>
+
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/nimbu/zuNbj/embedded/result,css"></iframe>
+
+
+<h3>Caveat</h3>
+
+
+<ul><li>This works great on simple gradients. You probably do not want to use this with multiple backgrounds as it would be a terrible pain to manage the right backgrounds to change.</li></ul>
+
+
+
+
+<h2>Animate elements with just font-size</h2>
+
+
+<p>Transitions can be applied on CSS transforms, so if you wish to scale an element on hover, it would be a matter of applying the right prefixed transition on the right prefixed transform and writing the vendor-prefixed scale transform 5 times on hover.</p>
+
+
+<p></p>
+
+<p>I am lazy, and I like to avoid typing if I can. So, given we can use <code>em</code> as a unit for width, height, line-height and border-radius would be something we can take advantage of. What this unit means is each of these properties are now relative to the <code>font-size</code> we set on the element.</p>
+
+
+<p>Now all we need to do is transition the font-size, and we get bonus transitions on width, height, line-height and border-radius! Now you can be carefully choose which elements should use em units depending on which properties (that use em unit values) you want transitioned.</p>
+
+
+<p>Don&#8217;t be so quick to gloat though. Webkit does not transition width, height, line-height if you only transition the font-size, so you would need to set <code>-webkit-transition: all 1s;</code> to get it to work on webkit.</p>
+
+
+
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/nimbu/86kET/embedded/result,css"></iframe>
+
+
+<h3>Caveats</h3>
+
+
+<ul>
+<li>The element expands in area - unlike a scale transform which expands without nudging other elements out of the way. This means elements adjacent to this element will move unless they are all positioned absolutely. You can also position the element to which transition is being applied absolutely so as to not impact rest of them.</li>
+<li>This only works for properties you want to transform that accept length units. </li>
+<li>If you do not want the text within the transformed element to also transform, using this method would be easier. When using transforms, you would need to reset the transform on the wrapper around the text so as to prevent text from transforming. In the above demo, the blue disc has considerably more rules and declarations to prevent scaling of text as compared to transforming the font size.</li>
+</ul>
+
+
+<p>If you know of a snappier way to do these, please fork the fiddles and link to your forks in the comments.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Safe CSS Defaults]]></title>
+    <link href="http://nimbupani.github.com/safe-css-defaults.html"/>
+    <updated>2011-04-13T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/safe-css-defaults</id>
+    <content type="html"><![CDATA[<p>You know those nights when you race towards a deadline, banging out the CSS as fast as you can, there comes a moment when you pause…wondering what keyword would get rid of that z-index on that anchor, then you make the best guess you can, and type:</p>
+
+
+
+
+<pre><code>z-index: none;</code></pre>
+
+
+
+
+<p>Then go on in life, as it “renders” like you wanted it, it works, no big deal. </p>
+
+
+
+
+<p>But it is. Specifying incorrect values might inject behaviour that you did not expect. It is quite possible that the currently incorrect value might be, in the future, used for a valid value which would distort the design you so carefully did (and how often do we revisit a client’s website to update? :).</p>
+
+
+
+
+<h3>Initial Values</h3>
+
+
+<p>The spec defines a value that will be the <em>initial</em> value for a property when it is not declared in any stylesheets - either the user agent stylesheet (look at <a href="http://www.iecss.com/">iecss.com</a> for stylesheets of IE, <a href="http://www.iecss.com/opera-10.51.css">Opera</a>, <a href="http://www.iecss.com/firefox-3.6.3.css">Firefox</a>, <a href="http://www.iecss.com/webkit-r61376.css">Webkit</a>) or the ones you write.</p>
+
+
+
+
+<p>Now, user agents assign values to CSS properties too. For example, when you do not declare margins on <code>h1</code>, the user agents have an initial value for margins. IE sets this to be <code>14pt</code>, Firefox, Opera sets this to <code>0.67em</code>, etc. This is not defined by the specifications and there is no keyword to obtain the values set by user agents.</p>
+
+
+
+
+<p>Initial values are different from inherited values. All properties accept a keyword <code>inherit</code>. When you use the keyword <code>inherit</code> on a property, the browser applies the value that it finds on its parent element. On <code>html</code> element if you use the value <code>inherit</code>, it applies the initial value. </p>
+
+
+
+
+<h3>Good News!</h3>
+
+
+<p><a href="http://leaverou.me">Lea Verou</a> alerted me to the CSS3 keyword <a href="http://www.w3.org/TR/css3-values/#keywords"><code>initial</code> which will set the CSS3 property to the initial value as defined in the spec</a>. Sadly, the only browsers that supports this seems to be <a href="http://jsfiddle.net/nimbu/CgRAZ/10/show/">Firefox</a> (with a <code>-moz-</code> prefix) and Webkit&#8217;s Safari and Chrome (yay!).</p>
+
+
+
+
+<p>So until full support lands on all browsers for this amazing keyword and we don&#8217;t have to support browsers that do not recognize that keyword, here are some of the ways you can reset some CSS properties to their initial values:</p>
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-background/#background">background</a>
+      </td>
+      <td>
+        transparent (<code>transparent</code> stands for <a href="http://www.w3.org/TR/css3-color/#transparent-def">rgba(0, 0, 0, 0)</a>) or <code>none</code> or <code>0 0</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-background/#ltborder-widthgt">border</a>
+      </td>
+      <td>
+        none or 0
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-background/#border-image-source">border-image</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-background/#the-border-radius">border-radius</a>
+      </td>
+      <td>
+        0
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-background/#the-box-shadow">box-shadow</a>
+      </td>
+      <td>
+       none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#clear">clear</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-color/#foreground">color</a>
+      </td>
+      <td>
+        No value, so best option is to use <code>inherit</code> to cascade from a parent element&#8217;s color value.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-content/#content">content</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#display">display</a>
+      </td>
+      <td>
+        inline
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#the-lsquo1">float</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2011/WD-css3-fonts-20110324/#descdef-font-style">font</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#height">height</a>
+      </td>
+      <td>
+        auto
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2011/WD-css3-text-20110215/#letter-spacing0">letter-spacing</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-linebox/#InlineBoxHeight">line-height</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#max-width">max-width</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#max-width">max-height</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#min-height">min-width</a>
+      </td>
+      <td>
+        0
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#min-height">min-height</a>
+      </td>
+      <td>
+        0
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-color/#opacity">opacity</a>
+      </td>
+      <td>
+        1
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#overflow0">overflow</a>
+      </td>
+      <td>
+        visible
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2006/WD-css3-page-20061010/#page-break-inside">page-break-inside</a>
+      </td>
+      <td>
+        auto
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/CSS2/visuren.html#propdef-position">position</a>
+      </td>
+      <td>
+        static (not <code>relative</code>)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2011/WD-css3-text-20110215/#text-shadow">text-shadow</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2011/WD-css3-text-20110215/#text-transform">text-transform</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-2d-transforms/#transform-property">transform</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-transitions/#the-transition-property-property-">transition</a>
+      </td>
+      <td>
+        none
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/CSS21/visudet.html#propdef-vertical-align">vertical-align</a>
+      </td>
+      <td>
+        baseline
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#visibility">visibility</a>
+      </td>
+      <td>
+        visible
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/CSS2/text.html#white-space-prop">white-space</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/css3-box/#width">width</a>
+      </td>
+      <td>
+        auto
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/2011/WD-css3-text-20110215/#word-spacing0">word-spacing</a>
+      </td>
+      <td>
+        normal
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.w3.org/TR/CSS2/visuren.html#z-index">z-index</a>
+      </td>
+      <td>
+        auto (not <code>none</code> or <code>0</code>)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<p><small>Thanks to <a href="http://css-tricks.com">Chris Coyier</a>, <a href="http://www.xanthir.com/blog/">Tab Atkins</a>, <a href="http://leaverou.me">Lea Verou</a>, and <a href="http://nicolasgallagher.com">Nicolas Gallagher</a> for feedback on this post!</small></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unplugged 2011]]></title>
+    <link href="http://nimbupani.github.com/unplugged-2011.html"/>
+    <updated>2011-03-04T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/unplugged-2011</id>
+    <content type="html"><![CDATA[<p>I gave my first ever big talk at <a href="http://south10.webdirections.org/program/w3c#active-web-development">Web Directions South in Sydney</a> last year. This May, I will be speaking at <a href="http://unplugged11.webdirections.org">Unplugged</a> in Seattle!</p>
+
+<p>It is going to be a different talk this time, — less on the activism and more on <a href="http://unplugged11.webdirections.org/program/design/#creative-css3">maximizing the cool on your web app styles</a>.</p>
+
+<p>As a front-end firefighter, I have learnt about the pain of working with a team, each with their own style and philosophy on what constitutes good markup, style, and script. While working on <a href="http://html5boilerplate.com">HTML5 Boilerplate</a> (and the website), a different layer of complexity showed up - managing styles/markup for different languages, choosing what to add or remove from the templates that have become the default choice of several front-end developers.</p>
+
+<p>Unplugged is where I hope to share some of the lessons learned and how to push the boundaries with browsers that can, while providing what can be managed best on browsers that can&#8217;t and introduce some tools to make your front-end development far more easier.</p>
+
+<p>The event is on <a href="http://unplugged11.webdirections.org/program/">12-13th May in The Conference Center</a>. Knowing the Web Directions folks, I know it would be a super smooth and well organized event, so you should be there. There is even a discount code - <em>WDMANIAN</em> - you can use to take $50 off the regular price.</p>
+
+<p>See you there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bokeh with CSS3 Gradients]]></title>
+    <link href="http://nimbupani.github.com/bokeh-with-css3-gradients.html"/>
+    <updated>2011-02-22T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/bokeh-with-css3-gradients</id>
+    <content type="html"><![CDATA[<p>Ever since <a href="http://leaverou.me/2010/12/checkered-stripes-other-background-patterns-with-css3-gradients/">Lea Verou mentioned about the possibilities of CSS3 Gradients</a>, I have been using them in various shapes and sizes as a replacement for background images. I recently worked on a project which uses a bunch of circles as a decorative background. <a href="http://gf3.ca/">gf3</a> suggested that the circles would look much better like <a href="http://en.wikipedia.org/wiki/Bokeh">bokeh</a>. Today, I finally got down to creating them.</p>
+
+
+
+
+<h3>Result</h3>
+
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/nimbu/CPCRU/embedded/result,css"></iframe>
+
+
+
+
+<h3>Design of the Bokeh</h3>
+
+
+<p>I referred to some pictures of bokeh, and these were their defining characteristics:</p>
+
+
+<ul>
+  <li>There should be groups of circles with same color (each circle outlined with the more opaque version of the fill). In each group, circles are close to each other.</li>
+  <li>The color transition from one color group to the other can be accomplished with a very blurry second color group radial gradient overlaid on the first group.</li>
+  <li>Each color group needs to have a very blurry large background circle to base the rest of the circles from.</li>
+  <li>Each color group has 2 or more of smaller circles and one big blurry circle as a base.</li>
+  <li>Colors used are almost transparent so that the background color shows through, and the colors mix well when they are overlaid.</li>
+</ul>
+
+
+
+
+<h3>Implementation</h3>
+
+
+<p>Here is how a single &#8220;tile&#8221; looks like:</p>
+
+
+
+
+<p><img src="http://nimbupani.com/files/bokeh-graph.png" alt="bokeh-graph.png" border="0" width="420" height="300"></p>
+
+
+
+
+<p>The black background is the size of the &#8220;tile&#8221;, set by <code>background-size</code> property (the grey area is where our circles spill over). In our demo it is 300px square. Each of these circles is a background image (all gradients are background images), and have a default <code>background-size</code> property set to the top left corner of the tile, which means, the center of each of the circle is at the intersection of the yellow lines in the image above.</p>
+
+
+
+
+<p>Then, we use <code>background-position</code> to offset them into places we want.</p>
+
+
+<p>By tweaking the <code>background-position</code> for each of the gradient images, we also move the center of each of the circle - shown in the image above relatively. Do note that what <em>actually</em> moves is the top left corner, but I find it easier to visualize the positioning of radial gradients in this manner.</p>
+
+
+
+
+<p>By using <code>background-repeat</code>, we can repeat our bokeh across the screen! You can tweak the tile size so you can get some interesting effects.</p>
+
+
+<p></p>
+
+<p>Needless to say, this demo <a href="http://caniuse.com/#feat=css-gradients">only works</a> on Firefox 3.6+, Safari 4+, Chrome 10+ all of which support CSS3 radial gradients as it has been finalized in the <a href="http://www.w3.org/TR/css3-images/#radial-gradients">spec</a> (support is coming soon in Opera 11).</p>
+
+
+
+
+<h3>Update</h3>
+
+
+<p><a href="http://a.deveria.com/">Alexis</a> has kindly <a href="http://nimbupani.com/bokeh-with-css3-gradients.html#comment-3620">provided an SVG</a> that would work as well for browsers that do not support gradients! I have updated the demo to use <a href="http://modernizr.github.com/Modernizr/2.0-beta/#cssgradients">Modernizr</a> to detect for gradients, and serve the SVG version if the browser does not support it. Whee! Thanks Alexis!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Making "Pure CSS3" demos better]]></title>
+    <link href="http://nimbupani.github.com/making-pure-css3-demos-better.html"/>
+    <updated>2011-02-17T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/making-pure-css3-demos-better</id>
+    <content type="html"><![CDATA[<p>I appreciate the effort that goes into creating a pure CSS3/HTML5 demo, but unfortunately many beginners consider these demos as representation of the best practices in Web Development (many aren&#8217;t). Here is one that got my goat today: A <a href="http://designmadeingermany.de/slideshow/">Pure CSS3 Slideshow</a>.</p>
+
+
+
+
+<p>Here are some reasons why this is not a great example of best practices:</p>
+
+
+<ul>
+  <li>Uses a table for navigation when the semantic nav element (or a simple list) would do.</li>
+  <li>Implements features using <code>-moz</code>, <code>-webkit</code> only prefix. Why not add the standard that they are temporary demonstrations for (and while at it, also support <a href="http://opera.com">other</a> <a href="http://ie.microsoft.com/testdrive/">browsers</a>?)</li>
+  <li><p>This is how it degrades on browsers that do not support CSS3 transitions, and transforms:</p>
+    <p><img src="http://nimbupani.com/files/79e91b32f7713c3a03a5650e476ade27.png" alt="79e91b32f7713c3a03a5650e476ade27.png" border="0" width="600" height="348" /></p>    
+  </li>
+</ul>
+
+
+<p>So, lets fix it! Here is the final result:</p>
+
+
+<p></p>
+
+<iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/nimbu/KEqSF/embedded/result,html,css"></iframe>
+
+
+<h3>Changes:</h3>
+
+
+<ul>
+<li><p>No translateX functions. All we need to do is to animate the <code>left</code> property. So:</p>
+<pre><code>#a1:target .page { -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); }
+#a2:target .page { -webkit-transform: translateX(-200%); -moz-transform: translateX(-200%); }
+#a3:target .page { -webkit-transform: translateX(-300%); -moz-transform: translateX(-300%); }</code></pre>
+<p>becomes:</p>
+<pre><code>#a1:target .pages { left: 0%; }
+#a2:target .pages { left: -100%; }
+#a3:target .pages { left: -200%; }</code></pre>
+</li>  
+<li>
+  I added a parent <code>div</code> element for all the pages so we just need to animate that element and not each of the 3 page elements.  
+</li>
+<li><p>No tables for nav! Just use the <code>nav</code> element with a set of links:</p>
+<pre>
+  <code>&lt;table&gt; 
+  &lt;tr&gt; 
+   &lt;td&gt;&lt;a href=&quot;#a1&quot; id=&quot;p1&quot;&gt;1&lt;/a&gt;&lt;/td&gt; 
+   &lt;td&gt;&lt;a href=&quot;#a2&quot; id=&quot;p2&quot;&gt;2&lt;/a&gt;&lt;/td&gt; 
+   &lt;td&gt;&lt;a href=&quot;#a3&quot; id=&quot;p3&quot;&gt;3&lt;/a&gt;&lt;/td&gt; 
+  &lt;/tr&gt; 
+&lt;/table&gt;</code>
+</pre>
+<p>becomes: </p>
+<pre><code>&lt;nav&gt;&lt;a href=&quot;#a1&quot;&gt;1&lt;/a&gt;&lt;a href=&quot;#a2&quot;&gt;2&lt;/a&gt;&lt;a href=&quot;#a3&quot;&gt;3&lt;/a&gt;&lt;/nav&gt;</code></pre>
+</li>
+<li>
+<p>In the default view, the first page is positioned outside the viewport:</p>  
+<pre><code>/* Page Positioning */
+#i1 { left: 100%; }
+#i2 { left: 200%; }
+#i3 { left: 300%; }</code></pre>
+<p>This means browsers that do not support transitions effectively see a blank page. We fix this but setting the default position as <code>left: 0</code>, and only adjust the positions for the next 2 slides:</p>
+<pre><code>/* Pages */
+#i2 { left: 100%; }
+#i3 { left: 200%; }  </code></pre>
+</li>
+</ul>
+
+
+<p>There, now we have a neat little slideshow, that doesn&#8217;t degrade too badly on browsers that do not support the target element (accessible via the horizontal scrollbar for IE6, 7). If there are ways to improve this, please fork the fiddle and link in the comments!</p>
+
+
+<p></body></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for January & February 2011]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-january-and-february-2011.html"/>
+    <updated>2011-02-17T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-january-and-february-2011</id>
+    <content type="html"><![CDATA[<p>This year started pretty well for my reading schedule. I managed to finish two huge books in January, but am on a particularly slow pace since. It also doesn&#8217;t help that I am in Oslo for the first two weeks of Feb getting to know people in Opera as part of my <a href="http://nimbupani.com/web-opener-at-opera.html">new position</a>. So these are all I am left with: </p>
+
+
+
+
+<H3>The Jewel in the Crown</H3>
+
+
+<p>I was recommended to read this by <a href="http://coldhead.miketaylr.com">Coldhead</a> (warning loud music and visuals). I am usually not a fan of colonialist literature, but <a href="http://www.amazon.com/gp/product/0226743403?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0226743403">The Jewel in the Crown</a> breaks new ground. There are characters of different hues, and the experiences are described vividly, while not portraying a flattering picture of the British Raj. It is very well written and a book (for being so wordy) requires as much to describe the story. I can&#8217;t wait to read the rest of the books in that series.</p>
+
+
+
+
+<h3>Gould&#8217;s Book of Fish</h3>
+
+
+<p>When I was embarking on my first trip to Australia, good old Coldhead, recommended I read <a href="http://www.amazon.com/gp/product/0802139590?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0802139590">Gould&#8217;s Book of Fish</a> in addition to <a href="http://nimbupani.com/book-reviews-for-september.html">Voss</a>. I never got around it, but I finally did! It is incredible (except for the ending). I really cannot describe how amazing it is. I only beg you to read it.</p>
+
+
+
+
+<h3>Tokyo Vice</h3>
+
+
+<p>This is a horribly written book by someone who was one of the very few white reporters for a Japanese newspaper who worked on the Tokyo police beat. There is an incredible amount of information on how Tokyo&#8217;s police/press work, but it is all suppressed by bad writing. <a href="http://www.amazon.com/gp/product/0307378799?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307378799">Tokyo Vice: An American Reporter on the Police Beat in Japan</a> is definitely not worth your time unless you have a passing interest in Tokyo Crime scenes.</p>
+
+
+
+
+<h3>Ender&#8217;s Game</h3>
+
+
+<p>When I finished <a href="http://www.amazon.com/gp/product/0765342294?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0765342294">Ender&#8217;s Game</a> I thought it was a plot for a bad science fiction movie, but then I realised it was written more than 30 years ago! It is quite a remarkable modern take on alien invasion with more than a thinly veiled support for wars and war games. I suppose the supporters of the book would claim the ending justifies the pacifist motives of the author, but I think it doesn&#8217;t. It is a nice read to escape the tortures of flying, but I don&#8217;t think it does anything more than be a precursor to game strategies outlined in <a href="http://en.wikipedia.org/wiki/Liar's_Poker">Liar&#8217;s Poker</a>.</p>
+
+
+<p></p>
+
+<p>As usual, here is my plea for you to recommend books you liked reading this month!</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web Opener at Opera]]></title>
+    <link href="http://nimbupani.github.com/web-opener-at-opera.html"/>
+    <updated>2011-01-31T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/web-opener-at-opera</id>
+    <content type="html"><![CDATA[<p>Good news everyone! I am now a Web Opener at <a href="http://opera.com">Opera</a>.</p>
+
+<p>I will be writing, breathing Open web standards while also making sure pesky websites that break in Opera no longer do so.  It is a milestone on a journey that started almost two years ago when I started taking web development seriously instead of just another means to an end ($$$).</p>
+
+<p>Needless to say, I will continue working on all the Open Source projects I am involved in (<a href="http://html5boilerplate.com">HTML5 Boilerplate</a>, <a href="http://html5readiness.com">HTML5 Readiness</a>, <a href="http://w3fools.com">w3fools</a>, etc) and hopefully more!</p>
+
+<p>I should also mention that, unless I specifically say so, my opinions are solely MINE and not of my employers, just in case you assume otherwise. If you have any questions about Opera, open web standards, do reach me or any of us @<a href="http://twitter.com/ODevRel/">ODevRel</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Current Color in CSS]]></title>
+    <link href="http://nimbupani.github.com/current-color-in-css.html"/>
+    <updated>2011-01-27T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/current-color-in-css</id>
+    <content type="html"><![CDATA[<p>In the interest of documenting useless trivia about CSS3, here is something that I re-discovered thanks to <a href="http://twitter.com/ultror">nlogax</a>: <code>currentcolor</code> (<a href="http://jsfiddle.net/2ysAr/show/">example</a>).</p>
+
+
+
+
+<p>Borders always render with the current color when a border color is not specified, but, till recently, there was no equivalent term for that use – now we do: <code>currentcolor</code>.</p>
+
+
+
+
+<p>In CSS3, you can use this value to <a href="http://www.w3.org/TR/css3-color/#currentcolor">indicate you want to use the value of color for other properties</a> that accept a color value: borders, box shadows, outlines, or backgrounds.</p>
+
+
+<p></p>
+
+<p>This value was <a href="http://www.opera.com/docs/specs/presto23/#css">first supported by Opera in 2009</a>, since then, Firefox 3.5+, Chrome 1+, and Safari 4+. IE 9 yet does not support this though.</p>
+
+
+
+
+<p>Now to find some practical use for this!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for December 2010]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-december-2010.html"/>
+    <updated>2010-12-22T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-december-2010</id>
+    <content type="html"><![CDATA[<p>A year is almost over! I have reviewed about 80 books (&amp; collections) and read about 110 books in total! Not bad given all the mindless travel I have been doing. Here are the last reviews for this year!</p>
+
+
+
+
+<h3>The Dispossessed: Living With Multiple Chemical Sensitivities</h3>
+
+
+
+
+<p>I actually wanted <a href="http://www.amazon.com/gp/product/0061054887?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0061054887">The Dispossessed</a> that has been hailed as one of the best sci-fi books, but somehow got <a href="http://www.amazon.com/gp/product/0966157109?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0966157109">The Dispossessed: Living With Multiple Chemical Sensitivities</a> at the library :/</p>
+
+
+
+
+<p>In the spirit of letting serendipity taking its course, I read it. It is a set of photo-narratives of people who consider themselves as victims of Multiple Chemical Sensitivities, with a variety of reactions to city-living. It is quite depressing read to see these people trying to find &#8220;cleaner&#8221; places to live in, losing the relationships they had.</p>
+
+
+
+
+<h3>Zen in the Art of Writing: Essays on Creativity</h3>
+
+
+<p>Ray Bradbury is an excellent writer of fiction, and in this book, sells the practice of writing, like a seasoned salesman. <a href="http://www.amazon.com/gp/product/1877741094?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1877741094">Zen in the Art of Writing: Essays on Creativity</a> is an excellent book because it is a book that practices what it preaches. There are no hidden gotchas or tips other than to keep thinking of ideas and practicing.</p>
+
+
+
+
+<h3>Being Wrong: Adventures in the Margin of Error</h3>
+
+
+<p>Kathy Schulz has a ball trying to understand why humans detest being wrong. <a href="http://www.amazon.com/gp/product/0061176044?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0061176044">Being Wrong: Adventures in the Margin of Error</a> is written in an entertaining and simple way (perhaps, too simplistic?) Each chapter explores stories of people who have discovered they were wrong in different areas of life and Kathy looks into how their life altered (or not) once they grasped that they were wrong. It is an excellent book to read if you would like to understand your own emotions when someone accuses you of being wrong.</p>
+
+
+
+
+<h3>Merde Happens</h3>
+
+
+<p>I originally wanted to read <a href="http://www.amazon.com/gp/product/0143055542?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0143055542">Merde Actually</a>, but my <a href="http://spl.org">library</a> does not seem to have it, so I ended up reading <a href="http://www.amazon.com/gp/product/1596915277?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1596915277">Merde Happens</a>. If you have read PG Wodehouse, you would notice this book reeks of wannabe-ness. It is a page-turner, but not what I would turn to for humour.</p>
+
+
+
+
+<h3>Hellboy</h3>
+
+
+<p>I finally finished the 10 volumes of Hellboy. I have been reading them over a few months, but decided to review them all in one go (<a href="http://www.amazon.com/gp/product/1595824774?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1595824774">10</a>, <a href="http://www.amazon.com/gp/product/1595824316?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1595824316">9</a>, <a href="http://www.amazon.com/gp/product/159307896X?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=159307896X">8</a>,
+<a href="http://www.amazon.com/gp/product/1593074751?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1593074751">6</a>, <a href="http://www.amazon.com/gp/product/1593070950?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1593070950">2</a>). Mike Mignola knows his myths and how to fashion a great story, not to mention find great artists to collaborate with. I can&#8217;t wait to get my hands on <a href="http://en.wikipedia.org/wiki/Bureau_for_Paranormal_Research_and_Defense">B.P.R.D</a>.</p>
+
+
+
+
+<p>Any books you liked recently?</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for November 2010]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-november-2010.html"/>
+    <updated>2010-11-29T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-november-2010</id>
+    <content type="html"><![CDATA[<p>Within 2 weeks of returning from Sydney, I was traipsing through New York. I stayed about 10 days in Albany and another 4 in NYC. I did have my Kindle, which is the main reason I managed to read at least these! Here are the reviews: </p>
+
+
+<p></p>
+
+<h3>Doctor No</h3>
+
+
+<p>I have seen James Bond movies, but this was the first time I picked up one of the books. Wow. While I understand how <a href="http://www.amazon.com/gp/product/0142002038">Doctor No</a> can be gripping, the nauseating racism and sexism completely threw me off. I think reading Nancy Drew novels might be a better idea than reading Ian Fleming&#8217;s novels. </p>
+
+
+<p></p>
+
+<h3>Our Kind of Traitor</h3>
+
+
+<p>If you have read <a href="http://www.nytimes.com/interactive/2010/11/28/world/20101128-cables-viewer.html#report/cables-06MOSCOW9533">the cable on the wedding in Dagestan</a>, you would appreciate this novel much better. Granted, <a href="http://www.amazon.ca/dp/0670064785/">Our Kind of Traitor</a> is a bit more &#8220;hollywoody&#8221; than usual John Le Carré&#8217;s offerings, it nevertheless captures the essence of a good spy thriller.</p>
+
+
+<p></p>
+
+<h3>Mort and The Light Fantastic</h3>
+
+
+<p>I am finally, deliberately, making my way through the Discworld series. Is there a better writer than Terry Pratchett? I enjoyed <a href="http://www.amazon.ca/dp/0552131067/">Mort</a> much more than <a href="http://www.amazon.ca/dp/0552128481/">The Light Fantastic</a> (mainly because I am fascinated by Death, the character).</p>
+
+
+<p></p>
+
+<h3>Live Flesh</h3>
+
+
+<p>It has been quite a while since I read a Ruth Rendell novel. <a href="http://www.amazon.ca/dp/0394555449/">Live Flesh</a> is quite unlike the usual murder mystery that Ruth Rendell is famous for. The story of Live Flesh is not that surprising, but the voice that each character takes on is quite an unexpected and pleasant surprise. I think this is the best I have read from Ruth Rendell. Do read. </p>
+
+
+
+
+<p>What did you all read this month? Anything interesting?</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kindle: The Power Reading Device]]></title>
+    <link href="http://nimbupani.github.com/kindle-the-power-reading-device.html"/>
+    <updated>2010-11-11T00:00:00-08:00</updated>
+    <id>http://nimbupani.github.com/kindle-the-power-reading-device</id>
+    <content type="html"><![CDATA[<p>Over the last few years, a lot of magazines have started publishing long-form content online (mostly from their archives). Thanks to these, I would invariably be sitting in front of my laptop late at night - trying to read in a posture that was comfortable (and failing). </p>
+
+
+<p>I also like to read at every opportunity I get. The limited battery life & distractions from multi-tasking make that a chore. </p>
+
+
+<p>I wanted a reading device that was: </p>
+
+
+<ul>
+<li>Easy to use with one hand.</li>
+<li>Not impacted by stains or strains. </li>
+<li>Not hard on the eyes</li>
+<li>Big enough to make reading of articles comfortable, but not too big to be unwieldily. </li>
+<li>Able to access the web.</li>  
+</ul>
+
+
+<p>Luckily for me, the Kindle satisfies all these conditions! The killer feature is the <a href="http://en.wikipedia.org/wiki/Electronic_paper">Electronic Ink Display</a> which makes it a pleasant reading experience while also making the battery last longer (it goes on for at least 5 or 6 days without using the internet, and 2 if you use internet exhaustively).</p>
+
+
+<p></p>
+
+<h3>3G or Not to 3G</h3>
+
+
+<p>The <a href="http://www.amazon.com/gp/product/B003FSUDM4?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003FSUDM4">Kindle 3G</a> costs about USD 50 more but is worth every cent. It offers lifetime free 3G - not just for downloading books but also for browsing the internet through their experimental browser! Here is <a href="http://kindleworld.blogspot.com/2010/10/global-kindle-3g-web-browsing-where.html">more information on worldwide 3G coverage</a>. In a country where 3G is supported &amp; it is not available, it converts to an EDGE or GPRS connection, which works just as fine &mdash; just not as fast. Unfortunately you can only have one window open (no multiple tabs) so it is not useful for anything other than checking email, Facebook, or Twitter (&amp; not clicking on the links!)</p>
+
+
+<p></p>
+
+<p>Another nice feature of the browser is the &ldquo;Article Mode&rdquo; which does what readability does to a page on the Kindle browser. So, you may not even have to do the conversion mentioned below, if you are connected over 3G. But the lack of multiple windows or tabs makes using the browser not an easy task.</p>
+
+
+<h3>Read Online Offline</h3>
+
+
+<p>What seals the deal, is the Kindle&rsquo;s conversion service. Kindle offers a free email service to which you can send documents, which it will convert into a Kindle-friendly format &amp; deliver to your Kindle whenever Wi-Fi is available.</p>
+
+
+<p>To do this, set up your Kindle email (and set the email addresses it can receive documents from). Then send your documents to &lt;that id&gt;@free.kindle.com</p>
+
+
+<p><a href="http://vyom.org">Deepak</a> found an easy way to forward long-form articles on the web to the Kindle with least effort on the Mac. You need to make sure your Mail.app can send emails.  </p>
+
+
+<p><em>Update:</em> Some people suggested I look into <a href="http://blog.instapaper.com/post/340418615">Instapaper Digest</a>. I have and I prefer this because Amazon charges per delivery of each digest (it can easily add up to at least USD50/yr) and you do not have much control over the format of the content. </p>
+
+
+
+
+<p>Here are the steps:</p>
+
+
+<ol>
+<li><p>Download <a href="http://nimbupani.com/downloads/Mail_Kindle.workflow.zip">this workflow</a>, unzip, and save it in Macintosh HD > Library > PDF Services:</p><p><img src="http://nimbupani.com/files/save_workflow.png" alt="save_workflow.png" border="0" width="600" height="347" /></p></li>  
+<li>Open it in Automator.</li>
+<li><p>Edit the &lsquo;New Mail Message&rsquo; and type in your free Kindle email address (&lt;your id&gt;@free.kindle.com) and set the right account from Mail.app to send from, like so:</p>
+<p><img src="http://nimbupani.com/files/automator.png" alt="automator.png" border="0" width="600" height="493" /></p>
+<p>
+</li> 
+<li>Save it.</li>  
+<li>Open your browser.</li> 
+<li>Save the <a href="http://lab.arc90.com/experiments/readability/">Readability bookmarklet</a> to your Personal bar.</li>  
+</ol>
+
+
+<p>To use it, just:</p>
+
+
+<ol>
+<li>Go to a page which contains the article you want to send to your kindle, and click the Readability Bookmarklet.</li>
+<li>Click the print icon on the left. </li>
+<li><p>Click the PDF option and select &ldquo;Mail to Kindle&rdquo; like this:</p><p><img src="http://nimbupani.com/files/mailkindle_0.png" alt="mailkindle.png" border="0" width="600" height="421" /><small><br>(I prefer the name Kindy.)</small></p></li>
+<li>Ta-da!</li>
+</ol>
+
+
+<h3>Convert existing eBooks to Kindle-friendly versions</h3>
+
+
+<p>Amazon&#8217;s email-based converter <a href="http://www.amazon.com/gp/help/customer/display.html/ref=hp_k3land_trans_pdocs?nodeId=200505520#email">can only handle this much</a>. If you have other documents you wish to convert to a Kindle-friendly format, <a href="http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000234621">download the KindleGen converter</a>. This is a command-line based tool, follow these steps carefully: </p>
+
+
+<ol><li>Download the <a href="http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000234621">zip file</a> to your desktop.</li>
+<li>Unzip it.</li>
+<li>Copy the files you want to convert to your desktop.</li>
+<li>Open the Terminal application.</li>
+<li><p>Type the following in the Terminal window:</p>
+<p><code>cd ~/Desktop/KindleGen</code></p></li>
+<li><p>Press the Enter key and then type:</p>
+<p><code>./KindleGen ../&lt;full-name-of-book-to-convert&gt;</code></p></li> 
+<li>Press Enter and the KindleGen will put the Kindle-compatible book on the desktop too.</li></ol>
+
+
+<p></p>
+
+<p>Now you can connect your Kindle via USB &amp; copy the Kindle-compatible files. </p>
+
+
+<h3>The Annoying Bits</h3>
+
+
+<p>There is a bit of a learning curve with the Kindle. It is not as trivial as opening an iPad and swiping away. There are things that are annoying: </p>
+
+
+<ul>
+<li><em>Keyboard:</em> It is good for typing text, but breaks down if you have to take notes with the book in landscape mode (you would have to keep tilting it back to type them), or are typing a password or even just typing numbers and letters together. </li>
+<li><em>Scrolling:</em> The Kindle is in a desperate need of a touch screen. Scrolling is a pain and horizontal scrolling even more so. </li>
+<li><em>Organization:</em> The books can only be organized into folders (no sub-folders), and you cannot bulk update books. There are no smart folders as well to move any new document into a particular folder based on filters. I suspect the keyboard-based interface prevents anything other than basic UI.</li>  
+</ul>
+
+
+<p></p>
+
+<p>I am yet to try Kindle&#8217;s MP3 player though (the iPod shuffle has proven to be more useful here). </p>
+
+
+<p>Don&#8217;t even try watching anything animated on the Kindle, the E-ink display takes quite long to refresh and you cannot see anything animated at the slow rate it refreshes.</p>
+
+
+<p>The Kindle portends a future when you can carry your library with you! It is not there yet, but I think the Kindle has the right form-factor and features to make that real. If you have a few Kindle tricks up your sleeve, do write in the comments.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for October 2010]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-october-2010.html"/>
+    <updated>2010-11-04T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-october-2010</id>
+    <content type="html"><![CDATA[<p>October was a month of traveling and being nervous about <a href="http://nimbupani.com/active-web-development.html">my talk at Web Directions South</a>, which meant I managed to read very little. But, it was the first time I read Kindle books &mdash; Alice&rsquo;s Adventures in Wonderland and The Girl Who Kicked the Hornet&rsquo;s Nest &mdash; both on the train from Darwin to Adelaide. A review of the Kindle is pending, and hopefully I should put it out soon!</p>
+
+
+<p>Meanwhile, here are the reviews!</p>
+
+
+<h3>Alice&rsquo;s Adventures in Wonderland</h3>
+
+
+<p>I find it so annoying that most books on Kindle cost at least USD10. Luckily, there is a list of popular free books and deservedly <a href="http://www.amazon.com/gp/product/1936594064?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1936594064">Alice&rsquo;s Adventures in Wonderland</a> is listed among the top books. I am amazed this book was popular at the time it was written. I suspect it became so because it was catalogued as a &ldquo;Children&rsquo;s book&rdquo;. It certainly is not just for kids! It is written so well, and Lewis Carroll had a very lively imagination.</p>
+
+
+<p></p>
+
+<h3>The Fourth Bear: A Nursery Crime</h3>
+
+
+<p>I loved Jasper Fforde&rsquo;s first Thursday Next novel, and <a href="http://www.amazon.com/gp/product/0670037729?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0670037729">The Fourth Bear: A Nursery Crime</a> is adorable too! It is quite silly a story, but has lots of word play and metaphors that delight. If you love funny puns, and metaphors, you should read Jasper Fforde&rsquo;s books!</p>
+
+
+<h3>The Girl Who Kicked the Hornet&rsquo;s Nest</h3>
+
+
+<p><a href="http://www.amazon.com/gp/product/030726999X?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=030726999X">The Girl Who Kicked the Hornet&rsquo;s Nest</a> was the first (and so far the only) book I have purchased on the Kindle. I don&rsquo;t know why, but the idea of reading Steig Larsson on the train crossing the Australian desert seemed irresistable. I enjoyed reading the first two, this was no different. It all ends quite happily much to my satisfaction. I only wish he was alive to write more books!</p>
+
+
+<h3>Tailor of Panama</h3>
+
+
+<p>Moral of the story for <a href="http://www.amazon.com/gp/product/034093770X?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=034093770X">The Tailor of Panama</a> is, Secret Service agents always look for an excuse for conspiracy even when there is none. It is a riveting read, mainly because most of the book rings true (especially when you read declassified information from U.S. or U.K.)</p>
+
+
+<p></p>
+
+<p>My productivity went for a toss after I discovered <a href="http://www.quora.com/Divya-Manian">Quora</a>, and especially <a href="http://www.quora.com/What-are-the-best-science-fiction-novels">this question</a>. Now I have more books to read &mdash; but that should not stop you from suggesting books you found interesting this month in the comments!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS Vocabulary]]></title>
+    <link href="http://nimbupani.github.com/css-vocabulary.html"/>
+    <updated>2010-11-02T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/css-vocabulary</id>
+    <content type="html"><![CDATA[<p>I realised quite late that to say something meaningful about CSS, I would have to know exactly what the terms used mean. Often, I have asked for help in forums, and have got stuck wondering how exactly to describe my problem. So I thought it would be a good idea to describe all the common terms of CSS. </p>
+
+
+
+
+<p>Bookmark this page, if you are prone to panic attacks while racing a deadline and are likely to have issues with your CSS at that time.</p>
+
+
+<p></p>
+
+<h3>CSS Vocabulary</h3>
+
+
+<ol>
+<li><strong>Property:</strong> The style that you are applying to a selector, e.g. <code>border</code>. </li>
+<li><strong>Value: </strong>The value that the property can have, e.g. <code>1px</code>. </li>
+<li><strong>Keyword:</strong> A word that is defined within the CSS specs and hence must never appear within quotes when used. E.g. <code>red</code>, <code>solid</code>, <code>dotted</code>.</li>
+<li><p><strong>Length Units:</strong>Values can be declared in units (e.g., 1px, 2%). <a href="http://twitter.com/#!/nimbuin/status/28960734159">This summarizes major units you should be concerned with</a>.</p></li>   
+<li><strong>Functional Notation:</strong> Any value that is specified as a function (an identifier followed by <code>()</code>). Mainly used to denote colors, URIs, attributes, and transforms: e.g. <code>rgba(0, 0, 0, 0.5)</code>, <code>url('im.png')</code>, <code>attr('href')</code>, <code>scale(20)</code>. Here are <a href="http://www.w3.org/TR/css3-values/#functional">some more details on functional notation</a>.</li>
+<li><p><strong>Declaration:</strong> The set of property names and values like so:</p>
+  <pre>background: red;</pre> 
+</li>
+<li><p><strong>Declaration Block:</strong> A set of declarations within <code>{}</code>, e.g.</p>
+<pre>{
+clear: both;
+color: sky; 
+}</pre></li>
+<li><p><strong>Rule or Rule Set:</strong> Selector(s) followed by a declaration block. E.g.</p>
+<pre>#lovelyweather {
+clear: both;
+color: skyblue;
+}  
+</pre>
+<p>This <a href="http://nimbupani.com/demo/css-vocab.html">demo</a> shows what each part of a ruleset means. Hover on each of the terms to see what they mean. </p>
+</li>  
+<li><p><strong>Selector</strong> The way you declare which elements the styles should apply to. <code>#lovelyweather</code> in the above example is a selector. There are <a href="http://www.w3.org/TR/css3-selectors/">different kinds of selectors</a>:</p>
+<ul>
+<li><strong>Class:</strong> The most commonly used selector. E.g. &#8220;.cloudy&#8221; to select an element with classname cloudy (e.g. &#8217;<div class=cloudy></div>&#8217; There can be more than 1 element with the same classname. </li>
+<li><strong>ID:</strong> Use this sparingly. You cannot reuse an ID within the same page and used only to identify an element uniquely. E.g. <code>&lt;div id=lovelyweather&gt;&lt;/div&gt;</code></li>                                                                                                                
+<li><strong>Attribute Selector:</strong> If you use any attribute other than class or id to identify an element in a stylesheet, you would be using Attribute Selectors. You can also do basic pattern matching within an attribute selector (so if you would like to do basic pattern matching for selectors using class or ID attributes, you would want to use attribute selectors).</li>  
+<li><strong>Pseudo-Classes: </strong> Classes that are applied to elements based on information that is not present in the markup, e.g. <code>:first-child</code> or <code>:last-child</code>. Do note that the selectors are parsed from right to left (<a href="http://nimbupani.com/demo/css-vocab.html#pseudo-classes">see the demo</a>). You cannot use <code>section article:first-child</code> to select the first occurrence of <code>article</code>, if the first child of <code>section</code> is <code>h1</code> and not <code>article</code>. Likewise with the <code>:nth-child</code>, and <code>:last-child</code> pseudo-classes.  </li>
+<li><strong>Pseudo-Elements</strong> Pseudo-elements differ from Pseudo-Classes in that they actually create an element in the document tree. This is almost the first instance of CSS modifying the HTML document tree. You should ideally use pseudo-elements with &#8220;::&#8221; instead of &#8220;:&#8221; (but most browsers accept &#8220;:&#8221; notation for CSS 2.1 pseudo-elements). Pseudo-elements are: <code>::first-line</code>, <code>::first-letter</code>, <code>::before</code>, <code>::after</code> (<a href="http://nimbupani.com/demo/css-vocab.html#pseudo-elements">See the demo for how pseudo-elements work</a>). </li>
+</ul>
+</li> 
+<li><p><strong>Combinators:</strong> The selection of an element based on its occurrence in relation to another element (chosen by the choice of combinator: whitespace, <code>&gt;</code>, <code>+</code>, or <code>~</code>). You can have:</p>
+<ul>
+<li><strong>Descendant Combinator:</strong> This is the most common usage, e.g. <code>#lovelyweather h1</code>.</li>
+<li><strong>Child Combinator:</strong> Select an element if it is a direct child of another element (and not a grandchild of that element). </li>
+<li><strong>Adjacent Sibling Combinator: </strong>The element that is immediately adjacent to another element. </li>
+<li><strong>General Sibling Combinator:</strong> The element that is adjacent, but not immediately to another element. </li>
+</ul>
+<p><a href="http://nimbupani.com/demo/css-vocab.html#combinators">See demo for all these combinators.</a></p>
+</li> 
+<li><strong>At-Rules:</strong> Rules that begin with the <code>@</code> character, e.g. <a href="http://www.w3.org/TR/2005/WD-css3-cascade-20051215/#import">@import</a>, <a href="http://www.w3.org/TR/css3-page/#page-box-page-rule">@page</a>, <a href="http://www.w3.org/TR/css3-mediaqueries/#background">@media</a>, and <a href="http://www.w3.org/TR/2009/WD-css3-fonts-20090618/#the-font-face-rule">@font-face</a>.</li>
+<li><strong>Media Features:</strong> With media queries, you can target the styles depending on the feature of that particular medium. A popular use of a media feature is the <code>min-width</code> and <code>max-width</code> to detect iOS devices. </li>
+<li><strong>Vendor-specific Extension: </strong>Exactly what it states. They provide functionality specific to that particular vendor (i.e. the browser). They do not always necessarily represent a feature declared in a standard. Peter Beverloo maintains an <a href="http://peter.sh/experiments/vendor-prefixed-css-property-overview/">exhaustive list of vendor-prefixed CSS properties by browser</a>. See <a href="http://nimbupani.com/demo/css-vocab.html#vendor-specific">this demo for how vendor-specific extensions work</a>.</li>
+</ol>
+
+
+<p>There is <a href="http://perfectionkills.com/tag-is-not-an-element-or-is-it/">similar confusion with HTML terms</a>. My hope is this makes it easier for everyone to communicate exactly what they mean when taking about markup and style. </p>
+
+
+<p></p>
+
+<p><small>Thanks to <a href="http://ajpiano.com/">ajpiano</a>, <a href="http://akahn.net/">akahn</a>, and <a href="http://desandro.com/">desandro</a> for the initial feedback!</small></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Active Web Development]]></title>
+    <link href="http://nimbupani.github.com/active-web-development.html"/>
+    <updated>2010-10-22T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/active-web-development</id>
+    <content type="html"><![CDATA[<p>I recently <a href="http://south10.webdirections.org/program/w3c#active-web-development">gave a talk at Sydney&#8217;s Web Directions South</a> on being more active as a web developer. These are the slides:</p>
+
+
+<div style="width:425px" id="__ss_5438688"><object id="__sse5438688" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-101013215252-phpapp01&stripped_title=active-web-development&userName=nimbupani" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse5438688" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=presentation-101013215252-phpapp01&stripped_title=active-web-development&userName=nimbupani" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object></div>
+
+
+<p><em>Update:</em> The audio for <a href="http://www.webdirections.org/resources/divya-manian-active-web-development/">this talk</a> is now available <a href="http://webdirections.org/podcasts/WD10/wds10-Divya-Manian.mp3">here.</a></a>
+<p>This talk came about from an article I wrote for WebStyleMag called <a href="http://webstylemag.com/web-development-with-curiosity">Web Development with Curiosity.</a></p>
+<p>It is also a personal story. In 2003, I discovered creating websites with CSS and HTML. It was a great time of exploration but it did not last long. In 2008, I was frustrated and bored with web development as I thought I knew all that was to know at that time.</p> 
+<p>Luckily for me, the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/">first draft of HTML5</a> was released in 2008, and while reading it, I thought it would be a good idea to do an objective assessment of what I knew and how glad I am that I did that! </p>
+<p>I opened one of my recent projects and started reading the code, to make sure I understood every code I wrote. I stumbled on the very first line: Why was I using a doctype? </p>
+<p>In 2008, I did not have an answer! I also did not know why I was using XHTML doctype either. I knew there was a good reason to do so, but did not know exactly why. As you can tell, my confidence in my abilities burst like a balloon.</p> 
+<p>How did it happen that someone who learnt about web development in 2003 so quickly lost that knowledge? There were several reasons, but the main one being Outsourced Learning. It works this way: </p>
+<p>I wake up in the morning, do my morning rituals, and then start reading articles from websites I track for web development. Stop to skim through an interesting article and bookmark it on <a href="http://delicious.com/nimbupani">delicious</a>. Those bookmarks remain there, never to be used again. When time comes for their use, instead of looking into my bookmarks, I look for a solution on Google and use whatever comes up first (irrespective of how robust that solution is).</p> 
+<p>This is <em>Outsourced Learning</em> because, at best what I can do with this information is to gossip about latest techniques and demos that I come across. It does not give me any insight and expertise that I would get by practicing the technology.</p> 
+<p>I was under the illusion that by outsourcing my learning I was somehow still learning. But, as my assessment showed, I clearly wasn&#8217;t.</p> 
+<p>How can we make sure that we continue to learn instead of using stale knowledge? In the last 2 years, these two have worked for me:</p>
+<ul><li>Create a Constitution</li> 
+<li>Creating Learning Rituals</li></ul>
+<h3>Constitution</h3>
+<p>By constitution I mean creating a support chart like so:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Features</th>
+      <th>Bling</th>
+      <th>Needs Fallback</th>
+      <th>Cannot Use</th>
+    </tr>
+  </thead>          
+  <tbody>
+    <tr>
+      <td>Border Radius</td>
+      <td>X</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Box Shadow</td>
+      <td>X</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>HTML5 Forms</td>
+      <td>-</td>
+      <td>X - HTML5Widgets</td>
+      <td>-</td>
+    </tr>       
+    <tr>
+      <td>Web Workers</td>
+      <td>-</td>
+      <td>-</td>
+      <td>X</td>
+    </tr>  
+    <tr>
+      <td>Web Sockets</td>
+      <td>-</td>
+      <td>-</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Categorize each new feature you come across into one of these 3 categories:</p>
+<ul>
+  <li><em>Bling:</em> You will use this feature, and you will not provide a fallback for browsers that do not support it.</li>
+  <li><em>Needs Fallback:</em> You will use this feature, but you will provide fallback for browsers that do not support it.</li>
+  <li><em>Cannot Use Now:</em> You will not use this feature for the time being for different reasons:
+  <ul>
+    <li>Lack of browser support</li>
+    <li>Feature is too unstable</li>
+    <li>Feature requires more than browser support (e.g. websockets require server-side support). </li>
+  </ul>
+  </li>
+</ul>
+
+<p>Make sure you mark which fallback you will use for each feature you put in the &#8220;needs fallback&#8221; category. <a href="http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">Modernizr Wiki maintains an exhaustive set of fallbacks for new features.</a></p>
+<p>The best part of this is not to create it, but to actively maintain it. I would recommend you glance through your Constitution at least once a month, as features may require reclassification based on support from new browsers, or may require new fallback solutions. Also, this will keep your awareness of new features up-to-date. </p> 
+<h3>Create learning rituals</h3>
+<p>When you create and follow through with your learning rituals, learning about web development will become like second nature to you. It is no longer a chore, or a tiring activity, but something you just do. There are 3 ways to go about this:</p>
+<ul>
+  <li>Deliberate Practice</li>
+  <li>Passive Learning</li>
+  <li>Participation</li>
+</ul>
+<h3>Deliberate Practice</h3>
+<p>I would recommend you set aside 2 hours of your week to practice web development (apart from your work schedule). This is not negotiable.</p>
+<h3>Passive Learning</h3>
+<ul>
+  <li>Refer to the <a href="http://www.delicious.com/nimbupani/activewebdevelopment">Official Browser documentation</a> when a particular feature does not work as per standard. </li>
+  <li>Refer to the <a href="http://www.w3.org/2009/cheatsheet/">W3C Cheat Sheet</a> if you want to look up a syntax for a property.</li>
+  <li>Read these documents. It is worth your time:
+  <ul>
+    <li><a href="http://w3.org/TR/html5-diff/">Differences between HTML4 and HTML5</a></li>
+    <li><a href="http://dev.w3.org/TR/html-markup/">HTML5 The Markup Language</a></li>    
+    <li><a href="http://w3.org/TR/html-polyglot/">Using XHTML in HTML5</a></li>
+    <li><a href="http://w3.org/TR/css3-selectors/#selectors">CS3 Selectors</a></li>
+  </ul>
+  </li>
+</ul>
+<h3>Participate</h3>
+<p>The advantage of participating in online/offline activities on web development is that it is a two-way process. If you slack on your learning process, constant reminders from your communities will keep you updated on what you have missed so when you are ready to get back into the game, you do not have a black hole to start from. You already know what specifically you have to catch up to (not some voodoo called &#8220;HTML5&#8221; but specific sections in standards like &#8220;Websocket API&#8221; or &#8220;Webfonts&#8221;).</p> 
+<p>I recommend the following for participation:</p>
+<ul>
+  <li>Mailing Lists</li>
+  <li>Filing browser bug reports</li>
+  <li>Browser communities</li>
+  <li>Writing and sharing demos.</li>
+</ul>
+<h3>Mailing Lists</h3>
+<p>If you write HTML and CSS, subscribing to these mailing lists is mandatory:</p>
+<ul>
+  <li><a href="http://lists.w3.org/Archives/Public/www-style/">www-style</a>: This is where you track how browsers are implementing CSS specs. This is also where you ask for features in CSS. </li>
+  <li><a href="http://www.whatwg.org/mailing-list">whatwg</a>: Browser developers frequently discuss new features. This is also where you can give feedback on the specs.</li>
+  <li><a href="http://tech.groups.yahoo.com/group/mobile-web/">mobile web</a>: Recent mailing list exclusively for developing for mobile devices. Developing for mobile devices is a whole new level of torture that these warriors will help you overcome.</li>
+</ul>
+<p>These mailing lists do get overwhelming. So, do not try to be on top of each and every thread. I usually, pick up an email thread, and spend 30 minutes or so to understand completely what that thread is discussing (and occasionally contribute to it). </p>
+<h3>Browser Bug Reports</h3>
+<p>It is almost an impossible task to check how each feature works in combination with other features. Browser developers do try, but miss a lot of use cases. So, I would think it is mandatory for developers to submit a bug report if they find a browser that renders a feature inconsistent with the description in the specification. Read <a href="http://ejohn.org/blog/a-web-developers-responsibility/">John Resig&rsquo;s post on a Web Developer&#8217;s Responsibility</a> to understand how to write and where to file bug reports.</p> 
+<h3>Communities:</h3>
+<p>Almost all browsers have places where they discuss and describe Open Web Standards. Subscribe and comment on their posts! </p>
+<h3>Writing and Sharing Demos:</h3>
+<p>I mentioned deliberate practice. But before you get started, you would have to get your practice tools set-up. </p>
+<ul>
+  <li>Get a sandbox where you can practice without worrying if your demos are going to take your homepage/blog down. I use <a href="http://www.dropbox.com/home">dropbox</a>. You can use whatever you are comfortable with. </li>
+  <li>Use a template to start your demos (try <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>). If you start writing code from scratch, your focus deflects from the features themselves to writing the support structure. Then again, make sure you use a template that is up-to-date and not something stale.</li>
+  <li>Finally, start writing demos! Here are some ways to think about these demos:
+  <ul>
+    <li>What is the most annoying use-case at work? How can you make it less annoying?</li>
+    <li>Is there a repeated pattern you can replace with the new features of HTML5/CSS3 or other Open Web Standards?</li>
+    <li>How fancy can you get with form elements without using graphics?</li>
+    <li>Do you use arrow graphics in your web application? If so, how about using only CSS to do these graphics?   </li>
+  </ul>
+  </li>
+</ul>
+<p>Once you have your demo, it is time to evaluate it!</p>
+<ul>
+  <li>Test it on all browsers that your audience would use (or the audience for the websites in your workplace would). How does it render on browsers that support the required features? How does it render on all other browsers? </li>
+  <li>Does it use a lot of CPU cycles (usually you would know this by the increased noise from the fans in your computer when you run your demo). </li>
+  <li>Does it slow down your browser (test this by scrolling or resizing the browser window)?</li>
+  <li>What fallback solutions do you need to render the demo correctly on all browsers? </li>
+  <li>Finally does your Constitution require an update based on the demo? </li>
+</ul>
+<h3>Share </h3>
+<ul>
+  <li>Put up the code on <a href="http://github.com">Github</a> (ask a friend how to do this, if you do not know already). Get people to comment and critique it.</li>
+  <li>By sharing your code, you will learn more simply by having others ask questions on what you did. Even better when someone points you to a simpler solution. </li>
+  <li>If you are working with a few other web developers, meet once a month at work to discuss either the constitution or what is new in Open Web Standards.</li>
+  <li>You could even meet to autopsy demos. <a href="http://html5demos.com/">Choose a demo</a> and change the parameters. Disable JavaScript and see how it works. Analyse its performance. How does it work when you combine it with some other feature? Are there other ways to accomplish the same demo? What are the fallbacks the demo uses? Can you use something else? </li>
+</ul>
+<h3>Continue Outsourced Learning</h3>
+<p>While you are doing all this, do <a href="http://paulirish.com/2010/front-end-development-feeds-to-follow/">continue with reading articles on Web Development</a>. But do remember to be wary of any claims articles make. Everyone has biases which they may or may not be aware of.</p> 
+<p>Always test and evaluate any demo before you accept the assertions as facts. </p>
+<h3>Designers</h3>
+<p>If you are a web designer, I have news for you. It used to be that, it was sufficient to know HTML/CSS to be a web designer.</p>
+<p>Alas, the new APIs that are available for HTML5 provide a lot of interactive features that can only be accessed through JavaScript. <a href="http://video.yahoo.com/watch/111593/1710507">Learn JavaScript.</a></p>
+<p>Do subscribe to the mailing lists I mentioned earlier, and be vocal about what you want from the standards bodies. If you have friends who have the same concerns as you, encourage them to voice it in the mailing lists. Browsers and standards bodies are actively looking to help web designers and developers for feature-requests and the more people who advocate it, the less it would seem like an isolated voice in the dark.</p>
+<p>Finally, live long and prosper!  </p>    
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for September]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-september.html"/>
+    <updated>2010-09-22T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-september</id>
+    <content type="html"><![CDATA[<p>Hey, hey, hey, is it September already? I had no idea where all the days went by. Seattle is already moaning with fall weather. But thankfully I will be escaping to Sydney (to give a talk on <a href="http://south10.webdirections.org/program/w3c#active-web-development">Oct 15th on Active Web Development</a>). If you are in Sydney or Melbourne, holler in the comments if you want to meet! Meanwhile, here are some books I read this month: </p>
+
+
+
+
+<h3>The Laughing Policeman</h3>
+
+
+
+
+<p>I love mysteries. <a href="http://chengiz.livejournal.com">Saurabh</a>, on Goodreads, alerted me to <a href="http://www.amazon.com/gp/product/0307390500?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0307390500">The Laughing Policeman</a>. The Laughing Policeman is quite slow but keeps you engaged throughout. Unlike American mysteries, the life of a policeman is completely without glamour. Awesome read.</p>
+
+
+
+
+<h3>The Art of Travel</h3>
+
+
+
+
+<p>There is a thin line between bullshit and insight, and <a href="http://www.amazon.com/gp/product/0375725342?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0375725342">The Art of Travel</a> keeps zig-zagging that line often. There are several times when travelling I felt exactly what the author talks about. This book certainly is not about the &ldquo;Art&rdquo; of Travel, more like musings on the idea of &ldquo;Travel&rdquo;.</p>
+
+
+<p></p>
+
+<p>But it is worth a read as it brings out the emptiness of being a tourist (traveling on long weekends to &ldquo;relax&rdquo; on the beach, and forcing ourselves to feel happy while doing so).</p>
+
+
+<p></p>
+
+<h3>Made By Hand</h3>
+
+
+
+
+<p>I was quite disappointed by the book, especially the way it begins. Mark Frauenfelder moves to a tropical island Raratonga and misses the conveniences of the country he left behind. While there, he learns to shred coconuts and that is how his love for hand-made stuff begins. Within 3 months he is back because he got sick of the &#8220;malaria, isolation, and ringworms&#8221;.</p>
+
+
+<p></p>
+
+<p><a href="http://www.amazon.com/gp/product/1591843324?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1591843324">Made by Hand: Searching for Meaning in a Throwaway World</a> documents his mistakes learning how to grow chickens, making furniture, or modding coffee machines. While, it is interesting (as reading anyone&rsquo;s diary is), there is nothing to inspire you to start doing things on your own. It is also very preachy: less on facts, more on emotions. </p>
+
+
+<p></p>
+
+<p>There probably is some culture gap between me and Mark, because Amazon has overwhelmingly positive reviews for this book. So, if you have grown up in the US you might possibly like it.</p>
+
+
+<p></p>
+
+<h3>Dictator Styles</h3>
+
+
+
+
+<p><a href="http://twitter.com/chewlink">Chew Lin</a> recommended <a href="http://www.amazon.com/gp/product/0811853144?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0811853144">Dictator Style: Lifestyles of the World&#8217;s Most Colorful Despots</a>. It is not as much of a &ldquo;read&rdquo; as it is a &ldquo;see&rdquo; Moral of the book: Never ever get inspired by the interior decor on Architectural Digest.</p>
+
+
+<p></p>
+
+<h3>Breakfast of Champions</h3>
+
+
+
+
+<p>This is exactly how books should be written. Kurt Vonnegut was the father to absurdist fiction and this book is AMAZING. Just read <a href="http://www.amazon.com/gp/product/0385334206?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0385334206">Breakfast of Champions</a></p>
+
+
+
+
+<h3>Wilson</h3>
+
+
+
+
+<p>If you are a hipster, you would want to read <a href="http://www.amazon.com/gp/product/1770460071?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1770460071">Wilson</a>, the graphic novel, every time you feel like complaining about non-hipsters – mainly to remind yourself never to become a Wilson.</p>
+
+
+
+
+<h3>Voss</h3>
+
+
+
+
+<p>I am going to Australia&#8217;s Northern wilderness and I was recommended I read <a href="http://www.amazon.com/gp/product/014310568X?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=014310568X">Voss</a> to experience the wilderness as it existed in the 19th century. Voss was written in the early fifties, and has elements of skepticism interwoven with the fictionalized account of a real adventurer who disappeared in Australia, <a href="http://en.wikipedia.org/wiki/Ludwig_Leichhardt">Ludwig Leichhardt</a>. If you like tragedies, read it.</p>
+
+
+
+
+<p>What books did you find interesting lately?</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for August 2010]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-august-2010.html"/>
+    <updated>2010-09-02T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-august-2010</id>
+    <content type="html"><![CDATA[<p>Eeks! I forgot to review books I read for August and now I have way too many! I shall hopefully not read as many in September and can space the reviews better. Anyways, onward!</p>
+
+
+
+
+<h3>Palestine</h3>
+
+
+<p></p>
+
+<p>Thanks to <a href="http://popagandhi.com">Adrianna</a>, I managed to read this awesome book. In <a href="http://www.amazon.com/gp/product/156097432X?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=156097432X">Palestine</a>, Joe Sacco documents what Palestinians go through every day. It is not a pretty picture and the violence against Israel is understandable in that context. It seems like the only way to end this issue would be to abandon Palestine and migrate elsewhere (<a href="http://en.wikipedia.org/wiki/Lost_cities">like our ancestors</a>).</p>
+
+
+
+
+<h3>Logicomix: An Epic Search for Truth</h3>
+
+
+<p><a href="http://www.amazon.com/gp/product/1596914521?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1596914521">Logicomix</a> is a fantastic introduction to logic and part-story of Bertrand Russell who was instrumental in creating this field. What is awesome is that it is understandable and interesting to anyone who is interested in rational thinking. All of the logicians featured in the book have a link to schizophrenia, which makes me wonder if the edge of rationality also the edge of madness?</p>
+
+
+
+
+<h3>Ways of Seeing </h3>
+
+
+<p>This is a <a href="http://www.amazon.com/gp/product/0140135154?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0140135154">slim but insightful book</a> on art and how indelibly it is linked to our perception of it. The book talks about art appreciation as merely a signaling mechanism at the most and how interpretation of art in a time other than when it was created is a doomed venture.</p>
+
+
+<p></p>
+
+<p>It also has a great essay on the rise, in western societies, of objectification of women which has continued to this day and is spreading in other cultures.</p>
+
+
+
+
+<p>This book is the result of a <a href="http://www.youtube.com/watch?v=LnfB-pUm3eI">BBC mini-series</a>.</p>
+
+
+<p></p>
+
+<h3>Skim</h3>
+
+
+
+
+<p>Jillian Tamaki&#8217;s art work in <a href="http://www.amazon.ca/dp/088899964X/?tag=book0a8-20&linkCode=asn&creativeASIN=088899964X">Skim</a> is amazing. Her illustrations are quite like <a href="http://en.wikipedia.org/wiki/Ukiyo-e">Ukiyo-e paintings</a> but also frame the story quite well. It is a beautiful piece of work.</p>
+
+
+<p></p>
+
+<h3>Kurosagi Corpse Delivery Service</h3>
+
+
+<p>I have finally caught up to <a href="http://www.amazon.com/gp/product/1593075553?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1593075553">all the back issues</a>. Now I have to wait for the english translations from Vol. 11 onwards. It is a hilarious series (<a href="http://nimbupani.com/search/node/kurosagi">I don&#8217;t seem to get tired of mentioning this)</a>, well worth a read!</p>
+
+
+
+
+<h3>The Art and Science of CSS</h3>
+
+
+<p>I discovered <a href="http://www.amazon.ca/dp/0975841971/">this</a> in my &ldquo;toread&rdquo; folder of e-books. The title vastly overestimates what the actual content is, which is a set of tips and tricks to get some popular Web Design patterns of that time (2007). Not something worth referring to.</p>
+
+
+
+
+<p>That is that! As usual, I beg you to leave your recommendations in the comments. I already have another 6 books to review, which I should hopefully do so by end of next week. Meanwhile, there is <a href="http://bumbershoot.org/">Bumbershoot</a> to look forward to!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sexy CSS3 Buttons]]></title>
+    <link href="http://nimbupani.github.com/sexy-css3-buttons.html"/>
+    <updated>2010-08-17T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/sexy-css3-buttons</id>
+    <content type="html"><![CDATA[<p><b>Update:</b> <a href="http://chriseppstein.github.com">Chris Eppstein</a> pointed out the obvious, a neat <a href="http://brandonmathis.com/projects/fancy-buttons/demo/">fancy buttons plugin for Compass</a> that provides simple gradient fancy buttons without using an extra element in the markup.</p>
+
+
+<p>I do not wear the mantle of Open Web Vigilante lightly. Granted, I may slack off now and then (who doesn&#8217;t?), I pay serious attention when claims of <a href="http://technology.posterous.com/make-css3-buttons-that-are-extremely-fancy">Extremely Fancy CSS3 Buttons</a> are made.</p>
+
+
+<p></p>
+
+<p><a href="http://nimbupani.com/demo/sexycss3buttons/"><img src="http://nimbupani.com/files/post_buttons_png_scaled500.png" alt="post_buttons.png.scaled500.png" border="0" width="500" height="70"></a></p>
+
+
+<p>Now, now, you might think, at first glance, I should be crying tears of joy at the grace and beauty of the purely CSS buttons, but I do not. Here’s why:</p>
+
+
+
+
+<ol>
+  <li>It uses 3 elements to do what essentially should be restricted to 1, the button element.</li>
+  <li>It uses a <code>div</code> tag to create a button, which violates my semantic rule book. 
+  </li>
+  <li>
+   The <code>div</code> means all buttons are block elements and will never be flexible and always need to have width set. That does not sound too buttony!
+  </li>                                                                   
+  <li>The example cites using a span with inline background color. I know everyone is lax about inline CSS, but as a Vigilante I NEVER AM (mostly)!    </li>
+  <li>So if you want to center these buttons you cannot, since they are floated block elements.</li>
+</ol>
+
+
+
+
+<p>The demo looked ripe for some vigilante action. Here is the re-worked HTML code for a button: </p>
+
+
+
+
+<pre>&lt;a class=&quot;fancy_button&quot; href=&quot;#&quot;&gt;&lt;b&gt;Post&lt;/b&gt;&lt;/a&gt;</pre>
+
+
+
+
+<p>If you are not fixated with the colors, you could drop the <code>b</code> element.</p>
+
+
+
+
+<p>Here is the CSS for rendering the normal state of the button (you can see the full CSS on <a href="http://nimbupani.com/demo/sexycss3buttons/">the Sexy Buttons demo</a>):</p>
+
+
+<pre>
+  .fancy_button { 
+    display: inline-block;   
+    position: relative; 
+    padding: 0.25em 2em;
+    border: 1px solid;    
+    border-color: transparent transparent rgba(202,202,202,0.27) transparent; 
+    -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;  
+    -webkit-background-clip: padding-box;
+  }
+  
+   .fancy_button b { 
+     display: block; 
+     z-index: 2;  /* Necessary to make this top-most element */
+     position: relative;  
+     text-shadow: rgba(0,0,0,0.45) 0 -1px 0; 
+    }   
+   
+  .fancy_button:before,
+  .fancy_button:after {
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    content: "";  /* Necessary to render these pseudo-elements */
+    display: block; 
+    -webkit-background-clip: padding-box;    
+  } 
+  
+  .fancy_button:before {  
+    top: -4px;
+    left: -4px; 
+    padding: 4px;       
+    background: #086f14; 
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.4)), to(rgba(77,77,77,0.4)));  
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(77,77,77,0.4));     
+    -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;    
+  }
+
+  .fancy_button:after { 
+    top: -1px;
+    left: -1px;
+    border: 1px solid; 
+    border-color: rgba(255,255,255,0.7) rgba(0,0,0,0.3) rgba(0,0,0,0.6) rgba(0,0,0,0.3); 
+    -webkit-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; -moz-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; box-shadow: rgba(0,0,0,0.75) 0px 0px 3px;
+    -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.6)), color-stop(0.5, rgba(255,255,255,0.15)), color-stop(0.5, rgba(255,255,255,0.01)), to(transparent)); 
+    background: transparent -moz-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.01) 50%, transparent);
+  }                                      
+</pre>
+
+
+
+
+<p>Some explanation is warranted:</p>
+
+
+<p></p>
+
+<ol>
+  <li><a href="http://caniuse.com/#feat=css3-colors">Effectively only IE8 &amp; below need rgb replacements for rgba</a>, so I have moved such degradations to an IE specific selector. </li>
+  <li>I dislike the need for an additional b element. The only reason it exists is, otherwise the text will look grey as it will be behind the gradients.  If you have a better solution, do comment!</li>
+  <li>This technique uses pseudo-elements (<code>:before</code> and <code>:after</code>), since they are more CSS3 than using divs and spans :). I have also gathered the common styles of these elements together.</li>
+  <li><p>IE8 and below get the same simple button treatment:</p><p><img src="http://nimbupani.com/files/postbuttonsie_0.png" alt="postbuttonsie.png" border="0" width="544" height="67"></p></li>
+  <li>
+  IE9 will render the box-shadow and rgba colors, if not the gradients. If you need to tweak this style, you just have to prefix your selector with <code>.ie9</code> in the CSS (provided you are using <a href="http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">IE conditional comments</a>.</li>
+</ol>
+
+
+
+
+<p>This button graphic is a bit too heavy for my taste :) but if this is the look you want, you can <a href="http://nimbupani.com/demo/sexycss3buttons/">consider this</a>!</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Accessible CSS Barcharts]]></title>
+    <link href="http://nimbupani.github.com/accessible-css-barcharts.html"/>
+    <updated>2010-08-16T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/accessible-css-barcharts</id>
+    <content type="html"><![CDATA[<p><b>Update:</b> I am now <a href="http://nimbu.in/accessible-bar-charts/">hosting the bar charts</a> for posterity :)  You can also <a href="http://github.com/nimbupani/table-bar-chart">fork it on Github</a>.</p>
+
+
+<p><a href="http://nimbu.in/accessible-bar-charts/"><img src="http://nimbupani.com/files/10kbarchart.png" alt="10kbarchart.png" border="0" width="600" height="409"></a></p>
+
+
+
+
+<p>When I worked on the design for <a href="http://html5readiness.com">HTML5Readiness</a>, I felt guilty for not using a table to represent the data. So, when the 10K competition came along and I thought it would be a good idea to come up with an accessible and ready-to-use CSS bar-chart. </p>
+
+
+
+
+<p>I initially thought of asking user for the data and then rendering the chart along with code for the HTML and CSS. But, it did not seem very intuitive (especially expecting the user to imagine the relationship between the data and the graph). I recalled <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/editing.html#attr-contenteditable">contentEditable</a> was now available in almost all browsers and decided to use that to let the users update the chart with names and values they wanted. As soon as the user finishes editing one of the chart values, the Textarea below updates to show the HTML markup they can copy to use on their own website.</p>
+
+
+
+
+<p>It was not a very difficult application to develop (given that I could already use jQuery in addition to my 10K of files). Most of my time was spent thinking of how to update the length of the bars dynamically when the user tabs or moves focus from one <code>contenteditable</code> area to the other. I also inlined the edit and delete icons using data URLs and used CSS3 transitions to position the vertical axis and its label. All the text within the barchart is editable, and the bars alter when the value of one is significantly altered from its original value.</p>
+
+
+
+
+<p>I was pretty pleased with the app: it seemed to work on Opera 10.6,  Safari 5, and Firefox 3.6.8. But, you must have guessed it by now, it did not work on IE9. Why, you ask? IE9 does not allow HTML Table elements to be styled with the <code>display</code> property (here is <a href="https://connect.microsoft.com/IE/feedback/details/556576/html-table-elements-cant-be-styled-using-display?wa=wsignin1.0">the bug report</a>, warning: MSN Passport required to view). The bug has been closed with a note stating it is &ldquo;by design&rdquo;. </p>
+
+
+
+
+<p>No version of IE9 will ever support tables to be styled as anything other than a table. It boggles me that IE 9 team cannot even be bothered to answer why it is &ldquo;by design&rdquo;, given that almost every other browser on the market seems to support it? There are <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/tabular-data.html#the-table-element">no restrictions from the HTML5 standard either</a>.</p>
+
+
+
+
+<p>Anyway, I had to alter the markup, so  a <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/grouping-content.html#the-dl-element">name-value pair</a> seemed to be the best alternative. So, now it works on <a href="http://10k.aneventapart.com/">all the browsers that the contest mandates it should work on</a>!</p>
+
+
+
+
+<p>Some people have reported they are unable to edit the data in Firefox on Linux, which seems strange given that it works on Firefox 3.6 on a Mac and PC. I have no Linux machine to test on, but I hope some of those who are reading this can help me with that!</p>
+
+
+
+
+<p><span class=strike>Meanwhile, if this application seems useful, do <a href="http://10k.aneventapart.com/entry/details/102">vote</a>!</span> The results are out, and I did not win :(</p>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Reviews for July - Part 2]]></title>
+    <link href="http://nimbupani.github.com/book-reviews-for-july-part-2.html"/>
+    <updated>2010-08-04T00:00:00-07:00</updated>
+    <id>http://nimbupani.github.com/book-reviews-for-july-part-2</id>
+    <content type="html"><![CDATA[<p>I have racked up too many books unreviewed, which means (un)fortunately means shorter reviews. Here goes:</p>
+
+
+
+
+<ol>
+    <li>
+        <h3>Landing Page Optimization: The Definitive Guide to Testing and Tuning for Conversions</h3>  
+        <p><a href="http://www.amazon.com/gp/product/0470174625?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0470174625">Landing Page Optimization</a> covers a lot on statistical models necessary to analyze a &ldquo;landing page&rdquo; to &ldquo;convert&rdquo; more people. I found the repeated need for &ldquo;conversions&rdquo; unnerving. The author found the need to write on how everyone (except the marketing expert) can block the process of optimizing the landing page and tactics to get around that. Sad.
+        </p>
+    </li>
+    <li>
+        <h3>Superman: Whatever Happened to the Man of Tomorrow?</h3>
+        <p>As far as I know, <a href="http://www.amazon.com/gp/product/1401223478?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1401223478">This</a> is the only set of Superman stories written by Alan Moore. Stylistically, the stories are drawn to resemble Jack Kirby&#x27;s work (it is lovely!) It is a great read if you like Superman.</p>
+    </li>               
+    <li>
+        <h3>Murder Mysteries</h3>
+        <p><a href="http://www.amazon.com/gp/product/156971634X?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=156971634X">Murder Mysteries</a> is an adaptation of a Neil Gaiman story and brings same joy as Sandman series with an extra benefit of also being a whodunnit.</p>
+    </li> 
+    <li>
+        <h3>A Mosque in Munich: Nazis, the CIA, and the Rise of the Muslim Brotherhood in the West</h3>
+        <p>In the early 30s, the Nazis established an organization to get Muslim refugees from USSR together to foment uprisings in Muslim provinces of USSR (now independent nations). After WWII, US joined in this scramble, literally stealing prized Muslim leaders from Germans (meanwhile the Nazi head of said organization goes unpunished, and retained his privileged status, in the new German government). Similar techniques were in play to <a href="http://en.wikipedia.org/wiki/CIA_activities_in_Afghanistan#Afghanistan_1985" title="CIA activities in Afghanistan - Wikipedia, the free encyclopedia">drive out the Soviets from Afghanistan</a>. If there is one book that will strip away the romance of diplomacy and notions of noble intentions of any country, <a href="http://www.amazon.com/gp/product/0151014183?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0151014183">this</a> would be it. </p>
+    </li>
+    <li>
+        <h3>The Vampire Files</h3> 
+        <p><a href="http://www.amazon.com/gp/product/0441014275?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0441014275">The Vampire Files, Volume Two</a> was a random pick from the <a href="http://spl.org">Library&rsquo;s</a> recommended books section. This is a pulp whodunit featuring a vampire as a detective. I thought it would be as wonderful as <a href="http://nimbupani.com/book-reviews-for-june-2009.html" title="Book Reviews for June 2009 | Nimbupani Designs">The Automatic Detective</a>, alas, it is not.</p>
+    </li>
+    <li>
+        <h3>Fantasies of a Bollywood Love Thief: Inside the World of Indian Moviemaking</h3> 
+        <p><a href="http://www.amazon.com/gp/product/0156030845?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0156030845">Fantasies of a Bollywood Love Thief</a> is an absurdly tacky title for a book on the making of <a href="http://en.wikipedia.org/wiki/Omkara_(film)" title="Omkara (film) - Wikipedia, the free encyclopedia">Omkara</a> by Stephen Alter (cousin of <a href="http://en.wikipedia.org/wiki/Tom_Alter">Tom Alter</a>). The narrator takes a backseat and lets the conversations speak for themselves. The book does not take any stereotyped view of Bollywood and is a glimpse into the power-play and process involved in making movies. Do read if you like seeing Bollywood movies.</p>
+    </li>                                                           
+    <li>
+        <h3>Tea Time for the Traditionally Built</h3>
+        <p><a href="http://www.amazon.com/gp/product/B001NLL8QU?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001NLL8QU">Tea Time for the Traditionally Built</a> is the new book in my favourite series ever: No 1 Ladies Detective Agency. <a href="http://en.wikipedia.org/wiki/The_No._1_Ladies'_Detective_Agency_(TV_series)" title="The No. 1 Ladies' Detective Agency (TV series) - Wikipedia, the free encyclopedia">The TV show based on this series</a>, does full justice to the book (though a touch too arty). I will never get tired of this series. Long live Mma Ramotswe!</p>
+    </li>
+</ol>
+
+
+<p>Do comment with books you found interesting this month! Meanwhile, I will dive back into obscurity to finish my backlog of books! </p>
+
+]]></content>
+  </entry>
+  
+</feed>
