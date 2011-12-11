@@ -7,7 +7,9 @@
   <title>Divya Manian</title>  
   <meta name="author" content="Divya Manian">
   
-  <meta name="description" content="I will be attending my first ever CSS Working Group Face to Face Meeting starting this Sunday, and I wanted to be at least up-to-speed on all the &hellip;">
+  <meta name="description" content="This site sports a refresh. Here is a list of what is different now: Runs on Octopress.
+Hosted on Github.
+Anyone can submit updates for any post with &hellip;">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +17,6 @@
   
   <link rel="canonical" href="http://nimbupani.github.com/index.html">
   <link href="/stylesheets/screen.css" rel="stylesheet">
-  <script src="/javascripts/modernizr-2.0.js"></script>
   <link href="http://feeds.feedburner.com/nimbupani" rel="alternate" title="Subscribe" type="application/atom+xml">
   <link href="http://feeds.feedburner.com/nimbu" rel="alternate" title="Subscribe to Web Development updates" type="application/atom+xml">    
   
@@ -27,7 +28,7 @@
     <div class="content">
       <header role="banner">  <h1><a href="/">Divya Manian</a></h1>
   
-  <h2><a class="twitter" href="https://twitter.com/divya">twitter</a> <a class="rss" href="http://feeds.feedburner.com/nimbupani">RSS Feed</a> <a class="youtube" href="http://youtube.com/nimbupani">Youtube Channel</a></h2>
+  <h2><a class="twitter" href="https://twitter.com/divya">twitter</a> <a class="rss" href="http://feeds.feedburner.com/nimbupani">RSS Feed</a> <a class="youtube" href="http://youtube.com/nimbupani">Youtube Channel</a> <a class="github" href="https://github.com/nimbupani">Github</a></h2>
   
 </header>
       <nav class="sitenav"><a href="/">Home</a>
@@ -52,7 +53,7 @@
     
      
     
-      <a class="previous" href="/this-revolution-needs-new-revolutionaries.html" title="This revolution needs new revolutionaries">❬</a>      
+      <a class="previous" href="/summary-of-various-exciting-css-drafts-and-proposals.html" title="Summary of various exciting CSS drafts and proposals">❬</a>      
     
                
   </nav>
@@ -64,96 +65,96 @@
 
   
 
-<time datetime="2011-12-10T18:51:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2011</span></time>    
+<time datetime="2011-12-11T04:51:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>11</span> <span class='year'>2011</span></time>    
     
     
-      <h1 class="entry-title"><a href="/summary-of-various-exciting-css-drafts-and-proposals.html">Summary of various exciting CSS drafts and proposals</a></h1>      
+      <h1 class="entry-title"><a href="/redesign-notes.html">Redesign Notes</a></h1>      
     
     
     
   </header>
-<div class="entry-content"><p>I will be attending my first ever <a href="http://lists.w3.org/Archives/Public/www-style/2011Jun/0593.html">CSS</a> Working Group Face to Face Meeting starting this Sunday, and I wanted to be at least up-to-speed on all the drafts that will be up for discussion. So, in the interest of not letting a few hours spent understanding some of them go to waste, here is a brief summary of each of these drafts and some of the concerns that will be discussed during the meeting.</p>
+<div class="entry-content"><p>This site sports a refresh. Here is a list of what is different now:</p>
 
-<p>You could probably look out for updates on the meeting <a href="http://twitter.com/csswg">@csswg</a></p>
-
-<h3><a href="http://dev.w3.org/csswg/css3-regions/">CSS Regions</a></h3>
-
-
-<p>This spec, from my understanding, is a way to define how content flows like in Adobe InDesign or Illustrator. Basically you can take content from a set of elements (by using the property <code>flow: &lt;nameoftheregion></code>) and make that render on a set of other elements (called  <em>regions</em>) which act as a container for that content using the <code>content: from-flow()</code>. If the container have content, those will be replaced by the content set using the  <code>content</code> property. This is controlled by using what is called as <em>named flow</em>. You control which elements belong to a flow using the <code>flow</code> property.</p>
-
-<pre><code>.contentthatflows { flow: newspaper-region; }
-
-.region1-1, .region1-2 { content: from-flow(newspaper-region); }
-</code></pre>
-
-<p>The content rendered within <code>.region1-1</code> and <code>.region1-2</code> will render with styles specified for <code>.region1-1</code> and <code>.region1-2</code> and will not use the styles of the element they belong to.</p>
-
-<p>Sometimes, content can straddle two or more such regions within the same flow. There is no clear way to adjust the styles of such content belonging to a single flow, so we use a pseudo-element called <code>::region-lines</code> . This property has been much debated and would be the subject of the debate at the CSS Face-to-face too.</p>
-
-<p>There is also a skeletal interface to access which region an element is part of which might be fleshed out further in the Face-to-face meeting.</p>
-
-<h3><a href="http://www.interoperabilitybridges.com/css3-floats/"> <span class="caps">CSS3</span> Floats </a></h3>
+<ul>
+<li>Runs on <a href="http://octopress.org">Octopress</a>.</li>
+<li>Hosted on <a href="http://github.com">Github</a>.</li>
+<li>Anyone can submit updates for any post with a pull request.</li>
+<li><a href="http://disqus.com">Disqus</a> comments (with threading!)</li>
+<li>No more categories except <a href="/categories/web-development">Web Development</a>.</li>
+<li>Based on <a href="http://h5bp.com">HTML5Boilerplate</a> (obviously).</li>
+<li>Keyboard navigation! Press left/right arrow for previous/next page.</li>
+</ul>
 
 
-<p></p>
+<h3>Why</h3>
 
-<p> Expands on floats to make float possible with positioning and wrap text content around the positioned element. However this conflates floats with positioning (if you want wrapping on elements, you need to set <code>float: positioned</code> and use <code>top</code> , <code>left</code> , <code>position</code> to control the location of the wrapped element) </p>
+<p>I have been wanting to move to a static site for several months because there were several things that annoyed me about Drupal (or any other CMS systems):</p>
 
-
-<p> <p> The properties for controlling the wrapping is similar to those in the <span class="caps">CSS</span> Exclusions proposal - <code>wrap-type</code> (vs <code>wrap-shape-mode</code> ), <code>wrap-shape</code> (same), <code>wrap-image</code> (vs <code>wrap-shape-image</code> ), <code>wrap-image-threshold</code> (vs <code>wrap-shape-image-threshold</code> ), <code>wrap-margin</code> (vs <code>wrap-shape-margin</code> ), <code>wrap-padding</code> (vs <code>wrap-shape-padding</code> ). It seems to me that these two proposals need to be merged or the scope of one of them changed significantly so there are no conflicts. From the <a href="http://wiki.csswg.org/ideas/css3-floats-use-cases">Wrap use cases</a> , personally I like the approach of <span class="caps">CSS</span> Exclusions which seems cleaner for all the use cases mentioned. </p></p>
-
-<h3> <a href="http://dev.w3.org/csswg/css3-exclusions/"> <span class="caps">CSS3</span> Exclusions </a> </h3>
-
-
-<p></p>
-
-<p> This has been initially proposed by Adobe (along with <span class="caps">CSS3</span> Regions). The case for wrapping is separate from positioning or floats, and wrapping can occur on any box independent of where they are located or rendered. In addition you can also specify how each wrapping shape interacts with each other (depending on what you set for wrap-shape-order, you can set which wrapping shape will clip the other when they interact). </p>
-
-
-<p> <p> I like this better than <span class="caps">CSS3</span> Floats because this is not related to how an element is positioned but merely impacts the wrapping. </p></p>
-
-<p> Both <span class="caps">CSS3</span> Exclusions and <span class="caps">CSS3</span> Floats accept <a href="http://www.w3.org/TR/2010/WD-SVG11-20100622/shapes.html"> basic <span class="caps">SVG</span> shapes </a> as values for <code>wrap-image-shape</code> ( <code>wrap-image</code> ). Both specs have equivalent properties to the background property for the wrap image, which means you can have repeating image patterns that you can use for creating your wrap shape. </p>
+<ul>
+<li>Lack of out of the box version control.</li>
+<li>Unnecessary security nightmare with MySQL.</li>
+<li>Loading of needless large resources just because the admin interfaces require it (<code>drupal.js</code> &amp; <code>drupal.css</code> I am looking at you).</li>
+<li>No way to collaborate or have others edit my mistakes (other than in comments).</li>
+<li>Dependence on several modules which go out of date when a new version comes along.</li>
+<li>Ceaseless updating of modules and versions.</li>
+<li>PHP (white screen of death anyone)!?!</li>
+<li>Poor spam filtering.</li>
+<li>Painful backup of database and none for the layout and design.</li>
+<li><code>.htaccess</code> drama</li>
+</ul>
 
 
-<p> <p>Both specs also specify an interesting alpha channel threshold which can be used to determine the shape that needs to be generated from the wrap-image specified. </p> <h3> <a href="http://dev.w3.org/csswg/css3-flexbox/"> <span class="caps">CSS3</span> Flexbox </a> </h3> <p> This has been entirely re-written and is significantly different from current implementations. What it aims to do is to provide you with flexible layout of child elements and the space around them within a parent element that has a flexbox layout. You get started by specifying <code>display: flexbox</code> on the parent element and then specifying the order in which you want the child elements to be laid out (using flex-direction). All child elements (with display set to inline or anything) will follow this direction if nothing more is specified for each of them. You can also determine how the white-space that is left after following the order should be allocated (using flex-pack). </p></p>
+<p>It was not until <a href="http://thecssninja.com">Ryan Seddon</a> pointed me to the documentation on <a href="https://github.com/mojombo/jekyll/wiki/blog-migrations">migrating from Drupal</a> that this even became feasible. Sadly, the script does not generate categories for the exported markdown files. Fortunately, I used this opportunity to disband the idea of categories all-together and just manually edit whichever post fitted best into <a href="/categories/web-development/">Web Development</a> as that typically has been what most visitors look for.</p>
 
-<p>You can also specify the order in which the child elements should occur using flex-order. Each of these child elements can have widths or heights as a function called flex(), which takes in 3 values - the amount it can expand to, the amount it can contract to, the preferred length it should have. Browsers need to follow the free space allocation algorithm to make sure each of these element’s width/height match the values provided.</p>
+<p>Later, <a href="http://rmurphey.com">Rebecca Murphey</a> moved her site to Octopress which seemed to be a nice wrapper around Jekyll and the migration seemed much less work than before. The most tedious process in migrating content from 2003 onwards was the export of the blog posts from Drupal, and making the Disqus comments work.</p>
 
+<h3>Disqus</h3>
 
-<p> <p>This would be very useful for mobile apps where device diversity makes creating flexible but usable designs almost mandatory. Cant wait to see this implemented across all browsers!</p></p>
+<p>Disqus offers a path for Wordpress users though, but for Drupal you would need to provide an XML file to import from. The good news is the new <a href="http://drupal.org/node/1349010#comment-5275640">Disqus module does that exactly</a> (you need to look under <code>Admin/Content Management/Comments</code> to find the export function). You can use any Disqus identifier, but the easiest method seems to be to use the unique url of each post.</p>
 
-<h3> <a href="http://dev.w3.org/csswg/css3-grid-align/"> <span class="caps">CSS3</span> Grid Layout </a> </h3>
+<p>The bad news is that unique url that Disqus module uses is the original Drupal path (e.g. <code>node/1</code>) which is useful if you are sticking with Drupal, but useless if you are using another system. Luckily for me, it also includes the path alias of the original post in <code>disqus_url</code> field for each comment, so it would simply be a matter of finding value of <code>disqus_url</code> in each comment, and replace the value of Disqus identifier with it – which is easy to do by executing a regular expression search and replace on the XML file.</p>
 
+<h3>Github Setup</h3>
 
-<p></p>
+<p>Source files used to generate the site are stored in a branch called <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/">source</a> and the generated files are required to be on the master branch. Octopress provides a <a href="http://octopress.org/docs/deploying/github/">rake interface for you to setup your github pages</a> as you wish.</p>
 
-<p> This spec would allow authors to have complete control over placement of each element on the page in a grid. It introduces completely new properties to aligning elements and like flexbox layout you use a <code>display: grid</code> on the parent element to make all the child elements be part of a grid. So, you cannot have an element that can be both a flexbox or a grid at the same time (clearly makes no sense). Do note that only block elements can take part in a grid layout and be part of a grid. </p>
+<p>You also need a CNAME record that has the domain name that will point to Github. If it is a top level domain, you need to also set up an A Record on your DNS, otherwise creating a CNAME record on your DNS should be sufficient.</p>
 
+<p>The most annoying thing is I cannot set the default branch for Pull Requests alone on Github (as they need to be made on the source branch), so for now you would have to change the branch of the remote to source manually for the pull request to go through.</p>
 
-<p></p>
+<h3>Jekyll</h3>
 
-<p>The Grid layout lets you set complicated grids of elements. The flexbox merely allows you to set how flexible the element can be and where it can be placed within the parent element, but the grid layout lets you set which elements can be part of a grid cell (each grid is made up of grid cells, grid rows, and grid columns), and where within the grid cell should each element be placed (the layer order, and if they should span multiple grid cells), and how elements should be laid out when you do not specify which grid cells they belong to. </p>
+<p>If you are using Octopress, you most likely needn’t worry about fiddling with Jekyll other than setting variables in <code>_config.yaml</code> file. Any variables you declare there are available for you site-wide for use in your Jekyll templates. So, it was easy to <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/_config.yml#L45">set a github url</a> to create the &#8216;submit pull request&#8217; url you see below each post.</p>
 
+<p>Jekyll does not, by default, paginate the archives. But the same code used to render pagination on the default home page <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/archives/index.html">can be used to do so</a>. The Category archives page is rendered by an Octopress Jekyll plugin and is not paginated (I am sure it is possible, but slightly more tedious).</p>
 
-<p> <p> The Grid layout can also be used in combination with <span class="caps">CSS</span> Regions such that grid cells that are selected to be part of a region can have text flowing through them (from another grid cell). Grid cells can be selected using ::grid-cell(‘cellname’) pseudo-element selector. </p></p>
+<p>Jekyll provides an XML feed at <code>atom.xml</code> and Octopress helpfully provides an XML feed with the categories plugin for your category listing. Octopress also makes it easy for you to set your feed urls to Feedburner. Just remember to point your Feedburner urls to these atom feeds!</p>
 
-<p> This spec is pretty well-defined, which is not surprising given <a href="http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGrid"> we already have an implementation in <span class="caps">IE10</span> </a> . My only concern is the redefinition of the <code>fr</code> unit which has also been used to define a flex tuple in the CSS3 Flexbox spec which will discussed at the CSS Face-to-face. </p>
+<h3>Liquid</h3>
 
+<p><a href="https://github.com/Shopify/liquid">Liquid</a> is the templating engine used by Jekyll. It looks pleasing and has a small set of manipulations you can do with it out of the box. I really like the simple filters that let you <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">manipulate values by simply piping them through filters</a> (there is a <a href="http://cheat.markdunkley.com/">lovely cheat sheet</a> too). There is no way you can get the filename of the markdown file used to create a post within Jekyll, so I had to recreate it using Liquid filters: <code>-</code>.</p>
 
-<p> <h3> <a href="http://dev.w3.org/csswg/css3-images/#gradients">Gradients</a> </h3> <p> While gradients are more or less determined, there is still a big discussion on how to render gradients with keywords (using <code>top left</code> , etc). Another concern with gradients has been the interpolation of colors (which currently results in ugly blackish interpolation such as this one on the left when you have one of the color stops as <code>transparent</code> ). </p></p>
+<p>It is not quite as clean as I thought it would be, to render the latest post on the homepage while reusing the same post template. Basically, each post renders in a page and hence the data is available as <code>page.url</code> or <code>page.date</code>. However, home page is itself a page which renders a list of posts (in this case just one), hence I had to set a variable <code>post</code> and make that point to the latest one (<code>site.posts.latest</code>). This meant, any of the variables need to be rendered irrespective of whether they are <code>post.url</code> or <code>page.url</code>, which meant <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/_includes/post_detail.html">several <code>if/else</code> statements</a>. I think this is better than replicating the same template twice, and having one go out of sync with the other.</p>
 
-<p> <img src="http://gyazo.com/9f995e0e98ba6c0dfbf71930dce4fb66.png"> <br> ( <a href="http://jsfiddle.net/nimbu/rK9Pd/">source</a> ) </p>
+<h3>Design</h3>
 
+<p>Octopress offers a base layout/design which I found too complicated to work with. I ended up replacing most of the Sass files (have not indulged my whim on the architecture of the layout templates). I have an <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/sass/base/_extends.scss"><code>_extends.scss</code></a> to store all <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend">my extend rules</a>, and a <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/sass/base/_vars.scss"><code>_vars.scss</code></a> to store variables. I had to override a few disqus styles, so they went into their own scss file (with dirty <code>!important</code> at the end of each declaration!)</p>
 
-<p> <p> The meaning of premultiplied color spaces <a href="http://dev.w3.org/csswg/css3-images/#color-stop-syntax">has been clarified</a> (Opera already implements this - see the gradient on the right). </p></p>
+<p>I was happy with the architecture of the older design, which is why nothing has changed significantly. I did want the previous/next links to be located at a fixed location and provide very basic navigation on top.</p>
 
-<h3> <a href="http://dev.w3.org/csswg/cssom/"> <span class="caps">CSSOM</span> </a> </h3>
+<h3>Performance</h3>
 
+<p>Lack of PHP and MySQL has made this page render in about 1s compared to 2.6s previously. I also don&#8217;t have frivolous resources loading which makes it better.</p>
 
-<p> <span class="caps">CSSOM</span> is the Document Object Model for <span class="caps">CSS</span> . It is an <span class="caps">API</span> thats allows you to access style rules, selectors, media queries, and the <span class="caps">CSS</span> used to render the styles on a page. This has previously not been specced which meant each browser could implement its own APIs for accessing stylesheets (and they did). Now, we have a comprehensive set of interfaces to access the styles from JavaScript. </p>
+<h3>Complaints</h3>
 
+<p>I am overall very satisfied with Octopress, and am so glad <a href="imathis.com">Brandon Mathis</a> created it. Only niggling complaint I have is that the rake deployment script takes <em>years</em> to run. You could use <code>rake isolate[filename]</code> and subsequent <code>rake integrate</code> to make this faster. But I wish it were the case automatically.</p>
 
-<p> <p> We already have parts of <span class="caps">CSSOM</span> implemented in various browsers (Opera 11.5+, <span class="caps">IE10</span> , Chrome, <span class="caps">FF5</span> ) though! </p> <p>Any questions you have that I can ask the Working Group about?</p></p>
+<p>Creating a new post is easy, but finding it in the 100s of posts I have to write it is a pain. I suspect I could add a <code>mate &lt;filename&gt;</code> to the <code>rake new_post</code> script which would make that easier.</p>
+
+<h3>Future</h3>
+
+<p>This site is a work in progress. I have some outstanding <a href="https://github.com/nimbupani/nimbupani.github.com/issues/1">to-dos</a> that I hope to get to soon. I do want to use this site to experiment with learning new languages/technologies, so anything you think would be an interesting idea to pursue, please <a href="https://github.com/nimbupani/nimbupani.github.com/issues/new">suggest</a>!</p>
 </div>
 
   <footer>
@@ -168,15 +169,15 @@
 
   
 
-<time datetime="2011-12-10T18:51:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2011</span></time> in 
+<time datetime="2011-12-11T04:51:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>11</span> <span class='year'>2011</span></time> in 
 
 <span class="categories">
   
-    <a class='category' href='/categories/development/'>Development</a>, <a class='category' href='/categories/web/'>Web</a>
+    <a class='category' href='/categories/web-development/'>Web Development</a>
   
 </span>
 
- with  <a href="/summary-of-various-exciting-css-drafts-and-proposals.html#disqus_thread" data-disqus-identifier="http://nimbupani.com/summary-of-various-exciting-css-drafts-and-proposals.html">Comments</a>.  If you would like to update this post, <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/_posts/2011-12-10-summary-of-various-exciting-css-drafts-and-proposals.md">please send a pull request</a>.       
+ with  <a href="/redesign-notes.html#disqus_thread" data-disqus-identifier="http://nimbupani.com/redesign-notes.html">Comments</a>.  If you would like to update this post, <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/_posts/2011-12-11-redesign-notes.md">please send a pull request</a>.       
     </p>
   </footer>
 </article>
@@ -187,6 +188,10 @@
     <p><img class="avatar" src="/assets/divya.png" height=50> <a href="http://twitter.com/divya">Divya Manian</a> is a Web Developer in Seattle. <a href="/about.html">More about me ❭</a></p>
     <h2>Posts on Web Development</h2>
     <ul>
+              
+        <li><a href="/redesign-notes.html">Redesign Notes</a></li>
+              
+        <li><a href="/summary-of-various-exciting-css-drafts-and-proposals.html">Summary of various exciting CSS drafts and proposals</a></li>
               
         <li><a href="/this-revolution-needs-new-revolutionaries.html">This revolution needs new revolutionaries</a></li>
               
@@ -223,10 +228,6 @@
         <li><a href="/diversity.html">Diversity</a></li>
               
         <li><a href="/notes-from-javascript-n00b.html">Notes from a JavaScript n00b</a></li>
-              
-        <li><a href="/spacing-out-on-css-namespaces.html">Spacing Out on CSS Namespaces</a></li>
-              
-        <li><a href="/notes-from-html5-readiness-hacking.html">Notes from HTML5 Readiness Hacking</a></li>
                     
       <li><a class="btn" href="/categories/web-development/">More</a></li>
     </ul>

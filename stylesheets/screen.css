@@ -249,7 +249,7 @@ td {
   vertical-align: top;
 }
 
-.ir, .icons, .twitter, .youtube, .rss {
+.ir, .icons, .twitter, .youtube, .github, .rss {
   display: block;
   border: 0;
   text-indent: -999em;
@@ -261,7 +261,7 @@ td {
   *line-height: 0;
 }
 
-.ir br, .icons br, .twitter br, .youtube br, .rss br {
+.ir br, .icons br, .twitter br, .youtube br, .github br, .rss br {
   display: none;
 }
 
@@ -339,14 +339,14 @@ body header[role="banner"] h2 {
   font-size: 1.5em;
 }
 
-.less-focus, h5, section h4, section section h3, .sitenav a, article footer, #articles > p, #articles li {
+.less-focus, h5, section h4, section section h3, code, article footer, #articles > p, #articles li {
   font-size: 0.9em;
 }
 
 .least-focus, h6,
 section h5,
 section section h4,
-section section section h3, article > header time, footer[role="contentinfo"], .blog-archives article time {
+section section section h3, .sitenav a, article > header time, footer[role="contentinfo"], .blog-archives article time {
   font-size: 0.7em;
   color: #4c561d;
 }
@@ -368,13 +368,13 @@ article > header h1, #articles li, .blog-archives article h2 {
   padding: 0;
 }
 
-.inline-block, .icons, .twitter, .youtube, .rss, body header[role="banner"] h1,
+.inline-block, .icons, .twitter, .youtube, .github, .rss, body header[role="banner"] h1,
 body header[role="banner"] h2, nav.article a.next,
 nav.article a.previous, #articles li, #articles .btn, .blog-archives article time {
   display: inline-block;
 }
 
-.icons, .twitter, .youtube, .rss {
+.icons, .twitter, .youtube, .github, .rss {
   width: 24px;
   height: 24px;
   background-position: center center;
@@ -540,6 +540,10 @@ a:active {
   color: #308da4;
 }
 
+code {
+  color: #282626;
+}
+
 li {
   margin-bottom: 1em;
 }
@@ -551,25 +555,31 @@ li {
 }
 
 .twitter {
-  background-image: url('/images/twitter.png?1323563830');
+  background-image: url('/images/twitter.png?1323607740');
 }
 
 .youtube {
-  background-image: url('/images/youtube.png?1323563830');
+  background-image: url('/images/youtube.png?1323607740');
+}
+
+.github {
+  background-image: url('/images/github.png?1323607739');
+  background-size: 16px 16px;
 }
 
 .rss {
-  background-image: url('/images/rss.png?1323563830');
+  background-image: url('/images/rss.png?1323607739');
   background-size: 10px 10px;
 }
 
 .sitenav {
   margin: 0 0 2em 0;
-  padding-top: 2em;
+  clear: both;
 }
 
 .sitenav a {
-  margin: 0 0.5em;
+  margin: 0 1em 0 0;
+  text-transform: uppercase;
 }
 
 body header[role="banner"] h1,
@@ -587,6 +597,9 @@ body header[role="banner"] h2 a:nth-child(2) {
 body header[role="banner"] h2 a:nth-child(3) {
   background-color: #d24739;
 }
+body header[role="banner"] h2 a:nth-child(4) {
+  background-color: #3c9ab2;
+}
 
 nav.article {
   white-space: nowrap;
@@ -602,7 +615,7 @@ nav.article a.previous {
 }
 
 article > header {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 article > header time {
@@ -716,8 +729,7 @@ footer[role="contentinfo"] {
   }
 
   .sitenav {
-    text-align: right;
-    margin: 0 0 10em 0;
+    margin: 0 0 8em 0;
   }
 
   nav.article {
@@ -831,7 +843,7 @@ footer[role="contentinfo"] {
     content: " (" attr(title) ")";
   }
 
-  .ir a:after, .icons a:after, .twitter a:after, .youtube a:after, .rss a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after, .icons a:after, .twitter a:after, .youtube a:after, .github a:after, .rss a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
