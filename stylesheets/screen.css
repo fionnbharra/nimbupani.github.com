@@ -265,7 +265,7 @@ td {
   display: none;
 }
 
-.hidden, .sitenav form {
+.hidden {
   display: none !important;
   visibility: hidden;
 }
@@ -313,7 +313,9 @@ a.btn {
   font-weight: normal;
 }
 
-.default, body {
+.default, body, h4, section h3,
+section section h2,
+section section section h1 {
   line-height: 1.8;
   font-size: inherit;
 }
@@ -444,12 +446,6 @@ h3, section h2, section section h1 {
   margin-bottom: 0;
 }
 
-h4, section h3,
-section section h2,
-section section section h1 {
-@extends .default;
-}
-
 h6,
 section h5,
 section section h4,
@@ -514,9 +510,6 @@ blockquote cite:before {
 
 /* @extend this to force long lines of continuous text to wrap */
 .force-wrap {
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -556,22 +549,6 @@ li {
   padding-bottom: 3em;
 }
 
-body header[role="banner"] h1,
-body header[role="banner"] h2 {
-  vertical-align: middle;
-}
-
-body header[role="banner"] h2 {
-  margin-left: 0.5em;
-}
-
-body header[role="banner"] h2 a:nth-child(2) {
-  background-color: #90a935;
-}
-body header[role="banner"] h2 a:nth-child(3) {
-  background-color: #d24739;
-}
-
 .twitter {
   background-image: url('/images/twitter.png?1323563830');
 }
@@ -586,8 +563,7 @@ body header[role="banner"] h2 a:nth-child(3) {
 }
 
 .sitenav {
-  text-align: right;
-  margin: 0 0 10em 0;
+  margin: 0 0 2em 0;
   padding-top: 2em;
 }
 
@@ -598,6 +574,22 @@ body header[role="banner"] h2 a:nth-child(3) {
 header[role="banner"] {
   float: left;
   margin-top: 4em;
+}
+
+body header[role="banner"] h1,
+body header[role="banner"] h2 {
+  vertical-align: middle;
+}
+
+body header[role="banner"] h2 {
+  margin-left: 0.5em;
+}
+
+body header[role="banner"] h2 a:nth-child(2) {
+  background-color: #90a935;
+}
+body header[role="banner"] h2 a:nth-child(3) {
+  background-color: #d24739;
 }
 
 nav.article {
@@ -721,6 +713,11 @@ footer[role="contentinfo"] {
 }
 
 @media (min-width: 800px) {
+  .sitenav {
+    text-align: right;
+    margin: 0 0 10em 0;
+  }
+
   nav.article {
     width: 48em;
     position: fixed;
