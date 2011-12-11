@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -483,10 +482,8 @@ ul, ul ul, ul ol, ol, ol ul, ol ol {
 }
 
 blockquote {
-  font-style: italic;
   position: relative;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-style: italic;
   padding-left: 1em;
   border-left: 4px solid;
 }
@@ -500,12 +497,6 @@ blockquote cite:before {
   content: '\2014';
   padding-right: .3em;
   padding-left: .3em;
-}
-@media only screen and (min-width: 992px) {
-  blockquote {
-    padding-left: 1.5em;
-    border-left-width: 4px;
-  }
 }
 
 /* @extend this to force long lines of continuous text to wrap */
