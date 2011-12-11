@@ -17,7 +17,6 @@ function addCodeLineNumbers() {
 
 $.domReady(function() {
   addCodeLineNumbers();
-  addSidebarToggler();
 });
 
 // iOS scaling bug fix

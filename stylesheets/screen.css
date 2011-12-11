@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -336,7 +337,7 @@ body header[role="banner"] h2 {
   font-size: 1.5em;
 }
 
-.less-focus, h5, section h4, section section h3, .sitenav a, article footer, #articles li {
+.less-focus, h5, section h4, section section h3, .sitenav a, article footer, #articles > p, #articles li {
   font-size: 0.9em;
 }
 
@@ -572,15 +573,15 @@ body header[role="banner"] h2 a:nth-child(3) {
 }
 
 .twitter {
-  background-image: url('/images/twitter.png?1323546739');
+  background-image: url('/images/twitter.png?1323563830');
 }
 
 .youtube {
-  background-image: url('/images/youtube.png?1323546739');
+  background-image: url('/images/youtube.png?1323563830');
 }
 
 .rss {
-  background-image: url('/images/rss.png?1323546739');
+  background-image: url('/images/rss.png?1323563830');
   background-size: 10px 10px;
 }
 
@@ -640,6 +641,16 @@ article footer {
   margin-top: 3em;
 }
 
+#articles > p {
+  margin-bottom: 2em;
+}
+
+#articles .avatar {
+  margin-right: 0.5em;
+  border-radius: 10em;
+  box-shadow: 0 0 1em #0e0d0d;
+}
+
 #articles li {
   list-style: none;
   line-height: 1.5;
@@ -658,6 +669,9 @@ article footer {
   background: -webkit-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
   background: -moz-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
   background: -ms-linear-gradient(to right, rgba(213, 135, 66, 0), #d58742);
+}
+#articles li:last-child:hover .btn {
+  color: white;
 }
 #articles li:last-child:hover .btn::after {
   position: absolute;
