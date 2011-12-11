@@ -4,7 +4,7 @@
   <title><![CDATA[Divya Manian]]></title>
   <link href="http://nimbupani.github.com/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2011-12-10T18:43:34-08:00</updated>
+  <updated>2011-12-10T19:15:03-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Summary of various exciting CSS drafts and proposals]]></title>
+    <link href="http://nimbupani.github.com/summary-of-various-exciting-css-drafts-and-proposals.html"/>
+    <updated>2011-12-10T18:51:00-08:00</updated>
+    <id>http://nimbupani.github.com/summary-of-various-exciting-css-drafts-and-proposals</id>
+    <content type="html"><![CDATA[<p>I will be attending my first ever <a href="http://lists.w3.org/Archives/Public/www-style/2011Jun/0593.html">CSS</a> Working Group Face to Face Meeting starting this Sunday, and I wanted to be at least up-to-speed on all the drafts that will be up for discussion. So, in the interest of not letting a few hours spent understanding some of them go to waste, here is a brief summary of each of these drafts and some of the concerns that will be discussed during the meeting.</p>
+
+<p>You could probably look out for updates on the meeting <a href="http://twitter.com/csswg">@csswg</a></p>
+
+<h3>[CSS Regions](http://dev.w3.org/csswg/css3-regions/)</h3>
+
+
+<p>This spec, from my understanding, is a way to define how content flows like in Adobe InDesign or Illustrator. Basically you can take content from a set of elements (by using the property <code>flow: &lt;nameoftheregion></code>) and make that render on a set of other elements (called  <em>regions</em>) which act as a container for that content using the <code>content: from-flow()</code>. If the container have content, those will be replaced by the content set using the  <code>content</code> property. This is controlled by using what is called as <em>named flow</em>. You control which elements belong to a flow using the <code>flow</code> property.</p>
+
+<pre><code>.contentthatflows { flow: newspaper-region; }
+
+.region1-1, .region1-2 { content: from-flow(newspaper-region); }
+</code></pre>
+
+<p>The content rendered within <code>.region1-1</code> and <code>.region1-2</code> will render with styles specified for <code>.region1-1</code> and <code>.region1-2</code> and will not use the styles of the element they belong to.</p>
+
+<p>Sometimes, content can straddle two or more such regions within the same flow. There is no clear way to adjust the styles of such content belonging to a single flow, so we use a pseudo-element called <code>::region-lines</code> . This property has been much debated and would be the subject of the debate at the CSS Face-to-face too.</p>
+
+<p>There is also a skeletal interface to access which region an element is part of which might be fleshed out further in the Face-to-face meeting.</p>
+
+<h3><a href="http://www.interoperabilitybridges.com/css3-floats/"> <span class="caps">CSS3</span> Floats </a></h3>
+
+
+<p></p>
+
+<p> Expands on floats to make float possible with positioning and wrap text content around the positioned element. However this conflates floats with positioning (if you want wrapping on elements, you need to set <code>float: positioned</code> and use <code>top</code> , <code>left</code> , <code>position</code> to control the location of the wrapped element) </p>
+
+
+<p> <p> The properties for controlling the wrapping is similar to those in the <span class="caps">CSS</span> Exclusions proposal - <code>wrap-type</code> (vs <code>wrap-shape-mode</code> ), <code>wrap-shape</code> (same), <code>wrap-image</code> (vs <code>wrap-shape-image</code> ), <code>wrap-image-threshold</code> (vs <code>wrap-shape-image-threshold</code> ), <code>wrap-margin</code> (vs <code>wrap-shape-margin</code> ), <code>wrap-padding</code> (vs <code>wrap-shape-padding</code> ). It seems to me that these two proposals need to be merged or the scope of one of them changed significantly so there are no conflicts. From the <a href="http://wiki.csswg.org/ideas/css3-floats-use-cases">Wrap use cases</a> , personally I like the approach of <span class="caps">CSS</span> Exclusions which seems cleaner for all the use cases mentioned. </p></p>
+
+<h3> <a href="http://dev.w3.org/csswg/css3-exclusions/"> <span class="caps">CSS3</span> Exclusions </a> </h3>
+
+
+<p></p>
+
+<p> This has been initially proposed by Adobe (along with <span class="caps">CSS3</span> Regions). The case for wrapping is separate from positioning or floats, and wrapping can occur on any box independent of where they are located or rendered. In addition you can also specify how each wrapping shape interacts with each other (depending on what you set for wrap-shape-order, you can set which wrapping shape will clip the other when they interact). </p>
+
+
+<p> <p> I like this better than <span class="caps">CSS3</span> Floats because this is not related to how an element is positioned but merely impacts the wrapping. </p></p>
+
+<p> Both <span class="caps">CSS3</span> Exclusions and <span class="caps">CSS3</span> Floats accept <a href="http://www.w3.org/TR/2010/WD-SVG11-20100622/shapes.html"> basic <span class="caps">SVG</span> shapes </a> as values for <code>wrap-image-shape</code> ( <code>wrap-image</code> ). Both specs have equivalent properties to the background property for the wrap image, which means you can have repeating image patterns that you can use for creating your wrap shape. </p>
+
+
+<p> <p>Both specs also specify an interesting alpha channel threshold which can be used to determine the shape that needs to be generated from the wrap-image specified. </p> <h3> <a href="http://dev.w3.org/csswg/css3-flexbox/"> <span class="caps">CSS3</span> Flexbox </a> </h3> <p> This has been entirely re-written and is significantly different from current implementations. What it aims to do is to provide you with flexible layout of child elements and the space around them within a parent element that has a flexbox layout. You get started by specifying <code>display: flexbox</code> on the parent element and then specifying the order in which you want the child elements to be laid out (using flex-direction). All child elements (with display set to inline or anything) will follow this direction if nothing more is specified for each of them. You can also determine how the white-space that is left after following the order should be allocated (using flex-pack). </p></p>
+
+<p>You can also specify the order in which the child elements should occur using flex-order. Each of these child elements can have widths or heights as a function called flex(), which takes in 3 values - the amount it can expand to, the amount it can contract to, the preferred length it should have. Browsers need to follow the free space allocation algorithm to make sure each of these element’s width/height match the values provided.</p>
+
+
+<p> <p>This would be very useful for mobile apps where device diversity makes creating flexible but usable designs almost mandatory. Cant wait to see this implemented across all browsers!</p></p>
+
+<h3> <a href="http://dev.w3.org/csswg/css3-grid-align/"> <span class="caps">CSS3</span> Grid Layout </a> </h3>
+
+
+<p></p>
+
+<p> This spec would allow authors to have complete control over placement of each element on the page in a grid. It introduces completely new properties to aligning elements and like flexbox layout you use a <code>display: grid</code> on the parent element to make all the child elements be part of a grid. So, you cannot have an element that can be both a flexbox or a grid at the same time (clearly makes no sense). Do note that only block elements can take part in a grid layout and be part of a grid. </p>
+
+
+<p></p>
+
+<p>The Grid layout lets you set complicated grids of elements. The flexbox merely allows you to set how flexible the element can be and where it can be placed within the parent element, but the grid layout lets you set which elements can be part of a grid cell (each grid is made up of grid cells, grid rows, and grid columns), and where within the grid cell should each element be placed (the layer order, and if they should span multiple grid cells), and how elements should be laid out when you do not specify which grid cells they belong to. </p>
+
+
+<p> <p> The Grid layout can also be used in combination with <span class="caps">CSS</span> Regions such that grid cells that are selected to be part of a region can have text flowing through them (from another grid cell). Grid cells can be selected using ::grid-cell(‘cellname’) pseudo-element selector. </p></p>
+
+<p> This spec is pretty well-defined, which is not surprising given <a href="http://msdn.microsoft.com/en-us/ie/hh272902#_CSSGrid"> we already have an implementation in <span class="caps">IE10</span> </a> . My only concern is the redefinition of the <code>fr</code> unit which has also been used to define a flex tuple in the CSS3 Flexbox spec which will discussed at the CSS Face-to-face. </p>
+
+
+<p> <h3> <a href="http://dev.w3.org/csswg/css3-images/#gradients">Gradients</a> </h3> <p> While gradients are more or less determined, there is still a big discussion on how to render gradients with keywords (using <code>top left</code> , etc). Another concern with gradients has been the interpolation of colors (which currently results in ugly blackish interpolation such as this one on the left when you have one of the color stops as <code>transparent</code> ). </p></p>
+
+<p> <img src="http://gyazo.com/9f995e0e98ba6c0dfbf71930dce4fb66.png"> <br> ( <a href="http://jsfiddle.net/nimbu/rK9Pd/">source</a> ) </p>
+
+
+<p> <p> The meaning of premultiplied color spaces <a href="http://dev.w3.org/csswg/css3-images/#color-stop-syntax">has been clarified</a> (Opera already implements this - see the gradient on the right). </p></p>
+
+<h3> <a href="http://dev.w3.org/csswg/cssom/"> <span class="caps">CSSOM</span> </a> </h3>
+
+
+<p> <span class="caps">CSSOM</span> is the Document Object Model for <span class="caps">CSS</span> . It is an <span class="caps">API</span> thats allows you to access style rules, selectors, media queries, and the <span class="caps">CSS</span> used to render the styles on a page. This has previously not been specced which meant each browser could implement its own APIs for accessing stylesheets (and they did). Now, we have a comprehensive set of interfaces to access the styles from JavaScript. </p>
+
+
+<p> <p> We already have parts of <span class="caps">CSSOM</span> implemented in various browsers (Opera 11.5+, <span class="caps">IE10</span> , Chrome, <span class="caps">FF5</span> ) though! </p> <p>Any questions you have that I can ask the Working Group about?</p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[This revolution needs new revolutionaries]]></title>
@@ -1658,54 +1748,6 @@ color: skyblue;
 <p><span class=strike>Meanwhile, if this application seems useful, do <a href="http://10k.aneventapart.com/entry/details/102">vote</a>!</span> The results are out, and I did not win :(</p>
 
 
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Book Reviews for July - Part 2]]></title>
-    <link href="http://nimbupani.github.com/book-reviews-for-july-part-2.html"/>
-    <updated>2010-08-04T00:00:00-07:00</updated>
-    <id>http://nimbupani.github.com/book-reviews-for-july-part-2</id>
-    <content type="html"><![CDATA[<p>I have racked up too many books unreviewed, which means (un)fortunately means shorter reviews. Here goes:</p>
-
-
-
-
-<ol>
-    <li>
-        <h3>Landing Page Optimization: The Definitive Guide to Testing and Tuning for Conversions</h3>  
-        <p><a href="http://www.amazon.com/gp/product/0470174625?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0470174625">Landing Page Optimization</a> covers a lot on statistical models necessary to analyze a &ldquo;landing page&rdquo; to &ldquo;convert&rdquo; more people. I found the repeated need for &ldquo;conversions&rdquo; unnerving. The author found the need to write on how everyone (except the marketing expert) can block the process of optimizing the landing page and tactics to get around that. Sad.
-        </p>
-    </li>
-    <li>
-        <h3>Superman: Whatever Happened to the Man of Tomorrow?</h3>
-        <p>As far as I know, <a href="http://www.amazon.com/gp/product/1401223478?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1401223478">This</a> is the only set of Superman stories written by Alan Moore. Stylistically, the stories are drawn to resemble Jack Kirby&#x27;s work (it is lovely!) It is a great read if you like Superman.</p>
-    </li>               
-    <li>
-        <h3>Murder Mysteries</h3>
-        <p><a href="http://www.amazon.com/gp/product/156971634X?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=156971634X">Murder Mysteries</a> is an adaptation of a Neil Gaiman story and brings same joy as Sandman series with an extra benefit of also being a whodunnit.</p>
-    </li> 
-    <li>
-        <h3>A Mosque in Munich: Nazis, the CIA, and the Rise of the Muslim Brotherhood in the West</h3>
-        <p>In the early 30s, the Nazis established an organization to get Muslim refugees from USSR together to foment uprisings in Muslim provinces of USSR (now independent nations). After WWII, US joined in this scramble, literally stealing prized Muslim leaders from Germans (meanwhile the Nazi head of said organization goes unpunished, and retained his privileged status, in the new German government). Similar techniques were in play to <a href="http://en.wikipedia.org/wiki/CIA_activities_in_Afghanistan#Afghanistan_1985" title="CIA activities in Afghanistan - Wikipedia, the free encyclopedia">drive out the Soviets from Afghanistan</a>. If there is one book that will strip away the romance of diplomacy and notions of noble intentions of any country, <a href="http://www.amazon.com/gp/product/0151014183?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0151014183">this</a> would be it. </p>
-    </li>
-    <li>
-        <h3>The Vampire Files</h3> 
-        <p><a href="http://www.amazon.com/gp/product/0441014275?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0441014275">The Vampire Files, Volume Two</a> was a random pick from the <a href="http://spl.org">Library&rsquo;s</a> recommended books section. This is a pulp whodunit featuring a vampire as a detective. I thought it would be as wonderful as <a href="http://nimbupani.com/book-reviews-for-june-2009.html" title="Book Reviews for June 2009 | Nimbupani Designs">The Automatic Detective</a>, alas, it is not.</p>
-    </li>
-    <li>
-        <h3>Fantasies of a Bollywood Love Thief: Inside the World of Indian Moviemaking</h3> 
-        <p><a href="http://www.amazon.com/gp/product/0156030845?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0156030845">Fantasies of a Bollywood Love Thief</a> is an absurdly tacky title for a book on the making of <a href="http://en.wikipedia.org/wiki/Omkara_(film)" title="Omkara (film) - Wikipedia, the free encyclopedia">Omkara</a> by Stephen Alter (cousin of <a href="http://en.wikipedia.org/wiki/Tom_Alter">Tom Alter</a>). The narrator takes a backseat and lets the conversations speak for themselves. The book does not take any stereotyped view of Bollywood and is a glimpse into the power-play and process involved in making movies. Do read if you like seeing Bollywood movies.</p>
-    </li>                                                           
-    <li>
-        <h3>Tea Time for the Traditionally Built</h3>
-        <p><a href="http://www.amazon.com/gp/product/B001NLL8QU?ie=UTF8&amp;tag=nimbupani-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B001NLL8QU">Tea Time for the Traditionally Built</a> is the new book in my favourite series ever: No 1 Ladies Detective Agency. <a href="http://en.wikipedia.org/wiki/The_No._1_Ladies'_Detective_Agency_(TV_series)" title="The No. 1 Ladies' Detective Agency (TV series) - Wikipedia, the free encyclopedia">The TV show based on this series</a>, does full justice to the book (though a touch too arty). I will never get tired of this series. Long live Mma Ramotswe!</p>
-    </li>
-</ol>
-
-
-<p>Do comment with books you found interesting this month! Meanwhile, I will dive back into obscurity to finish my backlog of books! </p>
 
 ]]></content>
   </entry>
