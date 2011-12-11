@@ -1,4 +1,3 @@
-@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
@@ -545,6 +544,7 @@ li {
 }
 
 .container {
+  background-color: #eee;
   background: url('/images/bgnoise_lg.png?1323546739');
   padding-bottom: 3em;
 }
