@@ -4,7 +4,7 @@
   <title><![CDATA[Divya Manian]]></title>
   <link href="http://nimbupani.github.com/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2011-12-23T21:58:27-08:00</updated>
+  <updated>2011-12-23T22:23:11-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -18,7 +18,7 @@
     <link href="http://nimbupani.github.com/twittering-with-d3.html"/>
     <updated>2011-12-23T20:08:00-08:00</updated>
     <id>http://nimbupani.github.com/twittering-with-d3</id>
-    <content type="html"><![CDATA[<p>What you see on the homepage now is something I had been thinking of doing since the obsession of a redesign hit my head. I wanted to use that space to render visual snippets of data on my latest tracked actions. Hopefully this is the first of many.</p>
+    <content type="html"><![CDATA[<p>What you see above is something I had been thinking of doing since the obsession of a redesign hit my head: rendering visual snippets of my latest tracked actions as pretty and useless graphics. Hopefully this is the first of many.</p>
 
 <p>My very first data mapping project was my <a href="http://j.mp/divyaieee">Final Year Project</a> where I had to render XML data from the server on to a J2ME application. I have since not wanted to recreate that horrific experience again and have stayed well out of the way of such complicated mappings. But, last year, I wrote a bit on using <a href="http://www.netmagazine.com/tutorials/build-tweet-map-svg">Polymaps for mapping tweets</a> and discovered that <a href="http://bost.ocks.org/mike/">Mike Bostock</a> has since created a new library for data visualization called <a href="http://mbostock.github.com/d3/">D3</a>. I finally got a chance to play with it.</p>
 
@@ -44,7 +44,7 @@
 
 <h3>Play!</h3>
 
-<p>The code is in the <a href="https://github.com/nimbupani/nimbupani.github.com/tree/source/source/viz">Viz</a> folder to which I should be adding more such pointless data graphics. Please do suggest improvements or feel free to use this in your own obsessive experiments :)</p>
+<p>The code is in the <a href="https://github.com/nimbupani/nimbupani.github.com/tree/source/source/viz">Viz</a> folder to which I should be adding more such pointless data art. Please do suggest improvements or feel free to use this in your own obsessive experiments :)</p>
 ]]></content>
   </entry>
   
