@@ -7,7 +7,7 @@
   <title>Divya Manian</title>  
   <meta name="author" content="Divya Manian">
   
-  <meta name="description" content="This weekend, I chanced upon this article on the woes of Swatch’s rivals in the New York Times. It is an interesting read throughout. What is &hellip;">
+  <meta name="description" content="What you see on the homepage now is something I had been thinking of doing since the obsession of a redesign hit my head. I wanted to use that space &hellip;">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
 </head>
 
 
-<body >
+<body   class="viz" >
   <div class="container">
     <div class="content">
       <header role="banner">  <h1><a href="/">Divya Manian</a></h1>
@@ -33,7 +33,7 @@
 <a href="/archives">Archives</a>
 <a href="/about.html">About</a>
 </nav>    
-      <div class="blog-index">  
+      <div class="blog-index"> 
   
   
   
@@ -51,7 +51,7 @@
     
      
     
-      <a class="previous" href="/redesign-notes.html" title="Redesign Notes">❬</a>      
+      <a class="previous" href="/swatchs-now-is-androids-future.html" title="Swatch’s Now is Android’s Future?">❬</a>      
     
                
   </nav>
@@ -63,33 +63,41 @@
 
   
 
-<time datetime="2011-12-11T07:04:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>11</span> <span class='year'>2011</span></time>    
+<time datetime="2011-12-23T20:08:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>23</span> <span class='year'>2011</span></time>    
     
     
-      <h1 class="entry-title"><a href="/swatchs-now-is-androids-future.html">Swatch’s Now is Android’s Future?</a></h1>      
+      <h1 class="entry-title"><a href="/twittering-with-d3.html">Twittering with D3</a></h1>      
     
     
     
   </header>
-<div class="entry-content"><p>This weekend, I chanced upon this article on the <a href="http://www.nytimes.com/2011/12/10/business/swatch-group-to-trim-sales-of-watch-parts-to-rivals.html">woes of Swatch’s rivals in the New York Times</a>. It is an interesting read throughout.</p>
+<div class="entry-content"><p>What you see on the homepage now is something I had been thinking of doing since the obsession of a redesign hit my head. I wanted to use that space to render visual snippets of data on my latest tracked actions. Hopefully this is the first of many.</p>
 
-<p>What is interesting is Swatch provides most of the mechanical movements for its rivals and is now cutting back and possibly end supplying them. Here are some interesting quotes from the article:</p>
+<p>My very first data mapping project was my <a href="http://j.mp/divyaieee">Final Year Project</a> where I had to render XML data from the server on to a J2ME application. I have since not wanted to recreate that horrific experience again and have stayed well out of the way of such complicated mappings. But, last year, I wrote a bit on using <a href="http://www.netmagazine.com/tutorials/build-tweet-map-svg">Polymaps for mapping tweets</a> and discovered that <a href="http://bost.ocks.org/mike/">Mike Bostock</a> has since created a new library for data visualization called <a href="http://mbostock.github.com/d3/">D3</a>. I finally got a chance to play with it.</p>
 
-<blockquote><p>Mr. Stas acknowledged that it would have been nearly impossible for him to start out in watchmaking 23 years ago without access to Swatch’s production platform.</p>
+<h3>Idea</h3>
 
-<p>Swatch’s revenue last year of 6.44 billion Swiss francs, or about $6.95 billion, makes it by far the world’s largest watchmaker. The company insists that its goal is not to strangle competitors. And it argues that its withdrawal will require rivals to raise their spending on manufacturing, thereby strengthening the quality and competitiveness of the Swiss watch sector as a whole.</p>
+<p>The bar chart shows a timeline of the last 10 tweets starting with the earliest tweet. Each bar represents a tweet and grows darker across the timeline based on how many retweets occur. The darkest bar represents a tweet that was retweeted the most. Clicking on each bar gives you the tweet itself and the actual number of retweets that has occurred.</p>
 
-<p>Thanks to Swatch, “there is no other industry with such cheap entry costs,” said Jean-Claude Biver, who spent 12 years on Swatch’s executive committee before becoming chairman of Hublot, which is now part of LVMH Moët Hennessy Louis Vuitton, the world’s largest luxury goods company and one of Swatch’s main rivals.</p></blockquote>
+<p>I originally started with the idea of only plotting tweets created over the last 24 hours and the ebb and flow of each of their retweets. But, then, it became harder to visualize how I would treat retweets that occurred beyond a day. It seemed simpler to just switch over to plotting the graph for the latest few tweets.</p>
 
-<p>As I was reading the article, it became really hard for me not to draw the comparison to Android, and the <a href="http://www.engadget.com/2011/08/15/editorial-engadget-on-googles-motorola-mobility-acquisition/">subsequent acquisition of Motorola Mobility by Google</a>. The CEO of Swatch mentions:</p>
+<h3>Design</h3>
 
-<blockquote><p>“In no other industry do you have one company supply all the critical parts to the people who then compete directly with it,” Nick Hayek, Swatch’s chief executive, said in an interview this year.</p></blockquote>
+<p>I had in my mind a graded bar chart that would animate across time and change in color values based on when and how many retweets occurred. I wanted to include axes in the design, but they looked very noisy when I got around to doing them, so they were <em>axed</em> :)</p>
 
-<p>Clearly he has not heard of Android.</p>
+<h3>Implementation</h3>
 
-<p>I am not suggesting Google will do this, just that there are very obvious incentives to do so. What I would like to know is how mobile manufacturers are hedging their risks. As one ex-Swatch executive said:</p>
+<p>This project was primarily a vehicle to learn <a href="http://mbostock.github.com/d3/">D3</a> and <a href="http://nodejs.org/">node.js</a> and I must say I did learn quite a bit of both while using them. Not having much of a data visualization background, understanding <code>scale</code>, <code>transition</code>, and <code>data</code> took a while, but it became more intuitive as I grasped how these worked.</p>
 
-<blockquote><p>“This whole battle is the result of people completely underestimating the risk that at some stage Swatch could cut off rivals, which is a legitimate decision to make in a free market,”</p></blockquote>
+<p>The binding of <code>data</code> to each SVG/DOM object using <code>selectAll('&lt;node&gt;').data()</code> is really awesome. It makes it easy to add/remove nodes depending on the data that you are dealing with, though, it does require you to think carefully about your data object (I spent many sleepless hours on this). D3&#8217;s handy <a href="https://github.com/mbostock/d3/wiki/Transitions#wiki-d3_interpolate">interpolators</a> are useful for interpolating between arbitrary set of values. The variety of <a href="https://github.com/mbostock/d3/wiki/Scales">mappings of domains to ranges</a> that is available is also impressive.</p>
+
+<p>I used <a href="https://github.com/AvianFlu/ntwitter">nTwitter</a> to make requests to the Twitter REST API and write the results to a JSON file. Node’s async callbacks threw me in a loop but <a href="http://deepak.jois.name">Deepak</a> used <a href="https://github.com/caolan/async">Async</a> to make it all seamless (while also helping me out with a major rework of the code).</p>
+
+<p><a href="http://momentjs.com/">moment.js</a> was quite handy both server-side and client-side to parse and compare dates for tweets and retweets.</p>
+
+<h3>Play!</h3>
+
+<p>The code is in the <a href="https://github.com/nimbupani/nimbupani.github.com/tree/source/source/viz">Viz</a> folder to which I should be adding more such pointless data graphics. Please do suggest improvements or feel free to use this in your own obsessive experiments :)</p>
 </div>
 
   <footer>
@@ -104,9 +112,15 @@
 
   
 
-<time datetime="2011-12-11T07:04:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>11</span> <span class='year'>2011</span></time> in 
+<time datetime="2011-12-23T20:08:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>23</span> <span class='year'>2011</span></time> in 
 
- with  <a href="/swatchs-now-is-androids-future.html#disqus_thread" data-disqus-identifier="http://nimbupani.com/swatchs-now-is-androids-future.html">Comments</a>.  If you would like to update this post, <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/_posts/2011-12-11-swatchs-now-is-androids-future.md">please send a pull request</a>.       
+<span class="categories">
+  
+    <a class='category' href='/categories/viz/'>viz</a>
+  
+</span>
+
+ with  <a href="/twittering-with-d3.html#disqus_thread" data-disqus-identifier="http://nimbupani.com/twittering-with-d3.html">Comments</a>.  If you would like to update this post, <a href="https://github.com/nimbupani/nimbupani.github.com/blob/source/source/_posts/2011-12-23-twittering-with-d3.md">please send a pull request</a>.       
     </p>
   </footer>
 </article>

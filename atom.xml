@@ -4,7 +4,7 @@
   <title><![CDATA[Divya Manian]]></title>
   <link href="http://nimbupani.github.com/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2011-12-20T06:11:54-08:00</updated>
+  <updated>2011-12-23T21:58:27-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Twittering with D3]]></title>
+    <link href="http://nimbupani.github.com/twittering-with-d3.html"/>
+    <updated>2011-12-23T20:08:00-08:00</updated>
+    <id>http://nimbupani.github.com/twittering-with-d3</id>
+    <content type="html"><![CDATA[<p>What you see on the homepage now is something I had been thinking of doing since the obsession of a redesign hit my head. I wanted to use that space to render visual snippets of data on my latest tracked actions. Hopefully this is the first of many.</p>
+
+<p>My very first data mapping project was my <a href="http://j.mp/divyaieee">Final Year Project</a> where I had to render XML data from the server on to a J2ME application. I have since not wanted to recreate that horrific experience again and have stayed well out of the way of such complicated mappings. But, last year, I wrote a bit on using <a href="http://www.netmagazine.com/tutorials/build-tweet-map-svg">Polymaps for mapping tweets</a> and discovered that <a href="http://bost.ocks.org/mike/">Mike Bostock</a> has since created a new library for data visualization called <a href="http://mbostock.github.com/d3/">D3</a>. I finally got a chance to play with it.</p>
+
+<h3>Idea</h3>
+
+<p>The bar chart shows a timeline of the last 10 tweets starting with the earliest tweet. Each bar represents a tweet and grows darker across the timeline based on how many retweets occur. The darkest bar represents a tweet that was retweeted the most. Clicking on each bar gives you the tweet itself and the actual number of retweets that has occurred.</p>
+
+<p>I originally started with the idea of only plotting tweets created over the last 24 hours and the ebb and flow of each of their retweets. But, then, it became harder to visualize how I would treat retweets that occurred beyond a day. It seemed simpler to just switch over to plotting the graph for the latest few tweets.</p>
+
+<h3>Design</h3>
+
+<p>I had in my mind a graded bar chart that would animate across time and change in color values based on when and how many retweets occurred. I wanted to include axes in the design, but they looked very noisy when I got around to doing them, so they were <em>axed</em> :)</p>
+
+<h3>Implementation</h3>
+
+<p>This project was primarily a vehicle to learn <a href="http://mbostock.github.com/d3/">D3</a> and <a href="http://nodejs.org/">node.js</a> and I must say I did learn quite a bit of both while using them. Not having much of a data visualization background, understanding <code>scale</code>, <code>transition</code>, and <code>data</code> took a while, but it became more intuitive as I grasped how these worked.</p>
+
+<p>The binding of <code>data</code> to each SVG/DOM object using <code>selectAll('&lt;node&gt;').data()</code> is really awesome. It makes it easy to add/remove nodes depending on the data that you are dealing with, though, it does require you to think carefully about your data object (I spent many sleepless hours on this). D3&#8217;s handy <a href="https://github.com/mbostock/d3/wiki/Transitions#wiki-d3_interpolate">interpolators</a> are useful for interpolating between arbitrary set of values. The variety of <a href="https://github.com/mbostock/d3/wiki/Scales">mappings of domains to ranges</a> that is available is also impressive.</p>
+
+<p>I used <a href="https://github.com/AvianFlu/ntwitter">nTwitter</a> to make requests to the Twitter REST API and write the results to a JSON file. Node’s async callbacks threw me in a loop but <a href="http://deepak.jois.name">Deepak</a> used <a href="https://github.com/caolan/async">Async</a> to make it all seamless (while also helping me out with a major rework of the code).</p>
+
+<p><a href="http://momentjs.com/">moment.js</a> was quite handy both server-side and client-side to parse and compare dates for tweets and retweets.</p>
+
+<h3>Play!</h3>
+
+<p>The code is in the <a href="https://github.com/nimbupani/nimbupani.github.com/tree/source/source/viz">Viz</a> folder to which I should be adding more such pointless data graphics. Please do suggest improvements or feel free to use this in your own obsessive experiments :)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Swatch’s Now is Android’s Future?]]></title>
@@ -1613,83 +1648,6 @@ color: skyblue;
 
 
 <p>What books did you find interesting lately?</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Book Reviews for August 2010]]></title>
-    <link href="http://nimbupani.github.com/book-reviews-for-august-2010.html"/>
-    <updated>2010-09-02T00:00:00-07:00</updated>
-    <id>http://nimbupani.github.com/book-reviews-for-august-2010</id>
-    <content type="html"><![CDATA[<p>Eeks! I forgot to review books I read for August and now I have way too many! I shall hopefully not read as many in September and can space the reviews better. Anyways, onward!</p>
-
-
-
-
-<h3>Palestine</h3>
-
-
-<p></p>
-
-<p>Thanks to <a href="http://popagandhi.com">Adrianna</a>, I managed to read this awesome book. In <a href="http://www.amazon.com/gp/product/156097432X?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=156097432X">Palestine</a>, Joe Sacco documents what Palestinians go through every day. It is not a pretty picture and the violence against Israel is understandable in that context. It seems like the only way to end this issue would be to abandon Palestine and migrate elsewhere (<a href="http://en.wikipedia.org/wiki/Lost_cities">like our ancestors</a>).</p>
-
-
-
-
-<h3>Logicomix: An Epic Search for Truth</h3>
-
-
-<p><a href="http://www.amazon.com/gp/product/1596914521?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1596914521">Logicomix</a> is a fantastic introduction to logic and part-story of Bertrand Russell who was instrumental in creating this field. What is awesome is that it is understandable and interesting to anyone who is interested in rational thinking. All of the logicians featured in the book have a link to schizophrenia, which makes me wonder if the edge of rationality also the edge of madness?</p>
-
-
-
-
-<h3>Ways of Seeing </h3>
-
-
-<p>This is a <a href="http://www.amazon.com/gp/product/0140135154?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0140135154">slim but insightful book</a> on art and how indelibly it is linked to our perception of it. The book talks about art appreciation as merely a signaling mechanism at the most and how interpretation of art in a time other than when it was created is a doomed venture.</p>
-
-
-<p></p>
-
-<p>It also has a great essay on the rise, in western societies, of objectification of women which has continued to this day and is spreading in other cultures.</p>
-
-
-
-
-<p>This book is the result of a <a href="http://www.youtube.com/watch?v=LnfB-pUm3eI">BBC mini-series</a>.</p>
-
-
-<p></p>
-
-<h3>Skim</h3>
-
-
-
-
-<p>Jillian Tamaki&#8217;s art work in <a href="http://www.amazon.ca/dp/088899964X/?tag=book0a8-20&linkCode=asn&creativeASIN=088899964X">Skim</a> is amazing. Her illustrations are quite like <a href="http://en.wikipedia.org/wiki/Ukiyo-e">Ukiyo-e paintings</a> but also frame the story quite well. It is a beautiful piece of work.</p>
-
-
-<p></p>
-
-<h3>Kurosagi Corpse Delivery Service</h3>
-
-
-<p>I have finally caught up to <a href="http://www.amazon.com/gp/product/1593075553?ie=UTF8&tag=nimbupani-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1593075553">all the back issues</a>. Now I have to wait for the english translations from Vol. 11 onwards. It is a hilarious series (<a href="http://nimbupani.com/search/node/kurosagi">I don&#8217;t seem to get tired of mentioning this)</a>, well worth a read!</p>
-
-
-
-
-<h3>The Art and Science of CSS</h3>
-
-
-<p>I discovered <a href="http://www.amazon.ca/dp/0975841971/">this</a> in my &ldquo;toread&rdquo; folder of e-books. The title vastly overestimates what the actual content is, which is a set of tips and tricks to get some popular Web Design patterns of that time (2007). Not something worth referring to.</p>
-
-
-
-
-<p>That is that! As usual, I beg you to leave your recommendations in the comments. I already have another 6 books to review, which I should hopefully do so by end of next week. Meanwhile, there is <a href="http://bumbershoot.org/">Bumbershoot</a> to look forward to!</p>
 
 ]]></content>
   </entry>

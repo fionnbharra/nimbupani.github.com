@@ -542,7 +542,7 @@ li {
 
 .container {
   background-color: #eee;
-  background: url('/images/bgnoise_lg.png?1323546739');
+  background: url('/images/bgnoise_lg.png?1324671826');
   padding-bottom: 3em;
 }
 
@@ -723,6 +723,28 @@ footer[role="contentinfo"] {
 
   .sitenav {
     margin: 0 0 6em 0;
+  }
+
+  .viz .sitenav {
+    margin-bottom: 20em;
+  }
+
+  iframe {
+    position: absolute;
+    top: 8em;
+    left: 0;
+    height: 300px;
+    border: 0;
+    opacity: 0.3;
+    z-index: 3;
+    -o-transition: opacity 100ms linear;
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+  }
+
+  iframe:hover {
+    opacity: 1;
   }
 
   nav.article {
