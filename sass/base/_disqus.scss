@@ -29,7 +29,13 @@
   font-size: 0.8em !important; //ideally @extend .least-focus but we need !important
 }
 
+.dsq-comment-message {
+  font-size: 0.9em !important;
+}
+
 #dsq-sort-by { margin-top: 0.3em !important; }
 .dsq-collapse-toggle { right: 16px !important; }
 
 .dsq-is-liked .dsq-like-thumb { vertical-align: top !important; }
+
+a.dsq-subscribe-email em, a.dsq-subscribe-rss em { text-decoration: none !important; }

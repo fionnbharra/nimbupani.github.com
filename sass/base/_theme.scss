@@ -14,7 +14,7 @@ li { margin-bottom: 1em; }
 #articles,
 footer[role="contentinfo"] { @extend .default-width; }
 
-.container { background-color:  #eee; background: image-url('bgnoise_lg.png'); padding-bottom: 3em; }
+.container { background-color: #eee; background-image: image-url('bgnoise_lg.png'); padding-bottom: 3em; }
 
 .twitter { @extend .icons; background-image: image-url('twitter.png'); }
 .youtube { @extend .icons; background-image: image-url('youtube.png'); }
@@ -63,7 +63,10 @@ nav.article {
     cursor: pointer;
     width: 1em;
     text-align: left; 
+    color: lighten($text-color, 50%);
     font-family: menlo, sans-serif;
+    
+    &:hover { color: $link-color; }
   }
 }
 
@@ -88,17 +91,56 @@ article > header .archive-title { padding-top: 0.46em; }
 
 article .entry-content > p:first-child { 
   @extend .larger-focus; 
-  line-height: 1.2;
-  margin-bottom: 1em;  
+  line-height: 1.4;
+  margin: 1.4em 0;  
 }
 
 article footer { 
   @extend .less-focus; 
-  margin: 3em auto 5em;
+  margin: 5em auto 0;
+  position: relative;
+  color: #aaa;
+  font-style: italic;
+}
+
+article footer::after,
+article footer::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2em;
+  text-align: center;
+  color: #eee;
+  font-style: normal;
+}
+
+article footer::before {
+  @extend .larger-focus;  
+  content: "❮ ❤ ❯";
+  background: #fff;
+  border-radius: 3em;
+  left: 50%;
+  margin-left: -1.5em;
+  width: 3em;
+  z-index: 2;
+}
+
+article footer::after {
+  content: "";
+  top: -1.75em;
+  border-top: 1px dotted;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+// COMMENTS
+article + section {
+  margin-top: 4em;
 }
 
 // FOOTER ARTICLES
-#articles { margin-top: 3em; }
+#articles { margin-top: 2em; }
 
 #articles > p { @extend .less-focus; margin-bottom: 2em; }
 
@@ -127,7 +169,7 @@ article footer {
   
   &:hover {
     background: -o-linear-gradient(to right, rgba( #d58742, 0),  rgba( #d58742, 1));
-    background: -webkit-linear-gradient(to right, rgba( #d58742, 0),  rgba( #d58742, 1));  
+    background: -webkit-linear-gradient(0deg, rgba( #d58742, 0),  rgba( #d58742, 1));  
     background: -moz-linear-gradient(to right, rgba( #d58742, 0),  rgba( #d58742, 1));  
     background: -ms-linear-gradient(to right, rgba( #d58742, 0),  rgba( #d58742, 1));      
     
@@ -158,9 +200,9 @@ article footer {
 
 footer[role="contentinfo"] { 
   @extend .least-focus; 
-  margin-top: 3em; 
-  margin-bottom: 3em; 
+  margin: 3.33em auto; 
 }
+
 
 // ARCHIVES
 
