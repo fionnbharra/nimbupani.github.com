@@ -34,5 +34,5 @@ I used [nTwitter](https://github.com/AvianFlu/ntwitter) to make requests to the 
 
 ### Play!
 
-The code is in the [Viz](https://github.com/nimbupani/nimbupani.github.com/tree/source/source/viz) folder to which I should be adding more such pointless data art. Please do suggest improvements or feel free to use this in your own obsessive experiments :)
+The code is in the [Viz](https://github.com/nimbupani/viz) folder to which I should be adding more such pointless data art. Please do suggest improvements or feel free to use this in your own obsessive experiments :)
  
