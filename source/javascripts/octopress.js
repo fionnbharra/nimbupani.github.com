@@ -71,7 +71,6 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
     if(window.matchMedia("(min-width: 800px)").matches) {
       var iframe = document.createElement('iframe');
       iframe.setAttribute("width", document.body.clientWidth);
-      console.log(iframe.width);
       iframe.src="./viz/ebbflow.html";   
       document.body.appendChild(iframe);       
     }
