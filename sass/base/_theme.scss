@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+* { -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body { color: $text-color; background: adjust-color($text-color, $lightness: -30%, $saturation: 20%); }
 
@@ -229,7 +229,7 @@ footer[role="contentinfo"] {
   .sitenav { margin: 0 0 6em 0; }
   .viz .sitenav { margin-bottom: 20em; }
   
-  iframe {
+  .viz > iframe {
     position: absolute;
     top: 8em;
     left: 0;
@@ -243,7 +243,7 @@ footer[role="contentinfo"] {
     -ms-transition: opacity 100ms linear;    
   }
   
-  iframe:hover { 
+ .viz > iframe:hover { 
     opacity: 1
   }
   nav.article {
