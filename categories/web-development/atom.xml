@@ -4,7 +4,7 @@
   <title><![CDATA[Web Development | Divya Manian]]></title>
   <link href="http://nimbupani.github.com/categories/web-development/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2012-01-01T12:13:57-08:00</updated>
+  <updated>2012-01-02T13:53:25-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -45,9 +45,7 @@
 
 <p>Hogan.js is a library that is a straightforward implementation of mustache. Like Handlebars, Hogan is also compiled ahead of data being sent to render which makes it faster than Mustache. But unlike Handlebars, Hogan does not provide any extra features.</p>
 
-<p>Hogan.js seems to have better performance on <strong>most</strong> browsers. But do note that because there is no way to manipulate the data within the templates, you might have to do some work ahead of time or afterwards which might negate the performance benefits that you gain.</p>
-
-<p>Nevertheless, Hogan is a great alternative to Mustache.js for minimalists who simply want a template to use and nothing more.</p>
+<p>Hogan.js seems to have better performance on <strong>most</strong> browsers. Hogan is a great alternative to Mustache.js for minimalists who simply want a template to use and nothing more.</p>
 
 <h3>What about others?</h3>
 
