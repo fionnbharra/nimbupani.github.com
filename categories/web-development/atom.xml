@@ -4,7 +4,7 @@
   <title><![CDATA[Web Development | Divya Manian]]></title>
   <link href="http://nimbupani.github.com/categories/web-development/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2012-01-02T13:53:25-08:00</updated>
+  <updated>2012-01-17T18:23:45-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -53,9 +53,11 @@
 
 <p><a href="http://tbranyen.com/">Tim Branyen</a> is working on <a href="http://combyne.github.com/">Combyne</a> which is similar to Mustache but provides additional features that are similar to those found in <a href="http://liquidmarkup.org/">Liquid</a>.</p>
 
+<p><a href="https://github.com/adammark/">Adam Mark</a> has <a href="https://github.com/adammark/Markup.js">Markup.js</a> out, which is similar to mustache in some ways, but works on non-IE browsers. In addition it provides <a href="https://github.com/adammark/Markup.js/tree/master/src/pipes">piping out of the box</a> and has a low footprint (1.8K). However, I do not like the syntax for piping argument (<code>&gt;</code>), nor the ambiguous list piping. It doesn't precompile templates either, but seems to have some robut thoughts on working with language strings. Definitely worth a look.</p>
+
 <h3>What do I use?</h3>
 
-<p>I use Handlebars. Mainly, the performance boost of Hogan does not seem that significant for me given the opportunities of using helpers for simple data manipulation. My typical use cases seem to always have some client-side data manipulation that hogan does not provide for.</p>
+<p>I use Handlebsjkjars. Mainly, the performance boost of Hogan does not seem that significant for me given the opportunities of using helpers for simple data manipulation. My typical use cases seem to always have some client-side data manipulation that hogan does not provide for.</p>
 ]]></content>
   </entry>
   
