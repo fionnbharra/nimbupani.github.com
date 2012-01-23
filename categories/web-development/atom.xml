@@ -4,7 +4,7 @@
   <title><![CDATA[Web Development | Divya Manian]]></title>
   <link href="http://nimbupani.github.com/categories/web-development/atom.xml" rel="self"/>
   <link href="http://nimbupani.github.com/"/>
-  <updated>2012-01-21T09:25:43-08:00</updated>
+  <updated>2012-01-22T20:28:39-08:00</updated>
   <id>http://nimbupani.github.com/</id>
   <author>
     <name><![CDATA[Divya Manian]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[html5please]]></title>
+    <link href="http://nimbupani.github.com/html5please.html"/>
+    <updated>2012-01-22T17:11:00-08:00</updated>
+    <id>http://nimbupani.github.com/html5please</id>
+    <content type="html"><![CDATA[<p><a href="http://html5please.us"><img src="http://cache.gyazo.com/c5d6f648394681c59d93c487b8347cf5.png" alt="" /></a></p>
+
+<p>More than a year ago, in my very first talk at Web Directions on <a href="http://www.slideshare.net/nimbupani/active-web-development">Active Web Development</a>, I had this slide:</p>
+
+<p><img src="http://cache.gyazo.com/64c191910d79e1ec04e253caa7a74482.png" alt="" /></p>
+
+<p>The intention was that within organizations web developers work to keep an updated list of html5 features that they would adopt or not. However, Paul Irish and I thought it would be useful if there were a global set of recommendations that web developers could consult and tap on when they are deciding on how to use features. This was the seed for the creation of <a href="http://html5please.us">HTML5 Please</a>.</p>
+
+<p><a href="http://caniuse.com">When can I use</a> and <a href="http://modernizr.com">Modernizr</a> do a great job in informing the users of available features and how to feature detect them. The <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">Modernizr polyfill wikipage</a> also does a good job of listing all the available polyfills. What we felt missing was the glue that bound all this information together, to tell the user what the best tool for the job was: either on its own, or with a polyfill or a sensible fallback.</p>
+
+<p>With HTML5 Please, you can just search for a feature that you are looking to use and find out how to do so. If you think our recommendation is incorrect, you can edit the recommendation for each feature and send a pull request (like this <a href="https://github.com/h5bp/html5please/blob/master/posts/border-image.md">example</a>).</p>
+
+<h3>The Setup</h3>
+
+<p>Initially, this data was in JSON file that was manipulated in node to generate the static html. Soon, it became obvious that JSON would be a big pile of mess when many people <em>manually</em> update it.  Also, it was clear we needed a build system, which is where <a href="http://twitter.com/tbranyen">Tim Branyen</a> stepped in to help creating one using node and backbone that would combine markdown posts into a single HTML page.</p>
+
+<p>It was also obvious that we needed a good system to create these markdown posts so that each of the tags that are used in the 'Explore features' section are not created accidentally (e.g. prevent creating a tag called <code>polyfill</code> instead of <code>polyfills</code>). To do this, <a href="http://twitter.com/vyom">Deepak Jois</a> created a simple shell script that accepts a feature name, its associated tags, its kind, and then creates a markdown file with these details and opens it in your editor.</p>
+
+<p>We also wanted a way for users to help us make the content better. I added a link to the markdown source on github for each feature which the reader only needs to fork, edit and send pull request for (all over in two clicks!).</p>
+
+<h3>The Front End</h3>
+
+<p>I was unsure of how to proceed with the design. This is how it looked like at the beginning:</p>
+
+<p><img src="http://cache.gyazo.com/4e9fa43b13017085aa1647e1955a36d6.png" alt="" /></p>
+
+<p>Over the last month, I tweaked the design majorly to more or less match what you see today. I also wanted to use Sass more, which is why the source stylesheet is all Sass.</p>
+
+<p>It was awesome to work with Paul, Tim, Deepak, <a href="http://twitter.com/connor">Connor</a>, <a href="http://twitter.com/brianblakely">Brian Blakely</a>, <a href="http://twitter.com/addyosmani">Addy Osmani</a> &amp; <a href="https://github.com/h5bp/html5please/contributors">many more</a> to create this site. Please <a href="https://github.com/h5bp/html5please/issues/">let us know on Github</a> if you find issues or if you have ideas on how it could be better!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[mustache, hogan, handlebars]]></title>
@@ -333,73 +370,6 @@ Properties defined on <code>.region1-1</code> or <code>.region1-2</code> will no
 
 
 <p>The old revolution is dead, long live the revolution.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Some CSS Transition hacks]]></title>
-    <link href="http://nimbupani.github.com/some-css-transition-hacks.html"/>
-    <updated>2011-05-17T00:00:00-07:00</updated>
-    <id>http://nimbupani.github.com/some-css-transition-hacks</id>
-    <content type="html"><![CDATA[<p>I am speaking at <a href="http://unplugged11.webdirections.org/program/design#creative-css3">some</a> <a href="http://2011.texasjavascript.com/">events</a> which means I have to write a few demos. You can find some <a href="http://nimbu.in/unplugged/demos/">here</a>, and I am in the process of creating more. While doing so, I have come across two new (to me), ways of applying transitions.  This only works for the conditions stated here, and you should think carefully before trying to expand these to be used elsewhere.</p>
-
-
-
-
-<h2>Fake Transitions on Gradients</h2>
-
-
-<p>As you know, no browser supports transitions in CSS gradients (yet). But, we have two tools to fake this: transitions that work on background colors, and multiple backgrounds. Given transitions can interpolate colors, we simply transition the background color and apply a gradient image on top of it which fades to transparent value (giving the illusion of an transitioning gradient). </p>
-
-
-<p>Here is a demo:</p>
-
-
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/nimbu/zuNbj/embedded/result,css"></iframe>
-
-
-<h3>Caveat</h3>
-
-
-<ul><li>This works great on simple gradients. You probably do not want to use this with multiple backgrounds as it would be a terrible pain to manage the right backgrounds to change.</li></ul>
-
-
-
-
-<h2>Animate elements with just font-size</h2>
-
-
-<p>Transitions can be applied on CSS transforms, so if you wish to scale an element on hover, it would be a matter of applying the right prefixed transition on the right prefixed transform and writing the vendor-prefixed scale transform 5 times on hover.</p>
-
-
-<p></p>
-
-<p>I am lazy, and I like to avoid typing if I can. So, given we can use <code>em</code> as a unit for width, height, line-height and border-radius would be something we can take advantage of. What this unit means is each of these properties are now relative to the <code>font-size</code> we set on the element.</p>
-
-
-<p>Now all we need to do is transition the font-size, and we get bonus transitions on width, height, line-height and border-radius! Now you can be carefully choose which elements should use em units depending on which properties (that use em unit values) you want transitioned.</p>
-
-
-<p>Don't be so quick to gloat though. Webkit does not transition width, height, line-height if you only transition the font-size, so you would need to set <code>-webkit-transition: all 1s;</code> to get it to work on webkit.</p>
-
-
-
-
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/nimbu/86kET/embedded/result,css"></iframe>
-
-
-<h3>Caveats</h3>
-
-
-<ul>
-<li>The element expands in area - unlike a scale transform which expands without nudging other elements out of the way. This means elements adjacent to this element will move unless they are all positioned absolutely. You can also position the element to which transition is being applied absolutely so as to not impact rest of them.</li>
-<li>This only works for properties you want to transform that accept length units. </li>
-<li>If you do not want the text within the transformed element to also transform, using this method would be easier. When using transforms, you would need to reset the transform on the wrapper around the text so as to prevent text from transforming. In the above demo, the blue disc has considerably more rules and declarations to prevent scaling of text as compared to transforming the font size.</li>
-</ul>
-
-
-<p>If you know of a snappier way to do these, please fork the fiddles and link to your forks in the comments.</p>
 
 ]]></content>
   </entry>
